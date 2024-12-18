@@ -1,0 +1,21 @@
+<app-page-layout class='w-full'>
+    <ng-container title>
+        Clientes
+    </ng-container>
+    <ng-container btn>
+        <button mat-flat-button color="primary" class='transform hover:scale-105'>
+            <mat-icon [svgIcon]="'heroicons_outline:plus'"></mat-icon>
+            <span class="ml-2">Nuevo cliente</span>
+        </button>
+    </ng-container>
+    <ng-container main>
+        @if(customerList().length > 0){
+        <div @transformPopover *ngIf="usersList().length > 0" class="w-full max-w-screen-xl mx-auto">
+            <app-dinamic-table [columns]="tableColumns" [data]="customerList()" [filter]="true"
+                (actionReturn)="actionTable($event)"></app-dinamic-table>
+        </div>
+        } @else {
+        <app-empty-data></app-empty-data>
+        }
+    </ng-container>
+</app-page-layout>

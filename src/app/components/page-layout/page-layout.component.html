@@ -1,0 +1,69 @@
+<div class="flex flex-col flex-auto min-w-0">
+    <!-- Header -->
+    <div
+        class="flex flex-col sm:flex-row flex-0 sm:items-center sm:justify-between p-6 sm:py-8 sm:px-10 border-b bg-card dark:bg-transparent"
+    >
+        <div class="flex-1 min-w-0">
+            <!-- Breadcrumbs -->
+            <div *ngIf="breadcumbs().length > 0">
+                <div class="hidden sm:flex flex-wrap items-center font-medium">
+                    @for(br of breadcumbs(); track trackByFn; let i = $index){
+                    <div *ngIf="i === 0">
+                        <a
+                            class="whitespace-nowrap text-primary-900"
+                            [routerLink]="br.route"
+                            >{{ br.label }}</a
+                        >
+                    </div>
+                    <div
+                        *ngIf="i > 0"
+                        class="flex items-center ml-1 whitespace-nowrap"
+                    >
+                        <mat-icon
+                            class="icon-size-5 text-secondary"
+                            [svgIcon]="'heroicons_mini:chevron-right'"
+                        ></mat-icon>
+                        <a
+                            class="ml-1 text-primary-400"
+                            [routerLink]="br.route"
+                            >{{ br.label }}</a
+                        >
+                    </div>
+                    }
+                </div>
+                <div class="flex sm:hidden">
+                    <a
+                        class="inline-flex items-center -ml-1.5 text-secondary font-medium"
+                        [routerLink]="breadcumbs()[0].route"
+                    >
+                        <mat-icon
+                            class="icon-size-5 text-secondary"
+                            [svgIcon]="'heroicons_solid:chevron-left'"
+                        ></mat-icon>
+                        <span class="ml-1">Regresar</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Title -->
+            <div class="mt-2">
+                <h2
+                    class="text-3xl md:text-4xl font-extrabold tracking-tight leading-7 sm:leading-10 truncate"
+                >
+                    <ng-content select="[title]"></ng-content>
+                </h2>
+            </div>
+        </div>
+        <!-- Actions -->
+        <div class="flex shrink-0 items-center mt-6 sm:mt-0 sm:ml-4">
+            <ng-content select="[btn]"></ng-content>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <div class="flex-auto p-6 sm:p-10">
+        <!-- CONTENT GOES HERE -->
+        <div class="h-auto rounded-2xl">
+            <ng-content select="[main]"></ng-content>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+<div class='w-full flex flex-col'>
+    <div class='grid grid-cols-2 gap-2'>
+        <mat-form-field color="primary" appearance="outline" class=" w-full">
+            <!-- LABEL SECTION -->
+            <mat-label>Selecciona el campo</mat-label>
+            <!-- INPUT SECTION -->
+            <mat-select [formControl]="selectField" [required]="true">
+                @for (opt of data; track opt) {
+                <mat-option [value]="opt.property">
+                    {{opt.name}}
+                </mat-option>
+                }
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field color="primary" appearance="outline" class="w-full">
+            <!-- LABEL SECTION -->
+            <mat-label>Ingresa el valor</mat-label>
+            <!-- INPUT SECTION -->
+            <input matInput [formControl]="valueField" type="text" [required]="true" trimDirective autocomplete="off">
+        </mat-form-field>
+    </div>
+    <button mat-raised-button color="primary" (click)="addFilterFields()">Agregar filtro</button>
+
+    <div>
+        <div class="flex flex-row justify-between items-center">
+            <h2 class="text-xl font-bold">Filtros</h2>
+            <button mat-raised-button color="primary">Limpiar filtros</button>
+        </div>
+        <div class="flex flex-row flex-wrap">
+            <div *ngFor="let filter of filtersWithKeyValue(); let i = index"
+                class="flex flex-row items-center bg-gray-200 p-2 m-1 rounded-lg">
+                <span class="font-bold">{{filter.key}}</span>
+                <span class="mx-2">=</span>
+                <span>{{filter.value}}</span>
+                <button mat-icon-button (click)="removeFilter(i)">
+                    <mat-icon>close</mat-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <mat-checkbox color="primary" [(ngModel)]="searchMatchAll">Búsqueda exacta</mat-checkbox>
+    <button mat-raised-button color="accent" (click)="emitFilters()">Emitir valores</button>
+</div>

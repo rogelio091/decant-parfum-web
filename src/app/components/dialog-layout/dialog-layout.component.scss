@@ -1,0 +1,15 @@
+.fuse-confirmation-dialog-panel {
+    @screen sm {
+        @apply w-128;
+    }
+
+    @media screen and (max-width: 599px) {
+        width: 60%;
+    }
+
+    .mat-mdc-dialog-container {
+        .mat-mdc-dialog-surface {
+            padding: 0 !important;
+        }
+    }
+}

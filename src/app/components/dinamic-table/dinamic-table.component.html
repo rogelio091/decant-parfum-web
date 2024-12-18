@@ -1,0 +1,277 @@
+<div class="overflow-hidden w-full flex flex-col">
+    <!-- <div class="border-b py-4 px-6 flex items-center">
+      <h2 class="m-0 title flex-auto">Recent Sales</h2>
+
+      <button mat-icon-button type="button">
+        <mat-icon class="text-secondary" svgIcon="mat:cloud_download"></mat-icon>
+      </button>
+
+      <button mat-icon-button type="button">
+        <mat-icon class="text-secondary" svgIcon="mat:more_horiz"></mat-icon>
+      </button>
+    </div> -->
+    <!-- @if(filter){
+    <div class="md:w-1/2 flex md:flex-row flex-col gap-3 w-full">
+        <mat-form-field class="w-full">
+            <mat-label>Filtro de búsqueda</mat-label>
+            <input matInput (keyup)="applyFilter($event)" #input>
+        </mat-form-field>
+    </div>
+    } -->
+
+    <div class="overflow-auto">
+        <table [dataSource]="dataSource" class="w-full " mat-table matSort>
+
+            <!--- Note that these columns can be defined in any order.
+              The actual rendered columns are set as a property on the row definition" -->
+
+            <!-- Model Properties Column -->
+            @for (column of visibleColumnData; track column) {
+
+            @if (column.type === 'text') {
+            <ng-container [matColumnDef]="column.property">
+                <th *matHeaderCellDef mat-header-cell mat-sort-header class="text-md"
+                    [ngClass]="column.cssClassesHeader ?? 'bg-[#02050A] text-white  py-3'"> {{
+                    column.label
+                    }}</th>
+                <td *matCellDef="let row" [ngClass]="column.cellCssClasses" class='py-3 text-center' mat-cell>
+                    <span [ngClass]="column.cssClasses" class=' text-md'>
+                        {{
+                        row[column.property] }}
+                    </span>
+                </td>
+                @if(footer){
+                <td mat-footer-cell *matFooterCellDef class='text-center text-md font-bold'> {{column.footer}} </td>
+                }
+            </ng-container>
+            }
+
+            @if (column.type === 'html') {
+            <ng-container [matColumnDef]="column.property">
+                <th *matHeaderCellDef mat-header-cell mat-sort-header class="text-md"
+                    [ngClass]="column.cssClassesHeader ?? 'bg-[#02050A] text-white  py-3'"> {{
+                    column.label
+                    }}</th>
+                <td *matCellDef="let row" [ngClass]="column.cellCssClasses" class='py-3 text-center' mat-cell>
+                    <span [ngClass]="column.cssClasses" class=' text-md' [innerHTML]="row[column.property]">
+
+                    </span>
+                </td>
+                @if(footer){
+                <td mat-footer-cell *matFooterCellDef class='text-center text-md font-bold'> {{column.footer}} </td>
+                }
+            </ng-container>
+            }
+
+            @if (column.type === 'clipboard') {
+            <ng-container [matColumnDef]="column.property">
+                <th *matHeaderCellDef mat-header-cell mat-sort-header class="text-md"
+                    [ngClass]="column.cssClassesHeader ?? 'bg-[#02050A] text-white  py-3'"> {{
+                    column.label
+                    }}</th>
+                <td *matCellDef="let row" [ngClass]="column.cssClasses" class='flex justify-center gap-1 text-md py-3'
+                    mat-cell>
+                    {{
+                    row[column.property] }}
+
+                    <mat-icon class="icon-size-5 cursor-pointer" *ngIf="column.icon" [svgIcon]="column.icon"
+                        [matTooltip]="'Enlace de tienda'" [cdkCopyToClipboard]="row[column.propertyToEval]"></mat-icon>
+                </td>
+                @if(footer){
+                <td mat-footer-cell *matFooterCellDef class='text-center text-md font-bold'> {{column.footer}} </td>
+                }
+            </ng-container>
+            }
+
+            @if (column.type === 'dateText') {
+            <ng-container [matColumnDef]="column.property">
+                <th *matHeaderCellDef mat-header-cell mat-sort-header class="text-md"
+                    [ngClass]="column.cssClassesHeader ?? 'bg-[#02050A] text-white  py-3'"> {{
+                    column.label
+                    }}</th>
+                <td *matCellDef="let row" [ngClass]="column.cssClasses" class='text-center text-md py-3' mat-cell>{{
+                    dateText(row[column.property]) }}</td>
+                @if(footer){
+                <td mat-footer-cell *matFooterCellDef class='text-center text-md font-bold'> {{column.footer}} </td>
+                }
+            </ng-container>
+            }
+
+            @if (column.type === 'dateTimeText') {
+            <ng-container [matColumnDef]="column.property">
+                <th *matHeaderCellDef mat-header-cell mat-sort-header class="text-md"
+                    [ngClass]="column.cssClassesHeader ?? 'bg-[#02050A] text-white  py-3'"> {{
+                    column.label
+                    }}</th>
+                <td *matCellDef="let row" [ngClass]="column.cssClasses" class='text-center text-md py-3' mat-cell>{{
+                    dateTimeText(row[column.property]) }}</td>
+                @if(footer){
+                <td mat-footer-cell *matFooterCellDef class='text-center text-md font-bold'> {{column.footer}} </td>
+                }
+            </ng-container>
+            }
+
+            @if (column.type === 'percent') {
+            <ng-container [matColumnDef]="column.property">
+                <th *matHeaderCellDef mat-header-cell mat-sort-header class="text-md"
+                    [ngClass]="column.cssClassesHeader ?? 'bg-[#02050A] text-white  py-3'"> {{
+                    column.label
+                    }}</th>
+                <td *matCellDef="let row" [ngClass]="column.cssClasses" class='text-center text-md' mat-cell>{{
+                    row[column.property] }}%</td>
+                @if(footer){
+                <td mat-footer-cell *matFooterCellDef class='text-center text-md font-bold'> {{column.footer}} </td>
+                }
+            </ng-container>
+            }
+
+            @if (column.type === 'currency') {
+            <ng-container [matColumnDef]="column.property">
+                <th *matHeaderCellDef mat-header-cell mat-sort-header class="text-md"
+                    [ngClass]="column.cssClassesHeader ?? 'bg-[#02050A] text-white py-3'"> {{
+                    column.label
+                    }} </th>
+
+                <td *matCellDef="let row" [ngClass]="column.cssClasses" class='text-center text-md' mat-cell>{{
+                    row[column.property] | currency:'GTQ ' }}</td>
+                @if(footer){
+                <td mat-footer-cell *matFooterCellDef class='text-center text-md font-bold'>
+                    {{getTotalCost(column.property) | currency:'GTQ '}} </td>
+                }
+            </ng-container>
+            }
+
+            @if (column.type === 'badge') {
+            <ng-container [matColumnDef]="column.property">
+                <th *matHeaderCellDef mat-header-cell mat-sort-header class="text-md"
+                    [ngClass]="column.cssClassesHeader ?? 'bg-[#02050A] text-white  py-3'"> {{ column.label }}</th>
+                <td *matCellDef="let row" [ngClass]="column.cssClasses" class='text-center text-sm' mat-cell>
+                    <span [ngClass]="stateCss(row[column.propertyToEval])"
+                        class="rounded-md px-1 py-1 font-medium flex-none">{{row[column.property]}}</span>
+                </td>
+                @if(footer){
+                <td mat-footer-cell *matFooterCellDef class='text-center text-md font-bold'> {{column.footer}} </td>
+                }
+            </ng-container>
+            }
+
+            @if (column.type === 'status') {
+            <ng-container [matColumnDef]="column.property">
+                <th *matHeaderCellDef mat-header-cell mat-sort-header class="text-md"
+                    [ngClass]="column.cssClassesHeader ?? 'bg-[#02050A] text-white  py-3'"> {{ column.label }}</th>
+                <td *matCellDef="let row" [ngClass]="column.cssClasses" class='text-center text-sm' mat-cell>
+                    <span [ngClass]="stateCss(row[column.propertyToEval])"
+                        class="rounded-md px-1 py-1 font-medium flex-none">{{row[column.property]}}</span>
+                </td>
+                @if(footer){
+                <td mat-footer-cell *matFooterCellDef class='text-center text-md font-bold'> {{column.footer}} </td>
+                }
+            </ng-container>
+            }
+
+            @if(column.type === 'menu'){
+            <ng-container [matColumnDef]="column.property">
+                <th *matHeaderCellDef mat-header-cell class="text-md text-center"
+                    [ngClass]="column.cssClassesHeader ?? 'bg-[#02050A] text-white  py-3'">{{
+                    column.label
+                    }} </th>
+                <td *matCellDef="let row" [ngClass]="column.cssClasses" mat-cell>
+                    <div class="text-center text-md">
+                        <!-- {{row[column.property]}} -->
+                        <button mat-icon-button [matMenuTriggerFor]="actionsMenu">
+                            <mat-icon svgIcon="feather:more-vertical"></mat-icon>
+                        </button>
+                    </div>
+
+                    <mat-menu #actionsMenu="matMenu" xPosition="before" yPosition="below">
+                        <ng-template let-customer="customer" matMenuContent>
+                            @for(item of column.menu; track item){
+                            <button (click)="onActionSelected(item.action,item.tableAction,row[column.property])"
+                                [disabled]="disableOption(item.action, item)" mat-menu-item>
+                                <mat-icon class='icon-size-5' *ngIf="item.icon" [svgIcon]="item.icon"></mat-icon>
+                                <span class='text-sm'>{{item.text}}</span>
+                            </button>
+                            }
+                        </ng-template>
+                    </mat-menu>
+                </td>
+                @if(footer){
+                <td mat-footer-cell *matFooterCellDef class='text-center text-md font-bold'> {{column.footer}} </td>
+                }
+            </ng-container>
+            }
+
+            @if(column.type === 'menuByStatus'){
+            <ng-container [matColumnDef]="column.property">
+                <th *matHeaderCellDef mat-header-cell class="text-md text-center"
+                    [ngClass]="column.cssClassesHeader ?? 'bg-[#02050A] text-white  py-3'">{{
+                    column.label
+                    }} </th>
+                <td *matCellDef="let row" [ngClass]="column.cssClasses" mat-cell>
+                    <div class="text-center text-md">
+                        <button *ngIf="row[column.propertyToEval] === 0 || row[column.propertyToEval] === 1"
+                            mat-icon-button [matMenuTriggerFor]="actionsMenu">
+                            <mat-icon svgIcon="feather:more-vertical"></mat-icon>
+                        </button>
+                    </div>
+
+                    <mat-menu #actionsMenu="matMenu" xPosition="before" yPosition="below">
+                        <ng-template let-customer="customer" matMenuContent>
+                            @for(item of column.menu; track item){
+                            <button (click)="onActionSelected(item.action,item.tableAction,row[column.property])"
+                                [disabled]="disableOption(item.action, item)" mat-menu-item>
+                                <mat-icon class='icon-size-5' *ngIf="item.icon" [svgIcon]="item.icon"></mat-icon>
+                                <span class='text-sm'>{{item.text}}</span>
+                            </button>
+                            }
+                        </ng-template>
+                    </mat-menu>
+                </td>
+                @if(footer){
+                <td mat-footer-cell *matFooterCellDef class='text-center text-md font-bold'> {{column.footer}} </td>
+                }
+            </ng-container>
+            }
+
+            @if(column.type === 'iconButton'){
+            <ng-container [matColumnDef]="column.property">
+                <th *matHeaderCellDef mat-header-cell class="text-md text-center"
+                    [ngClass]="column.cssClassesHeader ?? 'bg-[#02050A] text-white  py-3'">{{
+                    column.label
+                    }} </th>
+                <td *matCellDef="let row" [ngClass]="column.cssClasses" mat-cell>
+                    <div class="flex justify-center">
+                        <!-- {{row[column.property]}} -->
+                        @for(item of column.menu; track item){
+                        <button mat-icon-button [matTooltip]="item.text"
+                            (click)="onActionSelected(item.action,item.tableAction,row[column.property])">
+                            <mat-icon class='icon-size-5' [color]="item.color" [svgIcon]="item.icon"></mat-icon>
+                        </button>
+
+                        }
+                    </div>
+                </td>
+                @if(footer){
+                <td mat-footer-cell *matFooterCellDef class='text-center text-md font-bold'> {{column.footer}} </td>
+                }
+            </ng-container>
+            }
+
+            } @empty {
+            No hay registros
+            }
+
+
+            <tr *matHeaderRowDef="visibleColumns" mat-header-row class="h-auto"></tr>
+            <tr *matRowDef="let row; columns: visibleColumns;" mat-row class="h-auto"></tr>
+            @if(footer){
+            <tr mat-footer-row *matFooterRowDef="visibleColumns"></tr>
+            }
+        </table>
+    </div>
+
+    <mat-paginator (page)="getPaginatorData($event)" [pageSize]="pageSize"
+        [length]="totalData ? length() : dataSource.data.length" [pageSizeOptions]="[10, 20, 50]"
+        class="paginator"></mat-paginator>
+
+</div>

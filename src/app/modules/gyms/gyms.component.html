@@ -1,0 +1,16 @@
+<app-page-layout class='w-full'>
+    <ng-container title>
+        Gimnasios
+    </ng-container>
+    <ng-container btn>
+        <!-- <button mat-flat-button color="primary" class='transform hover:scale-105' (click)="openRolDialog()">
+            <mat-icon [svgIcon]="'heroicons_outline:plus'"></mat-icon>
+            <span class="ml-2">Nuevo rol</span>
+        </button> -->
+    </ng-container>
+    <ng-container main>
+        <app-dinamic-filter [data]='filterFields' (filter)="setFilters($event)"></app-dinamic-filter>
+        <app-dinamic-table [columns]="tableColumns" [data]="gymList()?.items" [totalData]="gymList()?.totalCount"
+            (actionReturn)="actionTable($event)" (paginatorData)="pagesAction($event)"></app-dinamic-table>
+    </ng-container>
+</app-page-layout>

@@ -1,0 +1,44 @@
+<div class="relative flex flex-col w-full max-h-screen">
+
+    <ng-content select="[closeBtn]"></ng-content>
+
+    <!-- Content -->
+    <div class="flex flex-col sm:flex-row flex-auto items-center justify-start py-6 px-4 sm:pb-8">
+
+        @if(data.icon){
+        <div class="sm:flex flex-0 items-center justify-center w-10 h-10 sm:mr-1 hidden  rounded-full" [ngClass]="{'text-primary-600 bg-primary-100 dark:text-primary-50 dark:bg-primary-600': data.icon.color === 'primary',
+                                'text-accent-600 bg-accent-100 ': data.icon.color === 'accent',
+                                'text-warn-600 bg-warn-100 ': data.icon.color === 'warn',
+                                'text-gray-900  ': data.icon.color === 'basic',
+                                'text-blue-600 bg-blue-100 ': data.icon.color === 'info',
+                                'text-green-500 bg-green-100': data.icon.color === 'success',
+                                'text-amber-500 bg-amber-100': data.icon.color === 'warning',
+                                'text-red-600 bg-red-100 ': data.icon.color === 'error'
+                                }">
+            <mat-icon class="text-current" [svgIcon]="data.icon.name"></mat-icon>
+        </div>
+        }
+
+        @if(data.title){
+        <div class="flex flex-col items-center sm:items-start mt-4 sm:mt-0 sm:pr-8 space-y-1 text-center sm:text-left">
+
+            <!-- Title -->
+            <ng-container *ngIf="data.title">
+                <div class="text-xl leading-6 font-medium" [innerHTML]="data.title"></div>
+            </ng-container>
+        </div>
+        }
+
+    </div>
+    <div class='flex flex-col gap-2 px-4 overflow-y-auto'>
+        <ng-content select="[main]"></ng-content>
+    </div>
+
+    <!-- Actions -->
+    <div class="flex sm:flex-row flex-col gap-3 sm:items-center justify-center sm:justify-end px-6 py-4 bg-gray-50 ">
+
+        <ng-content select="[btn]"></ng-content>
+
+    </div>
+
+</div>
