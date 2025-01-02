@@ -560,7 +560,7 @@ export const items_catalogue: Item[] = [
     name: 'Acqua di Giò Profondo Eau de Parfum',
     description:
       'Una fragancia masculina de la familia olfativa Aromática Acuática, lanzada en 2020. Combina notas marinas frescas en la salida, seguidas por un corazón de esencias aromáticas, y culmina con un fondo amaderado y almizclado, ofreciendo un aroma profundo y sofisticado.',
-    image: image_basePath + 'armani_acqua_di_gio_profondo.jpg',
+    image: image_basePath + 'giorgioarmaniacquadigioprofondoedp.jpg',
     notes: {
       top: 'notas marinas, aquozone, bergamota, mandarina verde',
       middle: 'romero, lavanda, ciprés, lentisco',
@@ -614,7 +614,7 @@ export const items_catalogue: Item[] = [
     name: 'Irresistible Eau de Parfum',
     description:
       'Una fragancia femenina de la familia olfativa Floral Frutal, lanzada en 2020 y creada por los perfumistas Fanny Bal, Dominique Ropion y Anne Flipo. Combina notas frescas y afrutadas en la salida, seguidas por un corazón floral, y culmina con un fondo amaderado y almizclado, ofreciendo un aroma encantador y sofisticado.',
-    image: image_basePath + 'givenchy_irresistible_edp.jpg',
+    image: image_basePath + 'givenchyirresistible.jpg',
     notes: {
       top: 'pera, almizcle ambreta',
       middle: 'rosa, iris',
@@ -632,7 +632,7 @@ export const items_catalogue: Item[] = [
     name: 'Ambassador Men Eau de Parfum',
     description:
       'Una fragancia masculina de la familia olfativa Amaderada Aromática, lanzada en 2019 y creada por el perfumista Andreas Wilhelm. Combina notas frescas y afrutadas en la salida, seguidas por un corazón especiado y floral, y culmina con un fondo amaderado y cálido, ofreciendo un aroma sofisticado y versátil.',
-    image: image_basePath + 'gisada_ambassador_men.jpg',
+    image: image_basePath + 'gisadaambassadormen.webp',
     notes: {
       top: 'mandarina verde, manzana, cardamomo, violeta',
       middle: 'lavanda, pimienta negra, peonía, pachulí, mango',
