@@ -8,6 +8,7 @@
     "scripts": {
         "ng": "ng",
         "start": "ng serve -o",
+        "github": "cross-env NODE_ENV=production node --max_old_space_size=6144 ./node_modules/@angular/cli/bin/ng build --configuration production --base-href 'https://rogelio091.github.io/decant-parfum-web/'",
         "build": "cross-env NODE_ENV=production node --max_old_space_size=6144 ./node_modules/@angular/cli/bin/ng build --configuration production",
         "staging": "cross-env NODE_ENV=production node --max_old_space_size=6144 ./node_modules/@angular/cli/bin/ng build --configuration staging",
         "watch": "ng build --watch --configuration development",

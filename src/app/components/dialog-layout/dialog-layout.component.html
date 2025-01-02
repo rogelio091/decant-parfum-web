@@ -25,6 +25,7 @@
             <!-- Title -->
             <ng-container *ngIf="data.title">
                 <div class="text-xl leading-6 font-medium" [innerHTML]="data.title"></div>
+                <div *ngIf="data.subtitle" class="text-sm text-gray-500" [innerHTML]="data.subtitle"></div>
             </ng-container>
         </div>
         }

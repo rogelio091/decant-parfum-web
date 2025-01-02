@@ -70,12 +70,12 @@ export const appConfig: ApplicationConfig = {
       },
       loader: TranslocoHttpLoader
     }),
-    {
-      provide: APP_INITIALIZER,
-      useFactory: initializeApp,
-      deps: [ConfigService],
-      multi: true
-    },
+    // {
+    //   provide: APP_INITIALIZER,
+    //   useFactory: initializeApp,
+    //   deps: [ConfigService],
+    //   multi: true
+    // },
     {
       // Preload the default language before the app starts to prevent empty/jumping content
       provide: APP_INITIALIZER,

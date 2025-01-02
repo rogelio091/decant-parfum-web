@@ -1,1 +1,18 @@
-<app-items-grid class='w-full' [items]="items"></app-items-grid>
+<div class='flex flex-col w-full'>
+    <div class="flex flex-col sm:flex-row items-center justify-between w-fit max-w-xs sm:max-w-none p-4">
+        <mat-form-field class="w-full sm:w-36" [subscriptSizing]="'dynamic'">
+            <mat-select [value]="'all'" (selectionChange)="filterByGender($event)">
+                <mat-option [value]="'all'">Todos</mat-option>
+                <ng-container *ngFor="let gender of genders; trackBy: trackByFn">
+                    <mat-option [value]="gender.value">{{gender.value}}</mat-option>
+                </ng-container>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field class="w-full sm:w-72 mt-4 sm:mt-0 sm:ml-4" [subscriptSizing]="'dynamic'">
+            <mat-icon matPrefix class="icon-size-5" [svgIcon]="'heroicons_solid:magnifying-glass'"></mat-icon>
+            <input (input)="filterByQuery(query.value)" placeholder="Busca la fragancia" matInput #query>
+        </mat-form-field>
+    </div>
+    <app-items-grid class='w-full' [items]="items" (itemClick)="openFraganceDialog($event)"></app-items-grid>
+
+</div>

@@ -5,43 +5,11 @@ import { CustomNavigationItem } from 'app/core/navigation/navigation.types';
 
 export const defaultNavigation: CustomNavigationItem[] = [
   {
-    id: 'example',
-    title: 'Example',
+    id: 'catalogue',
+    title: 'Catálogo',
     type: 'basic',
-    icon: 'heroicons_outline:chart-pie',
-    link: '/example'
-  },
-  {
-    id: 'admin.users',
-    title: 'Usuarios',
-    type: 'basic',
-    permission: Permission.User,
-    icon: 'heroicons_outline:user-group',
-    link: '/users'
-  },
-  {
-    id: 'admin.roles',
-    title: 'Roles',
-    type: 'basic',
-    permission: Permission.Role,
-    icon: 'heroicons_outline:identification',
-    link: '/roles'
-  },
-  {
-    id: 'admin.customers',
-    title: 'Clientes',
-    type: 'basic',
-    permission: Permission.Customer,
-    icon: 'heroicons_outline:user-circle',
-    link: '/customers'
-  },
-  {
-    id: 'admin.gyms',
-    title: 'Gimnasios',
-    type: 'basic',
-    permission: Permission.Gym,
-    icon: 'heroicons_outline:building-library',
-    link: '/gyms'
+    icon: 'heroicons_outline:document-text',
+    link: '/catalogue'
   }
 ];
 export const compactNavigation: FuseNavigationItem[] = [
@@ -64,10 +32,10 @@ export const futuristicNavigation: FuseNavigationItem[] = [
 ];
 export const horizontalNavigation: FuseNavigationItem[] = [
   {
-    id: 'example',
-    title: 'Example',
+    id: 'catalogue',
+    title: 'Catálogo',
     type: 'basic',
-    icon: 'heroicons_outline:chart-pie',
-    link: '/example'
+    icon: 'heroicons_outline:document-text',
+    link: '/catalogue'
   }
 ];

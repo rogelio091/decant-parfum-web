@@ -1,9 +1,11 @@
 export type Item = {
+  house: string;
   name: string;
   description: string;
   image: string;
+  notes: NotesOptions;
   options: ItemOptions[];
-  genders: Gender[];
+  gender: Gender;
   status: ItemStatus;
 };
 
@@ -11,6 +13,12 @@ export type ItemOptions = {
   name: string;
   price: number;
   status: ItemStatus;
+};
+
+export type NotesOptions = {
+  top: string;
+  middle: string;
+  base: string;
 };
 
 export enum ItemStatus {
