@@ -1102,7 +1102,7 @@ export const items_catalogue: Item[] = [
     name: 'Yara',
     description:
       'Una fragancia femenina de la familia olfativa Ámbar Vainilla, lanzada en 2020. Combina notas florales y frutales con un fondo dulce y amaderado, ofreciendo un aroma sofisticado y envolvente, ideal para mujeres que buscan destacar con elegancia.',
-    image: image_basePath + 'lattafayara.jpg',
+    image: image_basePath + 'lattafayara.webp',
     notes: {
       top: 'orquídea, heliotropo, naranja tangerina',
       middle: 'acuerdo goloso, frutas tropicales',
@@ -1156,7 +1156,7 @@ export const items_catalogue: Item[] = [
     name: 'Yara Tous',
     description:
       'Una fragancia femenina de la familia olfativa Frutal Dulce, lanzada en 2023. Combina notas exóticas y cremosas, ofreciendo un aroma tropical y envolvente, ideal para mujeres que buscan una esencia fresca y encantadora.',
-    image: image_basePath + 'lattafayaratous.jpg',
+    image: image_basePath + 'lattafayaratous.webp',
     notes: {
       top: 'mango, coco, maracuyá (fruta de la pasión)',
       middle: 'jazmín, heliotropo, flor de azahar del naranjo',
