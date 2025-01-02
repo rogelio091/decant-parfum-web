@@ -68,7 +68,15 @@ export class FraganceListComponent implements OnInit {
     this.items = items_catalogue.filter((item) => item.gender === event.value);
   }
 
-  filterByQuery(event) {}
+  filterByQuery(event) {
+    const trimedEvent = event.trim();
+    if (trimedEvent === '') return (this.items = items_catalogue);
+    this.items = items_catalogue.filter(
+      (item) =>
+        item.name.toLowerCase().includes(trimedEvent.toLowerCase()) ||
+        item.house.toLowerCase().includes(trimedEvent.toLowerCase())
+    );
+  }
 
   trackByFn(index: number, item: any): any {
     return item.id || index;
