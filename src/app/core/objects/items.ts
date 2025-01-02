@@ -1156,7 +1156,7 @@ export const items_catalogue: Item[] = [
     name: 'Yara Tous',
     description:
       'Una fragancia femenina de la familia olfativa Frutal Dulce, lanzada en 2023. Combina notas exóticas y cremosas, ofreciendo un aroma tropical y envolvente, ideal para mujeres que buscan una esencia fresca y encantadora.',
-    image: image_basePath + 'lattafayaratous.webp',
+    image: image_basePath + 'lattafayaratous.jpg',
     notes: {
       top: 'mango, coco, maracuyá (fruta de la pasión)',
       middle: 'jazmín, heliotropo, flor de azahar del naranjo',
