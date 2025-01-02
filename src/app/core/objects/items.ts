@@ -615,7 +615,7 @@ export const items_catalogue: Item[] = [
     name: 'H24 Herbes Vives',
     description:
       'Una fragancia masculina fresca que combina la potencia de un ramo de hierbas frescas, la textura de una granita de pera y la vivacidad de una molécula de alta tecnología, Physcool®, evocando la sensación de redescubrir la naturaleza urbana después de la lluvia.',
-    image: image_basePath + 'hermesh24herbesvives.webp',
+    image: image_basePath + 'hermesh24herbesvives.jpg',
     notes: {
       top: 'hierbas frescas',
       middle: 'granita de pera',
@@ -1589,7 +1589,7 @@ export const items_catalogue: Item[] = [
     name: 'Libre Eau de Parfum',
     description:
       'Una fragancia femenina de la familia olfativa Ámbar Fougère, lanzada en 2019 y creada por los perfumistas Anne Flipo y Carlos Benaim. Combina notas cítricas y florales en la salida, seguidas por un corazón floral y aromático, y culmina con un fondo cálido y amaderado, ofreciendo un aroma elegante y contemporáneo.',
-    image: image_basePath + 'yvessaintlaurent Llbreedp.webp',
+    image: image_basePath + 'yvessaintlaurentlilbreedp.webp',
     notes: {
       top: 'lavanda, mandarina, grosellas negras, petit grain',
       middle: 'lavanda, flor de azahar del naranjo, jazmín',
