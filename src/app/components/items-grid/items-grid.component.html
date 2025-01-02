@@ -37,7 +37,7 @@
         </div>
     </fuse-card> -->
 
-    <fuse-card @fadeInRight *ngFor="let product of itemList$ |async; index as i; trackBy: trackByFn"
+    <fuse-card @fadeInRight *ngFor="let product of itemList$ |async; index as i;"
         class="flex flex-col max-w-80 w-full h-full transform transition hover:scale-105  cursor-pointer"
         (click)='itemClicked(product)'>
         <div class='flex'>
@@ -46,7 +46,7 @@
                     @if(product.image !== '' && !isMobile()){
                     <source type='image/png' [srcset]="product.image" class="object-cover ">
                     } @else if(product.image !== '' && isMobile()){
-                    <source type='image/png' [srcset]="'images/no-image_small.png'" class="object-cover ">
+                    <source type='image/png' [srcset]="product.image" class="object-cover ">
                     }
                     @else if(!isMobile()){
                     <source type='image/webp' [attr.srcset]="'images/no-image.png'" media="(min-width: 960px)">
