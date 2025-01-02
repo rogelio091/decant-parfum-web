@@ -921,7 +921,7 @@ export const items_catalogue: Item[] = [
     name: 'Asad',
     description:
       'Una fragancia masculina de la familia olfativa Ámbar, lanzada en 2021. Combina notas especiadas y dulces, ofreciendo un aroma sofisticado y duradero que refleja poder y elegancia.',
-    image: image_basePath + 'lattafaasad.jpg',
+    image: image_basePath + 'lattafaasadzanzibar.webp',
     notes: {
       top: 'pimienta negra, tabaco, piña',
       middle: 'pachulí, café, iris',
@@ -1120,7 +1120,7 @@ export const items_catalogue: Item[] = [
     name: 'Yara Candy',
     description:
       'Una fragancia femenina de la familia olfativa Floral Frutal Gourmand, lanzada en 2024. Combina notas dulces y afrutadas, ofreciendo un aroma juvenil y encantador, ideal para mujeres que buscan una esencia alegre y deliciosa.',
-    image: image_basePath + 'lattafayaracandy.webp',
+    image: image_basePath + 'lattafayaracandy.jpg',
     notes: {
       top: 'grosellas negras, mandarina verde',
       middle: 'caramelo efervescente de fresa, gardenia',
@@ -1138,7 +1138,7 @@ export const items_catalogue: Item[] = [
     name: 'Yara Moi',
     description:
       'Una fragancia femenina de la familia olfativa Floral Dulce, lanzada en 2022. Combina notas de durazno y jazmín en la salida, seguidas por un corazón de caramelo y ámbar, y culmina con un fondo de pachulí y sándalo, ofreciendo un aroma elegante y sofisticado.',
-    image: image_basePath + 'lattafayaramoi.webp',
+    image: image_basePath + 'lattafayaratous.webp',
     notes: {
       top: 'durazno (melocotón), jazmín',
       middle: 'caramelo, ámbar',
