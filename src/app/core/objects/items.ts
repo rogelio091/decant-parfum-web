@@ -974,7 +974,7 @@ export const items_catalogue: Item[] = [
     name: 'Asad',
     description:
       'Una fragancia masculina de la familia olfativa Ámbar, lanzada en 2021. Combina notas especiadas y dulces, ofreciendo un aroma sofisticado y duradero que refleja poder y elegancia.',
-    image: image_basePath + 'lattafaasadzanzibar.webp',
+    image: image_basePath + 'lattafaasad.webp',
     notes: {
       top: 'pimienta negra, tabaco, piña',
       middle: 'pachulí, café, iris',
@@ -1191,7 +1191,7 @@ export const items_catalogue: Item[] = [
     name: 'Yara Moi',
     description:
       'Una fragancia femenina de la familia olfativa Floral Dulce, lanzada en 2022. Combina notas de durazno y jazmín en la salida, seguidas por un corazón de caramelo y ámbar, y culmina con un fondo de pachulí y sándalo, ofreciendo un aroma elegante y sofisticado.',
-    image: image_basePath + 'lattafayaratous.webp',
+    image: image_basePath + 'lattafayaramoi.webp',
     notes: {
       top: 'durazno (melocotón), jazmín',
       middle: 'caramelo, ámbar',
@@ -1209,7 +1209,7 @@ export const items_catalogue: Item[] = [
     name: 'Yara Tous',
     description:
       'Una fragancia femenina de la familia olfativa Frutal Dulce, lanzada en 2023. Combina notas exóticas y cremosas, ofreciendo un aroma tropical y envolvente, ideal para mujeres que buscan una esencia fresca y encantadora.',
-    image: image_basePath + 'lattafayaratous.webp',
+    image: image_basePath + 'lattafayaratous.jpg',
     notes: {
       top: 'mango, coco, maracuyá (fruta de la pasión)',
       middle: 'jazmín, heliotropo, flor de azahar del naranjo',
@@ -1624,7 +1624,7 @@ export const items_catalogue: Item[] = [
     name: 'Erba Pura Eau de Parfum',
     description:
       'Una fragancia unisex de la familia olfativa Ámbar, lanzada en 2019. Combina notas cítricas y afrutadas en la salida, seguidas por un corazón de frutas exóticas, y culmina con un fondo de almizcle blanco, vainilla de Madagascar y ámbar, ofreciendo un aroma vibrante y sofisticado.',
-    image: image_basePath + 'xerjofferbapura.webp',
+    image: image_basePath + 'xerjofferbapura.jpg',
     notes: {
       top: 'naranja siciliana, bergamota de Calabria, limón siciliano',
       middle: 'frutas exóticas',
