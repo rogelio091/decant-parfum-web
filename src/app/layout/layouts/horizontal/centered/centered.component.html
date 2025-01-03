@@ -10,7 +10,7 @@
         <ng-container fuseVerticalNavigationContentHeader>
             <!-- Logo -->
             <div class="flex h-20 items-center px-8 pt-6">
-                <img class="w-30" src="images/logo/decantparfum.png" />
+                <img class="w-30 object-contain" src="images/logo/decantparfum.jpg" />
             </div>
         </ng-container>
     </fuse-vertical-navigation>
@@ -27,12 +27,13 @@
             <div class="mx-2 flex items-center lg:mr-8">
                 <div class="hidden lg:flex">
                     <!-- Light version -->
-                    <img class="w-20 dark:hidden" src="images/logo/decantparfum.png" alt="Logo image" />
+                    <img class="w-20 object-contain dark:hidden" src="images/logo/decantparfum.jpg" alt="Logo image" />
                     <!-- Dark version -->
-                    <img class="hidden w-20 dark:flex" src="images/logo/decantparfum.png" alt="Logo image" />
+                    <img class="hidden object-contain w-20 dark:flex" src="images/logo/decantparfum.jpg"
+                        alt="Logo image" />
                 </div>
                 <!-- Small version -->
-                <img class="flex w-8 lg:hidden" src="images/logo/decantparfum.png" alt="Logo image" />
+                <img class="flex w-8 object-contain lg:hidden" src="images/logo/decantparfum.jpg" alt="Logo image" />
             </div>
             <!-- Horizontal navigation -->
             <fuse-horizontal-navigation class="mr-2" [name]="'mainNavigation'"
