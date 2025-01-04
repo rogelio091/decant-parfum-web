@@ -17,7 +17,8 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "baseHref": "/decant-parfum-web/",
+                        "baseHref": "/",
+                        "deployUrl": "/",
                         "outputPath": "dist/decantparfum",
                         "index": "src/index.html",
                         "main": "src/main.ts",
