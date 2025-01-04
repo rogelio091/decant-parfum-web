@@ -2,7 +2,7 @@
     <div class="flex flex-col sm:flex-row items-center sm:justify-between justify-center sm:w-fit w-full p-4">
         <mat-form-field class="w-full sm:w-36" appearance="outline" [subscriptSizing]="'dynamic'">
             <mat-label>Aromas</mat-label>
-            <mat-select [value]="genders" (selectionChange)="filterByGender($event)" multiple>
+            <mat-select [formControl]="genderControl" [value]="genders" (selectionChange)="generalFilter()" multiple>
                 <ng-container *ngFor="let gender of genders; trackBy: trackByFn">
                     <mat-option [value]="gender.value">{{gender.value}}</mat-option>
                 </ng-container>
@@ -10,7 +10,12 @@
         </mat-form-field>
         <mat-form-field class="w-full sm:w-72 mt-4 sm:mt-0 sm:ml-4" appearance="outline" [subscriptSizing]="'dynamic'">
             <mat-icon matPrefix class="icon-size-5" [svgIcon]="'heroicons_solid:magnifying-glass'"></mat-icon>
-            <input (input)="filterByQuery(query.value)" placeholder="Busca la fragancia" matInput #query>
+            <input [formControl]='queryControl' (input)="generalFilter()" placeholder="Busca la fragancia" matInput
+                #query>
+            <mat-icon *ngIf="queryControl.value !== ''" matSuffix
+                class='icon-size-3.5 cursor-pointer transform transition hover:scale-105' (click)="clearQuery()">
+                <mat-icon>close</mat-icon>
+            </mat-icon>
         </mat-form-field>
     </div>
     <app-items-grid class='w-full' [items]="items" (itemClick)="openFraganceDialog($event)"></app-items-grid>

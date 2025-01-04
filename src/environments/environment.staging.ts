@@ -2,7 +2,7 @@
 
 export const environment = {
   production: true,
-  API_URL: 'https://optigym-develop.myoptizy.com/api/',
+  API_URL: '',
   // ENPOINTS: Endpoints,
   S_KEY: 'HX0KSQPHrapmAZLPB'
 };

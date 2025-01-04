@@ -36,6 +36,8 @@ export class FraganceListComponent implements OnInit {
   items: Item[];
   allItems = items_catalogue;
   genders = Object.entries(Gender).map(([key, value]) => ({ key, value }));
+  genderControl = new FormControl([]);
+  queryControl = new FormControl('');
 
   ngOnInit(): void {
     this.items = items_catalogue;
@@ -65,22 +67,44 @@ export class FraganceListComponent implements OnInit {
       .subscribe((data: UserListResponse) => {});
   }
 
-  filterByGender(event) {
-    console.log(event);
-    if (event.value.length === 0) return (this.items = items_catalogue);
-    this.items = items_catalogue.filter((item) =>
-      event.value.some((value) => item.gender === value)
-    );
+  // filterByGender(event) {
+  //   console.log(event);
+  //   if (event.value.length === 0) return (this.items = items_catalogue);
+  //   this.items = items_catalogue.filter((item) =>
+  //     event.value.some((value) => item.gender === value)
+  //   );
+  // }
+
+  // filterByQuery(event) {
+  //   const trimedEvent = event.trim();
+  //   if (trimedEvent === '') return (this.items = items_catalogue);
+  //   this.items = items_catalogue.filter(
+  //     (item) =>
+  //       item.name.toLowerCase().includes(trimedEvent.toLowerCase()) ||
+  //       item.house.toLowerCase().includes(trimedEvent.toLowerCase())
+  //   );
+  // }
+
+  generalFilter() {
+    var itemFilter = items_catalogue;
+    if (this.genderControl.value.length > 0) {
+      itemFilter = itemFilter.filter((item) =>
+        this.genderControl.value.some((value) => item.gender === value)
+      );
+    }
+    if (this.queryControl.value.trim() !== '') {
+      itemFilter = itemFilter.filter(
+        (item) =>
+          item.name.toLowerCase().includes(this.queryControl.value.toLowerCase()) ||
+          item.house.toLowerCase().includes(this.queryControl.value.toLowerCase())
+      );
+    }
+    this.items = itemFilter;
   }
 
-  filterByQuery(event) {
-    const trimedEvent = event.trim();
-    if (trimedEvent === '') return (this.items = items_catalogue);
-    this.items = items_catalogue.filter(
-      (item) =>
-        item.name.toLowerCase().includes(trimedEvent.toLowerCase()) ||
-        item.house.toLowerCase().includes(trimedEvent.toLowerCase())
-    );
+  clearQuery() {
+    this.queryControl.setValue('');
+    this.generalFilter();
   }
 
   trackByFn(index: number, item: any): any {
