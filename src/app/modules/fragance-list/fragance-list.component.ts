@@ -12,6 +12,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
+import { MessengerService } from 'app/core/services/messenger.service';
+import { FormControl, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-fragance-list',
@@ -22,7 +24,8 @@ import { MatInputModule } from '@angular/material/input';
     MatSelectModule,
     MatIconModule,
     MatInputModule,
-    ItemsGridComponent
+    ItemsGridComponent,
+    ReactiveFormsModule
   ],
   templateUrl: './fragance-list.component.html',
   styleUrl: './fragance-list.component.scss'
@@ -64,8 +67,10 @@ export class FraganceListComponent implements OnInit {
 
   filterByGender(event) {
     console.log(event);
-    if (event.value === 'all') return (this.items = items_catalogue);
-    this.items = items_catalogue.filter((item) => item.gender === event.value);
+    if (event.value.length === 0) return (this.items = items_catalogue);
+    this.items = items_catalogue.filter((item) =>
+      event.value.some((value) => item.gender === value)
+    );
   }
 
   filterByQuery(event) {
