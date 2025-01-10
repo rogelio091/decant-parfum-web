@@ -6,6 +6,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSelectChange, MatSelectModule } from '@angular/material/select';
 import { ActivatedRoute, RouterLink } from '@angular/router';
+import { FuseAlertComponent } from '@fuse/components/alert';
 import { FuseCardComponent } from '@fuse/components/card';
 import { FuseConfirmationService } from '@fuse/services/confirmation';
 import { FuseConfirmationDialogComponent } from '@fuse/services/confirmation/dialog/dialog.component';
@@ -27,7 +28,7 @@ import { environment } from 'environments/environment';
   imports: [
     CommonModule,
     FuseCardComponent,
-    FuseConfirmationDialogComponent,
+    FuseAlertComponent,
     MatButtonModule,
     MatIconModule,
     MatSelectModule,
