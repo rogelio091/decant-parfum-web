@@ -100,7 +100,7 @@ export class ClassyLayoutComponent implements OnInit, OnDestroy {
   }
 
   getUserSession(): void {
-    this.user.set(this._sessionService.getSession());
+    // this.user.set(this._sessionService.getSession());
   }
 
   /**

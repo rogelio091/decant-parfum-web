@@ -4,6 +4,7 @@ const image_basePath = 'images/fragances/';
 
 export const items_catalogue: Item[] = [
   {
+    id: 1,
     house: 'Adolfo Dominguez',
     name: 'Lima Tonka',
     description:
@@ -22,6 +23,7 @@ export const items_catalogue: Item[] = [
     status: undefined
   },
   {
+    id: 2,
     house: 'Adyan',
     name: 'Rehla',
     description:
@@ -40,6 +42,7 @@ export const items_catalogue: Item[] = [
     status: undefined
   },
   {
+    id: 3,
     house: 'Afnan',
     name: '9AM Dive',
     description:
@@ -73,7 +76,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 4
   },
   {
     house: 'Afnan',
@@ -91,7 +95,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 5
   },
   {
     house: 'Afnan',
@@ -110,7 +115,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
-    status: undefined
+    status: undefined,
+    id: 6
   },
   {
     house: 'Afnan',
@@ -128,7 +134,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 7
   },
   {
     house: 'Al Haramain',
@@ -147,7 +154,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
-    status: undefined
+    status: undefined,
+    id: 8
   },
   {
     house: 'Arabiyat',
@@ -165,7 +173,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 9
   },
   {
     house: 'Armaf',
@@ -183,7 +192,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 10
   },
   {
     house: 'Armaf',
@@ -202,7 +212,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 11
   },
   {
     house: 'Armaf',
@@ -220,7 +231,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 12
   },
   {
     house: 'Banderas',
@@ -238,7 +250,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 70.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 13
   },
   {
     house: 'Bharara',
@@ -257,7 +270,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 14
   },
   {
     house: 'Bharara',
@@ -275,7 +289,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 15
   },
   {
     house: 'Bharara',
@@ -293,7 +308,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
-    status: undefined
+    status: undefined,
+    id: 16
   },
   {
     house: 'Bharara',
@@ -312,7 +328,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 17
   },
   {
     house: 'Bharara',
@@ -331,7 +348,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 18
   },
   {
     house: 'Bharara',
@@ -350,7 +368,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 19
   },
   {
     house: 'Burberry',
@@ -369,7 +388,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 80.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 20
   },
   {
     house: 'Burberry',
@@ -387,7 +407,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 21
   },
   {
     house: 'Carolina Herrera',
@@ -406,7 +427,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 22
   },
   {
     house: 'Carolina Herrera',
@@ -425,7 +447,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 23
   },
   {
     house: 'Carolina Herrera',
@@ -443,7 +466,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 24
   },
   {
     house: 'Clinique',
@@ -462,7 +486,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 80.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 25
   },
   {
     house: 'Dolce & Gabbana',
@@ -481,7 +506,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 26
   },
   {
     house: 'Dolce & Gabbana',
@@ -499,7 +525,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 27
   },
   {
     house: 'Dolce & Gabbana',
@@ -517,7 +544,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 28
   },
   {
     house: 'Elizabeth Arden',
@@ -535,7 +563,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 29
   },
   {
     house: 'Giorgio Armani',
@@ -553,7 +582,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 30
   },
   {
     house: 'Giorgio Armani',
@@ -571,7 +601,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 31
   },
   {
     house: 'Giorgio Armani',
@@ -589,7 +620,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 200.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 32
   },
   {
     house: 'Givenchy',
@@ -607,7 +639,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 33
   },
   {
     house: 'Givenchy',
@@ -625,7 +658,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 34
   },
   {
     house: 'Gisada',
@@ -643,7 +677,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 220.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 35
   },
   {
     house: 'Halloween',
@@ -661,7 +696,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 80.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 36
   },
   {
     house: 'Hermès',
@@ -679,7 +715,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 200.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 37
   },
   {
     house: 'Hugo Boss',
@@ -697,7 +734,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 38
   },
   {
     house: 'Jean Paul Gaultier',
@@ -715,7 +753,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 39
   },
   {
     house: 'Jean Paul Gaultier',
@@ -733,7 +772,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 40
   },
   {
     house: 'Jean Paul Gaultier',
@@ -751,7 +791,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 41
   },
   {
     house: 'Jean Paul Gaultier',
@@ -769,7 +810,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 42
   },
   {
     house: 'Jean Paul Gaultier',
@@ -787,7 +829,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 43
   },
   {
     house: 'Jean Paul Gaultier',
@@ -801,11 +844,12 @@ export const items_catalogue: Item[] = [
       base: 'vainilla negra, ámbar, cedro, pachulí'
     },
     options: [
-      { name: '5ml', price: 80.0, status: ItemStatus.Available },
-      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+      { name: '5ml', price: 90.0, status: ItemStatus.Available },
+      { name: '10ml', price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 44
   },
   {
     house: 'Jo Milano',
@@ -823,7 +867,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
-    status: undefined
+    status: undefined,
+    id: 45
   },
   {
     house: 'Jo Milano',
@@ -841,7 +886,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
-    status: undefined
+    status: undefined,
+    id: 46
   },
   {
     house: 'Jo Milano',
@@ -859,7 +905,27 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
-    status: undefined
+    status: undefined,
+    id: 47
+  },
+  {
+    house: 'Jo Milano',
+    name: 'Game of Spades Full House',
+    description:
+      'Una fragancia unisex de la familia olfativa Ámbar Especiada, combina notas cítricas frescas, un corazón especiado y floral, y un fondo amaderado y cálido, ideal para ocasiones versátiles.',
+    image: image_basePath + 'jomilanofullhouse.webp',
+    notes: {
+      top: 'bergamota de Calabria, naranja de Sicilia, cidra de Sicilia',
+      middle: 'neroli tunecino, jengibre nigeriano, canela de Ceilán',
+      base: 'té negro chino, madera de guayaco, olíbano, ambroxan'
+    },
+    options: [
+      { name: '5ml', price: 90.0, status: ItemStatus.Available },
+      { name: '10ml', price: 180.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined,
+    id: 48
   },
   {
     house: 'Jo Milano',
@@ -877,7 +943,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
-    status: undefined
+    status: undefined,
+    id: 49
   },
   {
     house: 'Jo Milano',
@@ -895,7 +962,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
-    status: undefined
+    status: undefined,
+    id: 50
   },
   {
     house: 'Jo Milano',
@@ -913,7 +981,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
-    status: undefined
+    status: undefined,
+    id: 51
   },
   {
     house: 'Jo Milano',
@@ -931,7 +1000,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
-    status: undefined
+    status: undefined,
+    id: 52
   },
   {
     house: 'Jo Milano',
@@ -949,7 +1019,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
-    status: undefined
+    status: undefined,
+    id: 53
   },
   {
     house: 'Lancôme',
@@ -967,7 +1038,8 @@ export const items_catalogue: Item[] = [
       { name: '100ml', price: 200.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 54
   },
   {
     house: 'Lattafa',
@@ -985,7 +1057,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 55
   },
   {
     house: 'Lattafa',
@@ -1003,7 +1076,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 56
   },
   {
     house: 'Lattafa',
@@ -1021,7 +1095,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 57
   },
   {
     house: 'Lattafa',
@@ -1039,7 +1114,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 58
   },
   {
     house: 'Lattafa',
@@ -1057,7 +1133,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 59
   },
   {
     house: 'Lattafa',
@@ -1075,7 +1152,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 60
   },
   {
     house: 'Lattafa',
@@ -1093,7 +1171,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
-    status: undefined
+    status: undefined,
+    id: 61
   },
   {
     house: 'Lattafa',
@@ -1111,7 +1190,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
-    status: undefined
+    status: undefined,
+    id: 62
   },
   {
     house: 'Lattafa',
@@ -1129,9 +1209,9 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
-    status: undefined
+    status: undefined,
+    id: 63
   },
-  //---------------------------------------------------------------------- HASTA AQUI REVISAR PRECIOS----------------------------------------------------------
   {
     house: 'Lattafa',
     name: 'Mayar for Women',
@@ -1148,7 +1228,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 64
   },
   {
     house: 'Lattafa',
@@ -1166,7 +1247,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 65
   },
   {
     house: 'Lattafa',
@@ -1184,7 +1266,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 66
   },
   {
     house: 'Lattafa',
@@ -1202,7 +1285,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 67
   },
   {
     house: 'Lattafa',
@@ -1220,7 +1304,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 68
   },
   {
     house: 'Maison Alhambra',
@@ -1238,7 +1323,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 69
   },
   {
     house: 'Maison Alhambra',
@@ -1256,7 +1342,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 70
   },
   {
     house: 'Montblanc',
@@ -1274,7 +1361,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 71
   },
   {
     house: 'Montblanc',
@@ -1292,7 +1380,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 72
   },
   {
     house: 'Narciso Rodriguez',
@@ -1310,7 +1399,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 73
   },
   {
     house: 'Paco Rabanne',
@@ -1328,7 +1418,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 74
   },
   {
     house: 'Paco Rabanne',
@@ -1346,7 +1437,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 75
   },
   {
     house: 'Ralph Lauren',
@@ -1364,7 +1456,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 76
   },
   {
     house: 'Rasasi',
@@ -1382,7 +1475,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 77
   },
   {
     house: 'Rasasi',
@@ -1400,7 +1494,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 78
   },
   {
     house: 'Rasasi',
@@ -1418,7 +1513,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 79
   },
   {
     house: 'Rasasi',
@@ -1436,7 +1532,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 80
   },
   {
     house: 'Tommy Hilfiger',
@@ -1454,7 +1551,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 81
   },
   {
     house: 'Versace',
@@ -1472,7 +1570,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 82
   },
   {
     house: 'Versace',
@@ -1490,7 +1589,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 83
   },
   {
     house: 'Versace',
@@ -1508,7 +1608,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 84
   },
   {
     house: 'Versace',
@@ -1526,7 +1627,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 85
   },
   {
     house: 'Versace',
@@ -1544,7 +1646,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 86
   },
   {
     house: 'Versace',
@@ -1562,7 +1665,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 87
   },
   {
     house: 'Versace',
@@ -1580,7 +1684,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 88
   },
   {
     house: 'Versace',
@@ -1598,7 +1703,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 89
   },
 
   {
@@ -1617,7 +1723,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 360.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
-    status: undefined
+    status: undefined,
+    id: 90
   },
   {
     house: 'Xerjoff',
@@ -1635,7 +1742,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 320.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
-    status: undefined
+    status: undefined,
+    id: 91
   },
   {
     house: 'Yves Saint Laurent',
@@ -1653,7 +1761,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 200.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
-    status: undefined
+    status: undefined,
+    id: 92
   },
   {
     house: 'Yves Saint Laurent',
@@ -1671,7 +1780,8 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 93
   },
   {
     house: 'Yves Saint Laurent',
@@ -1689,6 +1799,7 @@ export const items_catalogue: Item[] = [
       { name: '10ml', price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
-    status: undefined
+    status: undefined,
+    id: 94
   }
 ];

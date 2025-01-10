@@ -1,0 +1,101 @@
+<div class="flex md:flex-row flex-col gap-4 m-2 w-full">
+    <fuse-card @transformPopover class="flex flex-col p-4 flex-grow h-fit">
+        <div class="flex justify-between">
+            <a class=" border-none w-fit" mat-button [color]="'accent'" [routerLink]="'..'">Regresar</a>
+            <button *ngIf="shoppingCart().items.length" @transformPopover class="w-fit gap-1 border-none"
+                mat-stroked-button [color]="'warn'" (click)="cleanCart()">
+                <mat-icon svgIcon="mat_solid:remove_shopping_cart" class="mr-1 icon-size-5"></mat-icon>
+                Limpiar carrito
+            </button>
+        </div>
+        <div class="relative flex flex-col flex-auto divide-y bg-card">
+            @if(shoppingCart().items.length > 0){
+            <cdk-virtual-scroll-viewport itemSize="2" class="h-72 sm:h-100">
+                <ng-container *cdkVirtualFor="let cartItem of shoppingCart().items">
+                    <div @transformPopover class="flex hover:bg-gray-50">
+                        <div class="flex flex-grow flex-shrink-0 gap-1 basis-0 py-3 pl-4">
+                            <picture>
+                                @if(cartItem.image !== '') {
+                                <source type='image/webp' [srcset]="cartItem.image">
+                                }
+                                <img class="shrink-0 w-14 max-w-14 overflow-hidden object-contain object-center hidden sm:block"
+                                    src="assets/images/no-image.png" loading="lazy" alt="Product Image">
+                            </picture>
+                            <!-- <img class="shrink-0 grow-0 w-18 mr-1 overflow-hidden object-contain object-center hidden sm:block"
+                  [src]="cartItem.isService ? url + 'images/tenant/'+this.tenantID()+'/services/'+cartItem.id+'/'+cartItem.imageIdentificators[0]+'-small.webp' : url + 'images/tenant/'+this.tenantID()+'/products/'+cartItem.id+'/'+cartItem.imageIdentificators[0]+'-small.webp'"
+                  [alt]="'Notification image'"> -->
+                            <!-- Title, description & time -->
+                            <div class="flex flex-col  w-auto">
+                                <div class="text-sm font-normal line-clamp-1" [innerHTML]="cartItem.house">
+                                </div>
+                                <div class="font-semibold text-md line-clamp-1"
+                                    [innerHTML]="cartItem.itemName + ' - ' + cartItem.name">
+                                </div>
+                                <a class="line-clamp-4 text-sm w-fit cursor-pointer text-warn-600"
+                                    (click)="deleteFromCart(cartItem)">Eliminar</a>
+                            </div>
+                        </div>
+
+
+                        <div class="flex-grow-0 flex-shrink-0 w-32 py-3 flex items-end">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Cantidad</mat-label>
+                                <mat-select [(value)]='cartItem.quantity'
+                                    (selectionChange)="modifyQuantity(cartItem, $event)">
+                                    <mat-option [value]="1">1</mat-option>
+                                    <mat-option [value]="2">2</mat-option>
+                                    <mat-option [value]="3">3</mat-option>
+                                    <mat-option [value]="4">4</mat-option>
+                                    <mat-option [value]="5">5</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="flex flex-col flex-shrink-0 flex-grow basis-1  py-3 items-end">
+                            <div class="line-clamp-4 md:text-base text-md">
+
+                                {{cartItem.quantity * cartItem.price | currency: 'Q. '}}
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
+            </cdk-virtual-scroll-viewport>
+            <footer class="px-4 flex justify-end">
+                <div class="flex gap-2 justify-center items-center">
+                    <div class="text-lg font-semibold">Total</div>
+                    <div class="text-lg font-semibold">{{totalCart() | currency: 'Q. '}}</div>
+                </div>
+            </footer>
+            } @else {
+            <div class="flex flex-col flex-auto items-center justify-center sm:justify-start py-12 px-8">
+                <div class="flex flex-0 items-center justify-center w-14 h-14 rounded-full bg-accent-300">
+                    <mat-icon class="text-accent-50" [svgIcon]="'mat_outline:remove_shopping_cart'"></mat-icon>
+                </div>
+                <div class="mt-5 md:text-2xl text-xl font-semibold tracking-tight">No hay productos</div>
+                <!-- <div class="w-full max-w-60 mt-1 text-md text-center text-secondary">Cuando agregues elementos, aparecerán
+              aquí.</div> -->
+            </div>
+            }
+
+        </div>
+    </fuse-card>
+
+    <fuse-card @transformPopover class="flex flex-col p-4 overflow-auto flex-grow h-fit">
+        <span class="font-medium md:text-lg text-base pb-4">
+            Ingrese sus datos para realizar la orden
+        </span>
+        <app-dinamic-form [dataForm$]="form$" [stateForm$]="stateForm$"
+            (returnData)="sendOrder($event)"></app-dinamic-form>
+        <div class='flex flex-col items-center'>
+            <span>ENVIA TU PEDIDO A WHATSAPP</span>
+            <picture>
+
+                <source type='image/png' [srcset]="'images/whatsapp/darkgreen.png'">
+
+                <img class="shrink-0 w-48 border-2 rounded-full p-3 overflow-hidden object-contain object-center transition transform hover:scale-105 cursor-pointer"
+                    src="images/no-image.png" loading="lazy" alt="Product Image" (click)="executeForm()">
+            </picture>
+
+        </div>
+    </fuse-card>
+</div>

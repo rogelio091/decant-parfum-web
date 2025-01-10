@@ -4,7 +4,7 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { MatDialog } from '@angular/material/dialog';
 import { ItemsGridComponent } from 'app/components/items-grid/items-grid.component';
 import { UserListResponse } from 'app/core/models-api/Identity';
-import { Gender, Item } from 'app/core/models/item.type';
+import { Gender, Item, ItemOptions } from 'app/core/models/item.type';
 import { items_catalogue } from 'app/core/objects/items';
 import { filter } from 'rxjs';
 import { FraganceDialogComponent } from './fragance-dialog/fragance-dialog.component';
@@ -14,6 +14,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { MessengerService } from 'app/core/services/messenger.service';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { ShoppingCartService } from 'app/core/services/shopping-cart.service';
+import { OptionDialogComponent } from './option-dialog/option-dialog.component';
 
 @Component({
   selector: 'app-fragance-list',
@@ -33,6 +35,7 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
 export class FraganceListComponent implements OnInit {
   private _matDialog = inject(MatDialog);
   private _destroyRef = inject(DestroyRef);
+  private _shoppingCartService = inject(ShoppingCartService);
   items: Item[];
   allItems = items_catalogue;
   genders = Object.entries(Gender).map(([key, value]) => ({ key, value }));
@@ -64,7 +67,42 @@ export class FraganceListComponent implements OnInit {
         filter((state) => state !== undefined),
         takeUntilDestroyed(this._destroyRef)
       )
-      .subscribe((data: UserListResponse) => {});
+      .subscribe((data: boolean) => {
+        if (data) this.addToCart(item);
+      });
+  }
+
+  addToCart(item: Item) {
+    this._matDialog
+      .open(OptionDialogComponent, {
+        data: {
+          title: item.name,
+          subtitle: item.house,
+          icon: {
+            show: true,
+            name: 'mat_outline:info',
+            color: 'info'
+          },
+          item: item
+        },
+        panelClass: 'fuse-confirmation-dialog-panel',
+        disableClose: false
+      })
+      .afterClosed()
+      .pipe(
+        filter((state) => state !== undefined),
+        takeUntilDestroyed(this._destroyRef)
+      )
+      .subscribe((data: ItemOptions) => {
+        this._shoppingCartService.addToShoppingCart({
+          itemName: item.name,
+          house: item.house,
+          image: item.image,
+          itemId: item.id,
+          ...data,
+          quantity: 1
+        });
+      });
   }
 
   // filterByGender(event) {

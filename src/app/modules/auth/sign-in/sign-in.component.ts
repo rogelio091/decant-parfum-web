@@ -95,7 +95,7 @@ export class AuthSignInComponent implements OnInit {
     this._sessionService.logIn(values).subscribe({
       next: (response) => {
         console.log(response);
-        this._storageService.setUserValue(response);
+        // this._storageService.setUserValue(response);
         const redirectURL =
           this._activatedRoute.snapshot.queryParamMap.get('redirectURL') || '/signed-in-redirect';
 

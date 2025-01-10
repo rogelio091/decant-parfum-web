@@ -3,6 +3,7 @@ import {
   Component,
   EventEmitter,
   HostListener,
+  inject,
   Input,
   input,
   OnChanges,
@@ -15,15 +16,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIcon, MatIconModule } from '@angular/material/icon';
 import { MatPaginator, MatPaginatorIntl, MatPaginatorModule } from '@angular/material/paginator';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { RouterLink } from '@angular/router';
 import { FuseCardComponent } from '@fuse/components/card';
 import { EmptyDataComponent } from '../empty-data/empty-data.component';
-import { Item, ItemStatus } from 'app/core/models/item.type';
+import { Item, ItemOptions, ItemStatus } from 'app/core/models/item.type';
 import { popoverAnimation } from 'app/animations/popover.animation';
 import { fadeInRight400ms } from 'app/animations/fade-in-right.animation';
 import { MatTableDataSource } from '@angular/material/table';
 import { Observable } from 'rxjs';
 import { getSpanishPaginatorIntl } from 'app/core/helpers/spanishPaginator';
+import { MatRippleModule } from '@angular/material/core';
 
 @Component({
   selector: 'app-items-grid',
@@ -33,10 +34,11 @@ import { getSpanishPaginatorIntl } from 'app/core/helpers/spanishPaginator';
     MatTooltipModule,
     MatButtonModule,
     FuseCardComponent,
-    RouterLink,
     MatPaginatorModule,
     MatIcon,
     MatIconModule,
+    MatRippleModule,
+    MatTooltipModule,
     NgOptimizedImage,
     EmptyDataComponent
   ],
@@ -48,6 +50,7 @@ import { getSpanishPaginatorIntl } from 'app/core/helpers/spanishPaginator';
 export class ItemsGridComponent implements OnChanges {
   @Input({ required: true }) items: Item[] = [];
   @Output() itemClick = new EventEmitter<Item>();
+  @Output() addToCartClick = new EventEmitter<Item>();
 
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
 
@@ -73,6 +76,11 @@ export class ItemsGridComponent implements OnChanges {
 
   itemClicked(item: Item): void {
     this.itemClick.emit(item);
+  }
+
+  addToCart(item: Item): void {
+    console.log(item);
+    this.addToCartClick.emit(item);
   }
 
   scrollToTop() {

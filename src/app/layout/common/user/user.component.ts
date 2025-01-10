@@ -61,8 +61,8 @@ export class UserComponent implements OnInit, OnDestroy {
   }
 
   getUserSession(): void {
-    this.user = this._sessionService.getSession();
-    this._changeDetectorRef.markForCheck();
+    // this.user = this._sessionService.getSession();
+    // this._changeDetectorRef.markForCheck();
   }
 
   /**

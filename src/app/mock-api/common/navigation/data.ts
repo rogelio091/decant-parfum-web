@@ -7,9 +7,22 @@ export const defaultNavigation: CustomNavigationItem[] = [
   {
     id: 'catalogue',
     title: 'Catálogo',
-    type: 'basic',
-    icon: 'heroicons_outline:document-text',
-    link: '/catalogue'
+    type: 'group',
+    icon: 'heroicons_outline:book-open',
+    children: [
+      {
+        id: 'decants',
+        title: 'Decants',
+        type: 'basic',
+        link: '/decants'
+      }
+      // {
+      //   id: 'completes',
+      //   title: 'Perfumes completos',
+      //   type: 'basic',
+      //   link: '/fragrances'
+      // }
+    ]
   }
 ];
 export const compactNavigation: FuseNavigationItem[] = [
@@ -30,12 +43,25 @@ export const futuristicNavigation: FuseNavigationItem[] = [
     link: '/example'
   }
 ];
-export const horizontalNavigation: FuseNavigationItem[] = [
+export const horizontalNavigation: CustomNavigationItem[] = [
   {
     id: 'catalogue',
     title: 'Catálogo',
-    type: 'basic',
-    icon: 'heroicons_outline:document-text',
-    link: '/catalogue'
+    type: 'collapsable',
+    icon: 'heroicons_outline:book-open',
+    children: [
+      {
+        id: 'decants',
+        title: 'Decants',
+        type: 'basic',
+        link: '/decants'
+      }
+      // {
+      //   id: 'completes',
+      //   title: 'Perfumes completos',
+      //   type: 'basic',
+      //   link: '/fragrances'
+      // }
+    ]
   }
 ];

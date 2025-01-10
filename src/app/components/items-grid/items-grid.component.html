@@ -38,9 +38,15 @@
     </fuse-card> -->
 
     <fuse-card @fadeInRight *ngFor="let product of itemList$ |async; index as i;"
-        class="flex flex-col max-w-80 w-full h-full transform transition hover:scale-105  cursor-pointer"
-        (click)='itemClicked(product)'>
-        <div class='flex'>
+        class="flex flex-col max-w-80 w-full h-full transform transition hover:scale-105  ">
+        <div class='fixed bottom-5 right-3 z-10 icon-size-6 cursor-pointer' matRipple [matRippleColor]="'cyan'"
+            [matRippleCentered]="true" [matRippleUnbounded]="true">
+            <mat-icon class='white-icon z-20 absolute' matTooltip="Agregar al carrito" [matTooltipPosition]="'below'"
+                svgIcon="mat_outline:add_shopping_cart" (click)="addToCart(product)"></mat-icon>
+
+        </div>
+        <div class='flex cursor-pointer' matRipple (click)='itemClicked(product)'>
+
             <div class="flex relative w-24 h-30 m-auto items-center justify-center">
                 <picture>
                     @if(product.image !== '' && !isMobile()){
@@ -64,7 +70,7 @@
                 <div class="text-secondary text-sm">{{product.house}}</div>
                 <div class="text-md font-semibold leading-tight"> {{product.name}} </div>
                 <!-- <div class="text-sm mt-1 font-semibold text-gray-800"> Salida: <span
-                        class='text-sm font-normal'>{{product.notes.top}}</span> </div> -->
+                                class='text-sm font-normal'>{{product.notes.top}}</span> </div> -->
 
                 <!-- <div class="text-sm mt-1 text-gray-800"> {{product.description}}</div> -->
                 <div class="mt-3 text-xs rounded-full px-2 py-0.5 font-normal w-fit text-white"
@@ -74,15 +80,24 @@
             </div>
         </div>
 
-        <div class="bg-accent-600 w-full flex items-center justify-center py-2 ">
-            @for(option of product.options; track option){
-            <div *ngIf="option.status === itemStatus.Available "
-                class="flex flex-col my-1 mx-2 rounded-full bg-gray-100 px-3 py-0.5 text-sm font-medium text-gray-500 text-center">
-                <span class='text-md font-semibold'>{{option.name}}</span>
-                <span class='text-md'>{{option.price| currency:'Q. ' }} </span>
+        <div class="bg-accent-600 w-full flex flex-col items-center justify-center py-2 ">
+            <!-- <div class='flex relative w-full h-6'>
+                        <img class="object-contain p-0.5" [ngSrc]="'images/whatsapp/inlinewhite.png'" alt="whatsapp" fill
+                            priority>
+        
+                    </div> -->
+            <div class='flex'>
+                @for(option of product.options; track option){
+                <div *ngIf="option.status === itemStatus.Available "
+                    class="flex flex-col my-1 mx-2 rounded-full bg-gray-100 px-3 py-0.5 text-sm font-normal text-gray-500 text-center">
+                    <span class='text-sm font-semibold'>{{option.name}}</span>
+                    <span class='text-sm font-medium'>{{option.price| currency:'Q. ' }} </span>
+                </div>
+
+                }
+
             </div>
 
-            }
         </div>
     </fuse-card>
 </div>

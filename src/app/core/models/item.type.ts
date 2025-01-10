@@ -1,4 +1,5 @@
 export type Item = {
+  id: number;
   house: string;
   name: string;
   description: string;

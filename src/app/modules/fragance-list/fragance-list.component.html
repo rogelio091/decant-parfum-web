@@ -18,6 +18,7 @@
             </mat-icon>
         </mat-form-field>
     </div>
-    <app-items-grid class='w-full' [items]="items" (itemClick)="openFraganceDialog($event)"></app-items-grid>
+    <app-items-grid class='w-full' [items]="items" (itemClick)="openFraganceDialog($event)"
+        (addToCartClick)="addToCart($event)"></app-items-grid>
 
 </div>

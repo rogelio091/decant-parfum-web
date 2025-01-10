@@ -1,14 +1,15 @@
 import { CommonModule, NgOptimizedImage } from '@angular/common';
-import { Component, Inject, OnInit, signal } from '@angular/core';
+import { Component, Inject, signal, WritableSignal } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MAT_DIALOG_DATA, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { DialogLayoutComponent } from 'app/components/dialog-layout/dialog-layout.component';
 import { DialogData } from 'app/core/models/dialog.type';
+import { ItemOptions, ItemStatus } from 'app/core/models/item.type';
 import { UserDialogComponent } from 'app/modules/users/user-dialog/user-dialog.component';
 
 @Component({
-  selector: 'app-fragance-dialog',
+  selector: 'app-option-dialog',
   standalone: true,
   imports: [
     CommonModule,
@@ -18,19 +19,26 @@ import { UserDialogComponent } from 'app/modules/users/user-dialog/user-dialog.c
     MatIconModule,
     NgOptimizedImage
   ],
-  templateUrl: './fragance-dialog.component.html',
-  styleUrl: './fragance-dialog.component.scss'
+  templateUrl: './option-dialog.component.html'
 })
-export class FraganceDialogComponent implements OnInit {
+export class OptionDialogComponent {
   isMobile = signal<boolean>(window.innerWidth < 960);
+  selectedOption = signal<ItemOptions>(undefined);
+  itemStatus = ItemStatus;
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: DialogData,
     private dialogRef: MatDialogRef<UserDialogComponent>
   ) {}
 
-  ngOnInit(): void {}
+  selectOption(option: ItemOptions): void {
+    this.selectedOption.set(option);
+  }
+
+  isSelected(option: ItemOptions): boolean {
+    return this.selectedOption()?.name === option.name;
+  }
 
   addToCart(): void {
-    this.dialogRef.close(true);
+    this.dialogRef.close(this.selectedOption());
   }
 }

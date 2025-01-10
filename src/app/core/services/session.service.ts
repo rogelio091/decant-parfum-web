@@ -39,40 +39,29 @@ export class SessionService {
     );
   }
 
-  logOut() {
-    this.storageService.removeUserValue();
-    // this.onlineNotificationsService.stopConnection();
-    this.api.CallApi(REQUEST_METHOD.POST, Endpoints.IDENTITY.LOGOUT, JSON.stringify({})).subscribe({
-      next: (response) => {
-        console.log(response);
-      }
-      // error: (error) => this.routerService.navigate(['/sign-in']),
-    });
-  }
+  logOut() {}
 
   logOutExpired() {
-    this.storageService.removeUserValue();
     // this.onlineNotificationsService.stopConnection();
     // this.routerService.navigate(['/sign-in']);
   }
 
-  getSession(): UserResponse {
-    return this.storageService.getUserValue() ? this.storageService.getUserValue() : undefined;
-  }
+  getSession() {}
 
   evaluatePermission(permission: Permission, action: PermissionActions): boolean {
-    const userData = this.getSession();
-    if (userData.roleName === Permission.Super) return true;
-    const containPermission = userData.claims[permission]?.includes(action);
-    return containPermission ? true : false;
+    // const userData = this.getSession();
+    // if (userData.roleName === Permission.Super) return true;
+    // const containPermission = userData.claims[permission]?.includes(action);
+    // return containPermission ? true : false;
+    return false;
   }
 
   hasSomePermission(permission: Permission[]): boolean {
-    const userData = this.getSession();
-    if (userData?.roleName === Permission.Super) return true;
-    const hasOne = permission.some((perm) => {
-      return userData?.claims[perm] ? true : false;
-    });
-    return hasOne;
+    // const userData = this.getSession();
+    // if (userData?.roleName === Permission.Super) return true;
+    // const hasOne = permission.some((perm) => {
+    //   return userData?.claims[perm] ? true : false;
+    // });
+    return false;
   }
 }
