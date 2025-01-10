@@ -100,7 +100,7 @@ export class CheckoutComponent {
       )
       .join('\n');
 
-    const message = `Hola mi nombre es ${data.webCustomerFullName}, quiero compartir esta lista de productos:\n${productList}\n\nTotal: Q${this.totalCart()} \n\nDirección de entrega: ${data.address} - ${data.webCustomerPhoneNumber}`;
+    const message = `Hola mi nombre es ${data.webCustomerFullName}, quiero compartir esta lista de productos:\n${productList}\n\nTotal: Q${this.totalCart()} \n\nDirección de entrega: ${data.address} \n Número de teléfono: ${data.webCustomerPhoneNumber}`;
 
     // Codificar el mensaje para la URL
     const encodedMessage = encodeURIComponent(message);
@@ -110,6 +110,7 @@ export class CheckoutComponent {
 
     // Redirigir al enlace de WhatsApp
     window.open(whatsappUrl, '_blank');
+    this.confirmSendedOrder();
   }
 
   confirmSendedOrder() {
@@ -120,7 +121,7 @@ export class CheckoutComponent {
           'Si no has podido enviar tú orden por medio de whatsapp, puedes intentar nuevamente.',
         icon: {
           show: true,
-          name: 'heroicons_outline:exclamation-triangle',
+          name: 'heroicons_outline:question-mark-circle',
           color: 'warning'
         },
         actions: {
@@ -138,7 +139,7 @@ export class CheckoutComponent {
       })
       .afterClosed()
       .subscribe((result: string) => {
-        if (result === 'confirm') {
+        if (result === 'confirmed') {
           this._toastService.showSuccessToast('Carrito restablecido');
           this.stateForm.set({ resetForm: true, executeReturn: false });
           this.cleanCart();
