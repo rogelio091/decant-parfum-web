@@ -23,6 +23,12 @@ export const defaultNavigation: CustomNavigationItem[] = [
       //   link: '/fragrances'
       // }
     ]
+  },
+  {
+    id: 'faq',
+    title: 'Preguntas frecuentes',
+    type: 'basic',
+    link: '/faqs'
   }
 ];
 export const compactNavigation: FuseNavigationItem[] = [
@@ -63,5 +69,12 @@ export const horizontalNavigation: CustomNavigationItem[] = [
       //   link: '/fragrances'
       // }
     ]
+  },
+  {
+    id: 'faq',
+    title: 'Preguntas frecuentes',
+    type: 'basic',
+    icon: 'heroicons_outline:question-mark-circle',
+    link: '/faqs'
   }
 ];

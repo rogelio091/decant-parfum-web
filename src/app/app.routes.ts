@@ -93,6 +93,11 @@ export const appRoutes: Route[] = [
         path: 'checkout',
         loadComponent: () =>
           import('app/modules/checkout/checkout.component').then((m) => m.CheckoutComponent)
+      },
+
+      {
+        path: 'faqs',
+        loadComponent: () => import('app/modules/faqs/faqs.component').then((m) => m.FaqsComponent)
       }
       // {
       //   path: 'users',
