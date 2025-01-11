@@ -5,12 +5,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { RouterLink } from '@angular/router';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { faqs } from './faqs';
+import { popoverAnimation } from 'app/animations/popover.animation';
+import { fadeIn } from '@fuse/animations/fade';
 
 @Component({
   selector: 'app-faqs',
   standalone: true,
   imports: [MatButtonModule, RouterLink, MatIconModule, NgFor, MatExpansionModule],
-  templateUrl: './faqs.component.html'
+  templateUrl: './faqs.component.html',
+  animations: [popoverAnimation]
 })
 export class FaqsComponent {
   faqs = faqs;
