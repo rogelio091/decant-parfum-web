@@ -2,7 +2,7 @@ import { Gender, Item, ItemStatus } from 'app/core/models/item.type';
 
 const image_basePath = 'images/fragances/';
 
-export const items_catalogue: Item[] = [
+export const items_catalogue_general: Item[] = [
   {
     id: 1,
     house: 'Adolfo Dominguez',
@@ -1157,7 +1157,7 @@ export const items_catalogue: Item[] = [
   },
   {
     house: 'Lattafa',
-    name: "Bade'e Al Oud Honor & Glory",
+    name: 'Badee Al Oud Honor & Glory',
     description:
       'Una fragancia unisex de la familia olfativa Ámbar Afrutada, lanzada en 2023. Combina notas dulces y especiadas, ofreciendo un aroma sofisticado y duradero que refleja lujo y elegancia.',
     image: image_basePath + 'lattafahonoryglory.jpeg',
@@ -1801,5 +1801,246 @@ export const items_catalogue: Item[] = [
     gender: Gender.Masculine,
     status: undefined,
     id: 94
+  },
+  {
+    id: 95,
+    house: 'Lattafa',
+    name: 'Fakhar Rose',
+    description:
+      'Una fragancia femenina de la familia olfativa Floral, lanzada en 2021. Combina notas frutales y florales en la salida, un corazón rico en flores blancas, y culmina con una base cálida y almizclada, ofreciendo un aroma sofisticado y envolvente.',
+    image: image_basePath + 'lattafafakhar.jpg',
+    notes: {
+      top: 'frutas, azucena, granada, aldehídos',
+      middle: 'nardos, jazmín, gardenia, ylang-ylang, madreselva, rosa, peonía',
+      base: 'vainilla, almizcle blanco, sándalo, ambroxan'
+    },
+    options: [
+      { name: '5ml', price: 50.0, status: ItemStatus.Available },
+      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined
+  },
+  {
+    id: 96,
+    house: 'Grandeur',
+    name: 'Aura Pink',
+    description:
+      'Una fragancia femenina de la familia olfativa Oriental Floral. Combina notas frutales en la salida, un corazón floral seductor y una base cálida y ambarada, ofreciendo un aroma encantador y sofisticado.',
+    image: image_basePath + 'grandeur_pink_aura.avif',
+    notes: {
+      top: 'frambuesa, lichi, grosella negra',
+      middle: 'rosa, magnolia, benjuí',
+      base: 'ámbar, pachulí'
+    },
+    options: [
+      { name: '5ml', price: 50.0, status: ItemStatus.Available },
+      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined
+  },
+  {
+    id: 97,
+    house: 'Grandeur',
+    name: 'Aura Pour Femme',
+    description:
+      'Una fragancia femenina de la familia olfativa Ámbar Amaderada, que combina notas florales y amaderadas para ofrecer un aroma encantador y sofisticado.',
+    image: image_basePath + 'grandeur_aura_pour_femme.jpg',
+    notes: {
+      top: 'violeta',
+      middle: 'peonía, jazmín',
+      base: 'sándalo, cachemira, vainilla'
+    },
+    options: [
+      { name: '5ml', price: 50.0, status: ItemStatus.Available },
+      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined
+  },
+  {
+    id: 98,
+    house: 'Maison Alhambra',
+    name: 'Jean Lowe Matière',
+    description:
+      'Inspirada en Matière Noire de Louis Vuitton, esta fragancia ofrece una experiencia olfativa rica y envolvente. Las notas de salida presentan un acorde dulce de jarabe de grosella negra y notas acuáticas, que aportan frescura y vitalidad. En el corazón, un bouquet floral compuesto por rosa, ciclamen, narciso y jazmín sambac añade profundidad y elegancia. La base combina la calidez del oud, el pachulí y el incienso, brindando una estela duradera y sofisticada.',
+    image: image_basePath + 'maison_alhambra_jean_lowe_matiere.jpg',
+    notes: {
+      top: 'jarabe de grosella negra, notas acuáticas',
+      middle: 'rosa, ciclamen, narciso, jazmín sambac',
+      base: 'madera de oud, pachulí, incienso'
+    },
+    options: [
+      { name: '5ml', price: 50.0, status: ItemStatus.Available },
+      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined
+  },
+  {
+    id: 99,
+    house: 'Bharara',
+    name: 'Rohit Delicate',
+    description:
+      'Ofrece una deliciosa sinfonía de notas exóticas y dulces. La fragancia se abre con el aroma vibrante y jugoso de la mandarina, acompañado de una mezcla de frutas tropicales que te transportan instantáneamente a un paraíso exuberante. En el corazón, florece con el encanto embriagador de la orquídea y el heliotropo, añadiendo una riqueza floral que es a la vez delicada y cautivadora. La faceta gourmand emerge con el delicioso aroma del postre de frutos rojos, que se mezcla perfectamente con la cremosa vainilla para crear una dulzura deliciosa. A medida que la fragancia se seca, revela una base cálida y sensual de almizcle y sándalo, dejando una impresión duradera que es a la vez reconfortante y sofisticada.',
+    image: image_basePath + 'bharara_rohit_delicate.jpg',
+    notes: {
+      top: 'mandarina, frutas tropicales',
+      middle: 'orquídea, heliotropo',
+      base: 'postre de frutos rojos, vainilla, almizcle, sándalo'
+    },
+    options: [
+      { name: '5ml', price: 60.0, status: ItemStatus.Available },
+      { name: '10ml', price: 120.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined
+  },
+  {
+    id: 100,
+    house: 'Maison Alhambra',
+    name: 'Glossy',
+    description:
+      'Esta fragancia combina notas frutales y especiadas en la salida, un corazón floral de jazmín y rosa, y una base cálida de vainilla, almizcle blanco, pachulí y cedro, creando un aroma sofisticado y envolvente.',
+    image: image_basePath + 'maison_alhambra_glossy.jpg',
+    notes: {
+      top: 'pera, pimienta rosa, bergamota',
+      middle: 'jazmín, rosa',
+      base: 'vainilla, almizcle blanco, pachulí, cedro'
+    },
+    options: [
+      { name: '5ml', price: 50.0, status: ItemStatus.Available },
+      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined
+  },
+  {
+    id: 101,
+    house: 'Lattafa',
+    name: 'Tharwah Silver',
+    description:
+      'Esta fragancia se abre con notas frescas de menta y bergamota, que aportan una sensación revitalizante. En el corazón, la lavanda y la salvia aportan un toque aromático y herbal, brindando profundidad y carácter. La base combina almizcle, vetiver y cedro, ofreciendo un fondo cálido y amaderado que equilibra la frescura inicial.',
+    image: image_basePath + 'lattafa_tharwah_silver.jpg',
+    notes: {
+      top: 'menta, bergamota',
+      middle: 'lavanda, salvia esclarea',
+      base: 'almizcle, vetiver, cedro'
+    },
+    options: [
+      { name: '5ml', price: 70.0, status: ItemStatus.Available },
+      { name: '10ml', price: 140.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined
+  },
+  {
+    id: 102,
+    house: 'Grandeur',
+    name: 'Elite Florist',
+    description:
+      'Fragancia femenina que captura la esencia de un jardín en plena floración. Se abre con la frescura vibrante de la peonía, que aporta una nota inicial ligera y aireada. En el corazón, la rosa y el osmanthus se entrelazan, ofreciendo un bouquet floral rico y sofisticado. La base de sándalo añade profundidad y calidez, creando un aroma equilibrado que es tanto elegante como acogedor. Esta fragancia es ideal para mujeres modernas que buscan un perfume que combine frescura floral con una base amaderada suave, perfecto para el uso diario o eventos especiales.',
+    image: image_basePath + 'grandeur_elite_florist.jpg',
+    notes: {
+      top: 'peonía',
+      middle: 'rosa, osmanthus',
+      base: 'sándalo'
+    },
+    options: [
+      { name: '5ml', price: 50.0, status: ItemStatus.Available },
+      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined
+  },
+  {
+    id: 103,
+    house: 'Lattafa',
+    name: 'Badee Al Oud Noble Blush',
+    description:
+      'Fragancia que evoca una fantasía dulce y soñadora. Se abre con una nota de salida de leche de rosas, que aporta una suavidad floral y cremosa. En el corazón, el merengue y la almendra se combinan para ofrecer una dulzura gourmand irresistible. La base de vainilla, sándalo y almizcle proporciona calidez y profundidad, dejando una estela aterciopelada y envolvente.',
+    image: image_basePath + 'lattafa_badee_al_oud_noble_blush.webp',
+    notes: {
+      top: 'leche de rosas',
+      middle: 'merengue, almendra',
+      base: 'vainilla, sándalo, almizcle'
+    },
+    options: [
+      { name: '5ml', price: 60.0, status: ItemStatus.Available },
+      { name: '10ml', price: 120.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined
+  },
+  {
+    id: 104,
+    house: 'Amaran',
+    name: 'Voca Celebrity',
+    description:
+      'Diseñado para mujeres que abrazan su fuerza, gracia y la belleza de ser auténticamente ellas mismas, esta fragancia se abre con notas de salida de jazmín sambac, aportando una frescura floral intensa. En el corazón, el cashmeran y la rosa turca añaden una riqueza y profundidad aterciopelada. La base de vainilla y ámbar proporciona una calidez duradera, envolviendo los sentidos en una estela sofisticada y elegante.',
+    image: image_basePath + 'amaran_voca_celebrity.webp',
+    notes: {
+      top: 'jazmín sambac',
+      middle: 'cashmeran, rosa turca',
+      base: 'vainilla, ámbar'
+    },
+    options: [
+      { name: '5ml', price: 50.0, status: ItemStatus.Available },
+      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined
+  },
+  {
+    id: 105,
+    house: 'Amaran',
+    name: 'Voca Pink',
+    description:
+      'Diseñado para aquellas que combinan suavidad con fortaleza y elegancia con audacia, este perfume se abre con notas de manzana Pink Lady y jazmín, ofreciendo una frescura frutal y floral. En el corazón, las notas de chicle y caramelo aportan una dulzura juguetona y juvenil. La base de ámbar, haba tonka y sándalo proporciona calidez y profundidad, dejando una estela envolvente y sofisticada.',
+    image: image_basePath + 'amaran_voca_pink.webp',
+    notes: {
+      top: 'manzana Pink Lady, jazmín',
+      middle: 'chicle, caramelo',
+      base: 'ámbar, haba tonka, sándalo'
+    },
+    options: [
+      { name: '5ml', price: 50.0, status: ItemStatus.Available },
+      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined
+  },
+  {
+    id: 106,
+    house: 'Amaran',
+    name: 'Voca Touch',
+    description:
+      'Esta fragancia se abre con notas vibrantes de fresa, bergamota y almendra amarga, que aportan una frescura afrutada y ligeramente dulce. En el corazón, la peonía y el ylang-ylang se entrelazan para ofrecer un bouquet floral sofisticado y femenino. La base combina la calidez de la vainilla, el haba tonka y la cumarina, proporcionando una estela duradera y envolvente que deja una impresión memorable.',
+    image: image_basePath + 'amaran_voca_touch.webp',
+    notes: {
+      top: 'fresa, bergamota, almendra amarga',
+      middle: 'peonía, ylang-ylang',
+      base: 'vainilla, haba tonka, cumarina'
+    },
+    options: [
+      { name: '5ml', price: 50.0, status: ItemStatus.Available },
+      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined
   }
 ];
+
+export const items_catalogue = [...items_catalogue_general].sort((a, b) => {
+  // Primero, comparar por la propiedad 'house'
+  if (a.house < b.house) return -1;
+  if (a.house > b.house) return 1;
+
+  // Si 'house' es igual, comparar por la propiedad 'name'
+  if (a.name < b.name) return -1;
+  if (a.name > b.name) return 1;
+
+  // Si ambos son iguales, devolver 0
+  return 0;
+});
