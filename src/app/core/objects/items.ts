@@ -1034,8 +1034,8 @@ export const items_catalogue_general: Item[] = [
       base: 'almizcle, ambroxan, sándalo, musgo, notas amaderadas'
     },
     options: [
-      { name: '50ml', price: 100.0, status: ItemStatus.Available },
-      { name: '100ml', price: 200.0, status: ItemStatus.Available }
+      { name: '5ml', price: 100.0, status: ItemStatus.Available },
+      { name: '10ml', price: 200.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
