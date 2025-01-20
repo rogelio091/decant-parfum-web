@@ -2029,6 +2029,44 @@ export const items_catalogue_general: Item[] = [
     ],
     gender: Gender.Feminine,
     status: undefined
+  },
+  {
+    id: 107,
+    house: 'Dumont',
+    name: 'Nitro Red',
+    description:
+      'Nitro Red de Dumont es una fragancia de la familia olfativa Aromática Frutal para hombres, lanzada en 2020. Esta fragancia se abre con notas frescas de manzana, lavanda y bergamota, que aportan una sensación revitalizante. En el corazón, la sandía, el cedro y el cálamo aromático se combinan para ofrecer un toque acuático y amaderado. La base está compuesta por ámbar, sándalo y pachulí, proporcionando una calidez duradera y una profundidad sofisticada.',
+    image: image_basePath + 'dumont_nitro_red.webp',
+    notes: {
+      top: 'manzana, lavanda, bergamota',
+      middle: 'sandía, cedro, cálamo aromático',
+      base: 'ámbar, sándalo, pachulí'
+    },
+    options: [
+      { name: '5ml', price: 50.0, status: ItemStatus.Available },
+      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined
+  },
+  {
+    id: 108,
+    house: 'Lattafa',
+    name: 'Vintage Radio',
+    description:
+      'Vintage Radio de Lattafa es una fragancia unisex de la familia olfativa Oriental Amaderada, lanzada en 2023. Esta fragancia nostálgica te transporta a tiempos más sencillos y elegantes, evocando la magia de sentarse junto a una radio antigua iluminada por el cálido resplandor de sus tubos. Se abre con notas de salida de lavanda, salvia y bergamota, que aportan una frescura aromática y cítrica. En el corazón, la ciruela, el palo santo y la pimienta negra se combinan para ofrecer un toque afrutado, amaderado y especiado. La base está compuesta por sándalo y madera de oud, proporcionando una calidez duradera y una profundidad sofisticada.',
+    image: image_basePath + 'lattafa_vintage_radio.jpg',
+    notes: {
+      top: 'lavanda, salvia, bergamota',
+      middle: 'ciruela, palo santo, pimienta negra',
+      base: 'sándalo, madera de oud'
+    },
+    options: [
+      { name: '5ml', price: 70.0, status: ItemStatus.Available },
+      { name: '10ml', price: 140.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined
   }
 ];
 

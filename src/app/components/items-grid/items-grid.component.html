@@ -38,7 +38,7 @@
     </fuse-card> -->
 
     <fuse-card @fadeInRight *ngFor="let product of itemList$ |async; index as i;"
-        class="flex flex-col max-w-80 w-full h-full transform transition hover:scale-105  ">
+        class="flex flex-col max-w-80 w-full h-full transform transition hover:scale-105 justify-between ">
         <div class='fixed bottom-5 right-3 z-10 icon-size-6 cursor-pointer' matRipple [matRippleColor]="'cyan'"
             [matRippleCentered]="true" [matRippleUnbounded]="true">
             <mat-icon class='white-icon z-20 absolute' matTooltip="Agregar al carrito" [matTooltipPosition]="'below'"
