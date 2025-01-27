@@ -2067,6 +2067,159 @@ export const items_catalogue_general: Item[] = [
     ],
     gender: Gender.Unisex,
     status: undefined
+  },
+  {
+    id: 109,
+    house: 'Versace',
+    name: 'Pour Femme Dylan Blue',
+    description:
+      'Esta esencia es un tributo a la feminidad, fuerte, sensual y refinada, creada para una mujer que conoce el poder de su sensualidad y de su mente. Se abre con notas frescas y afrutadas de grosella negra, manzana verde, trébol blanco, nomeolvides y shiso (menta púrpura). El corazón floral combina durazno (melocotón), petalia, rosa silvestre, rosa y jazmín, aportando una riqueza y profundidad aterciopelada. La base está compuesta por almizcle, maderas blancas, styrax y pachulí, proporcionando una calidez duradera y una profundidad sofisticada.',
+    image: image_basePath + 'versace_dylan_blue_pour_femme.jpg',
+    notes: {
+      top: 'grosella negra, manzana verde, trébol blanco, nomeolvides, shiso (menta púrpura)',
+      middle: 'durazno (melocotón), petalia, rosa silvestre, rosa, jazmín',
+      base: 'almizcle, maderas blancas, styrax, pachulí'
+    },
+    options: [
+      { name: '5ml', price: 80.0, status: ItemStatus.Available },
+      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined
+  },
+
+  {
+    id: 110,
+    house: 'Lancôme',
+    name: "La Vie Est Belle L'Elixir",
+    description:
+      'Esta esencia celebra la liberación y la autoconfianza, abriendo con notas chispeantes de frambuesa y bergamota de Calabria, que aportan una frescura afrutada. En el corazón, las hojas de violeta y la rosa se entrelazan para ofrecer un bouquet floral sofisticado y femenino. La base combina la calidez de la manteca de cacao, el acorde de cuero y la madera de cedro de Virginia, proporcionando una estela duradera y envolvente que deja una impresión memorable.',
+    image: image_basePath + 'lancome_la_vie_est_belle_lelixir.jpg',
+    notes: {
+      top: 'frambuesa, licor, bergamota de Calabria',
+      middle: 'hojas de violeta, rosa',
+      base: 'manteca de cacao, acorde de cuero, madera de cedro de Virginia'
+    },
+    options: [
+      { name: '5ml', price: 110.0, status: ItemStatus.Available },
+      { name: '10ml', price: 220.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined
+  },
+  {
+    id: 111,
+    house: 'Lattafa',
+    name: 'Mayar Cherry Intense',
+    description:
+      'Esta esencia cautivadora se abre con una explosión fresca de fresa y bergamota, creando una introducción vibrante y jugosa. En el corazón, se revela la rica e indulgente esencia de mermelada de cereza y cacao, añadiendo dulzura y profundidad a la composición. Finalmente, las notas de fondo de vainilla, pachulí y ámbar proporcionan un acabado cálido y cautivador que perdura bellamente en la piel.',
+    image: image_basePath + 'lattafa_mayar_cherry_intense.jpg',
+    notes: {
+      top: 'fresa, bergamota',
+      middle: 'mermelada de cereza, cacao',
+      base: 'vainilla, pachulí, ámbar'
+    },
+    options: [
+      { name: '5ml', price: 70.0, status: ItemStatus.Available },
+      { name: '10ml', price: 140.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined
+  },
+  {
+    id: 112,
+    house: 'Dolce & Gabbana',
+    name: 'Devotion Eau de Parfum',
+    description:
+      'Esta esencia cautivadora se abre con una nota luminosa de limón confitado, que aporta una frescura dulce y cítrica. En el corazón, la flor de azahar del naranjo se combina con la panacota y el ron, creando un acorde cremoso y embriagador. La base está dominada por la vainilla, que proporciona una calidez envolvente y duradera.',
+    image: image_basePath + 'dolce_gabbana_devotion_edp.jpg',
+    notes: {
+      top: 'limón confitado',
+      middle: 'flor de azahar del naranjo, panacota, ron',
+      base: 'vainilla'
+    },
+    options: [
+      { name: '5ml', price: 90.0, status: ItemStatus.Available },
+      { name: '10ml', price: 180.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined
+  },
+  {
+    id: 113,
+    house: 'Hugo Boss',
+    name: 'Boss Bottled Triumph Elixir',
+    description:
+      'Esta esencia se caracteriza por su aroma amaderado y ahumado, ofreciendo una experiencia olfativa sofisticada y masculina. Se abre con notas de hoja de violeta, que aportan una frescura verde y sutil. En el corazón, el vetiver añade profundidad y un carácter terroso. La base está dominada por el patchouli, proporcionando una calidez terrosa y persistente.',
+    image: image_basePath + 'hugo_boss_boss_bottled_triumph_elixir.jpg',
+    notes: {
+      top: 'hoja de violeta',
+      middle: 'vetiver',
+      base: 'patchouli'
+    },
+    options: [
+      { name: '5ml', price: 90.0, status: ItemStatus.Available },
+      { name: '10ml', price: 180.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined
+  },
+  {
+    id: 114,
+    house: 'Hugo Boss',
+    name: 'Boss Bottled Parfum',
+    description:
+      'Esta esencia sofisticada se abre con notas de salida de incienso de olíbano (franquincienso) y mandarina, que aportan una frescura especiada. En el corazón, se encuentran el árbol de la higuera y la raíz de lirio, ofreciendo una profundidad amaderada y terrosa. La base está compuesta por cedro y cuero, proporcionando una calidez intensa y duradera.',
+    image: image_basePath + 'hugo_boss_boss_bottled_parfum.jpg',
+    notes: {
+      top: 'incienso de olíbano (franquincienso), mandarina',
+      middle: 'árbol de la higuera, raíz de lirio',
+      base: 'cedro, cuero'
+    },
+    options: [
+      { name: '5ml', price: 80.0, status: ItemStatus.Available },
+      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined
+  },
+  {
+    id: 115,
+    house: 'Viktor & Rolf',
+    name: 'SpiceBomb Extreme',
+    description:
+      'Esta esencia intensa y seductora se abre con una explosión de lavanda aromática, combinada con especias picantes como comino, canela y azafrán. En el corazón, las notas de tabaco y bourbon se fusionan con la calidez de la vainilla, creando una estela duradera y envolvente.',
+    image: image_basePath + 'viktor_rolf_spicebomb_extreme.webp',
+    notes: {
+      top: 'lavanda, comino, canela, azafrán',
+      middle: 'tabaco, bourbon',
+      base: 'vainilla'
+    },
+    options: [
+      { name: '5ml', price: 90.0, status: ItemStatus.Available },
+      { name: '10ml', price: 180.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined
+  },
+  {
+    id: 116,
+    house: 'Azzaro',
+    name: 'The Most Wanted Eau de Toilette Intense',
+    description:
+      'Es una fragancia de la familia olfativa Fougère Amaderada para hombres. Esta esencia audaz y carismática se abre con una nota vibrante de bergamota verde mediterránea, seguida por un corazón de lavanda ardiente que aporta intensidad y profundidad. En el fondo, un acorde de licor de musgo añade una calidez terrosa y seductora, creando una estela inolvidable.',
+    image: image_basePath + 'azzaro_the_most_wanted_intense.jpg',
+    notes: {
+      top: 'bergamota',
+      middle: 'lavanda',
+      base: 'licor, musgo'
+    },
+    options: [
+      { name: '5ml', price: 90.0, status: ItemStatus.Available },
+      { name: '10ml', price: 180.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined
   }
 ];
 
