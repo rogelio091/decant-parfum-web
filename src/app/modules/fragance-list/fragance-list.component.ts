@@ -12,7 +12,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
-import { MessengerService } from 'app/core/services/messenger.service';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { ShoppingCartService } from 'app/core/services/shopping-cart.service';
 import { OptionDialogComponent } from './option-dialog/option-dialog.component';

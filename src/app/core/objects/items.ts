@@ -1,4 +1,4 @@
-import { Gender, Item, ItemStatus } from 'app/core/models/item.type';
+import { Gender, Item, ItemStatus, SizeOptions } from 'app/core/models/item.type';
 
 const image_basePath = 'images/fragances/';
 
@@ -16,8 +16,8 @@ export const items_catalogue_general: Item[] = [
       base: 'sándalo, almizcle'
     },
     options: [
-      { name: '5ml', price: 30.0, status: ItemStatus.Available },
-      { name: '10ml', price: 60.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 30.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 60.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine, // Add appropriate gender here
     status: undefined
@@ -35,8 +35,8 @@ export const items_catalogue_general: Item[] = [
       base: 'praliné, caramelo, vainilla, pachulí, incienso, regaliz, cumarina, papiro de Egipto'
     },
     options: [
-      { name: '5ml', price: 50.0, status: ItemStatus.Available },
-      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined
@@ -54,8 +54,8 @@ export const items_catalogue_general: Item[] = [
       base: 'jengibre, sándalo, pachulí, jazmín'
     },
     options: [
-      { name: '5ml', price: 70.0, status: ItemStatus.Available },
-      { name: '10ml', price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
     status: undefined
@@ -72,8 +72,8 @@ export const items_catalogue_general: Item[] = [
       base: 'almizcle, ámbar, naranja'
     },
     options: [
-      { name: '5ml', price: 60.0, status: ItemStatus.Available },
-      { name: '10ml', price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -91,8 +91,8 @@ export const items_catalogue_general: Item[] = [
       base: 'ciprés, pino, cedro, ámbar'
     },
     options: [
-      { name: '5ml', price: 60.0, status: ItemStatus.Available },
-      { name: '10ml', price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -111,8 +111,8 @@ export const items_catalogue_general: Item[] = [
     },
 
     options: [
-      { name: '5ml', price: 80.0, status: ItemStatus.Available },
-      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
     status: undefined,
@@ -130,8 +130,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, haba tonka, ámbar, pachulí'
     },
     options: [
-      { name: '5ml', price: 50.0, status: ItemStatus.Available },
-      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -150,8 +150,8 @@ export const items_catalogue_general: Item[] = [
     },
 
     options: [
-      { name: '5ml', price: 70.0, status: ItemStatus.Available },
-      { name: '10ml', price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
     status: undefined,
@@ -169,8 +169,8 @@ export const items_catalogue_general: Item[] = [
       base: 'sándalo, heliotropo'
     },
     options: [
-      { name: '5ml', price: 60.0, status: ItemStatus.Available },
-      { name: '10ml', price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -188,8 +188,8 @@ export const items_catalogue_general: Item[] = [
       base: 'ambroxan, vetiver, cedro'
     },
     options: [
-      { name: '5ml', price: 60.0, status: ItemStatus.Available },
-      { name: '10ml', price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -208,8 +208,8 @@ export const items_catalogue_general: Item[] = [
     },
 
     options: [
-      { name: '5ml', price: 70.0, status: ItemStatus.Available },
-      { name: '10ml', price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -227,8 +227,8 @@ export const items_catalogue_general: Item[] = [
       base: 'pachulí, vainilla, almizcle, vetiver'
     },
     options: [
-      { name: '5ml', price: 70.0, status: ItemStatus.Available },
-      { name: '10ml', price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -246,8 +246,8 @@ export const items_catalogue_general: Item[] = [
       base: 'sándalo, ámbar, caramelo, musgo'
     },
     options: [
-      { name: '5ml', price: 35.0, status: ItemStatus.Available },
-      { name: '10ml', price: 70.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 35.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 70.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -266,8 +266,8 @@ export const items_catalogue_general: Item[] = [
     },
 
     options: [
-      { name: '5ml', price: 80.0, status: ItemStatus.Available },
-      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -285,8 +285,8 @@ export const items_catalogue_general: Item[] = [
       base: 'almizcle blanco, vainilla, ámbar'
     },
     options: [
-      { name: '5ml', price: 90.0, status: ItemStatus.Available },
-      { name: '10ml', price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -304,8 +304,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla cremosa, ámbar, sándalo, almizcle'
     },
     options: [
-      { name: '5ml', price: 60.0, status: ItemStatus.Available },
-      { name: '10ml', price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
     status: undefined,
@@ -324,8 +324,8 @@ export const items_catalogue_general: Item[] = [
     },
 
     options: [
-      { name: '5ml', price: 70.0, status: ItemStatus.Available },
-      { name: '10ml', price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -344,8 +344,8 @@ export const items_catalogue_general: Item[] = [
     },
 
     options: [
-      { name: '5ml', price: 70.0, status: ItemStatus.Available },
-      { name: '10ml', price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -364,8 +364,8 @@ export const items_catalogue_general: Item[] = [
     },
 
     options: [
-      { name: '5ml', price: 60.0, status: ItemStatus.Available },
-      { name: '10ml', price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -384,8 +384,8 @@ export const items_catalogue_general: Item[] = [
     },
 
     options: [
-      { name: '5ml', price: 40.0, status: ItemStatus.Available },
-      { name: '10ml', price: 80.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 40.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 80.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -403,8 +403,8 @@ export const items_catalogue_general: Item[] = [
       base: 'cedro del Atlas, cedro del Himalaya, cedro de Virginia'
     },
     options: [
-      { name: '5ml', price: 80.0, status: ItemStatus.Available },
-      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -423,8 +423,8 @@ export const items_catalogue_general: Item[] = [
     },
 
     options: [
-      { name: '5ml', price: 50.0, status: ItemStatus.Available },
-      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -443,8 +443,8 @@ export const items_catalogue_general: Item[] = [
     },
 
     options: [
-      { name: '5ml', price: 80.0, status: ItemStatus.Available },
-      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -462,8 +462,8 @@ export const items_catalogue_general: Item[] = [
       base: 'sándalo australiano, vainilla Bourbon, haba tonka, notas amaderadas oscuras, Amberwood'
     },
     options: [
-      { name: '5ml', price: 90.0, status: ItemStatus.Available },
-      { name: '10ml', price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -482,8 +482,8 @@ export const items_catalogue_general: Item[] = [
     },
 
     options: [
-      { name: '5ml', price: 40.0, status: ItemStatus.Available },
-      { name: '10ml', price: 80.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 40.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 80.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -502,8 +502,8 @@ export const items_catalogue_general: Item[] = [
     },
 
     options: [
-      { name: '5ml', price: 60.0, status: ItemStatus.Available },
-      { name: '10ml', price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -521,8 +521,8 @@ export const items_catalogue_general: Item[] = [
       base: 'ámbar, tabaco, cedro'
     },
     options: [
-      { name: '5ml', price: 90.0, status: ItemStatus.Available },
-      { name: '10ml', price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -540,8 +540,8 @@ export const items_catalogue_general: Item[] = [
       base: 'ámbar, almizcle, vainilla, vetiver'
     },
     options: [
-      { name: '5ml', price: 90.0, status: ItemStatus.Available },
-      { name: '10ml', price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -559,8 +559,8 @@ export const items_catalogue_general: Item[] = [
       base: 'almizcles, maderas de ámbar, raíz de lirio, cedro'
     },
     options: [
-      { name: '5ml', price: 60.0, status: ItemStatus.Available },
-      { name: '10ml', price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -578,8 +578,8 @@ export const items_catalogue_general: Item[] = [
       base: 'incienso de olíbano, pachulí'
     },
     options: [
-      { name: '5ml', price: 90.0, status: ItemStatus.Available },
-      { name: '10ml', price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -597,8 +597,8 @@ export const items_catalogue_general: Item[] = [
       base: 'almizcle, pachulí, ámbar mineral'
     },
     options: [
-      { name: '5ml', price: 70.0, status: ItemStatus.Available },
-      { name: '10ml', price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -616,8 +616,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, ámbar, haba tonka, gamuza'
     },
     options: [
-      { name: '5ml', price: 100.0, status: ItemStatus.Available },
-      { name: '10ml', price: 200.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 100.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 200.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -635,8 +635,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla de Madagascar, sándalo australiano, cedro del Himalaya'
     },
     options: [
-      { name: '5ml', price: 90.0, status: ItemStatus.Available },
-      { name: '10ml', price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -654,8 +654,8 @@ export const items_catalogue_general: Item[] = [
       base: 'cedro de Virginia, almizcle'
     },
     options: [
-      { name: '5ml', price: 80.0, status: ItemStatus.Available },
-      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -673,8 +673,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vetiver, ámbar, vainilla, musgo, madera de teca'
     },
     options: [
-      { name: '5ml', price: 110.0, status: ItemStatus.Available },
-      { name: '10ml', price: 220.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 110.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 220.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -692,8 +692,8 @@ export const items_catalogue_general: Item[] = [
       base: 'haba tonka, ámbar, incienso'
     },
     options: [
-      { name: '5ml', price: 40.0, status: ItemStatus.Available },
-      { name: '10ml', price: 80.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 40.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 80.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -711,8 +711,8 @@ export const items_catalogue_general: Item[] = [
       base: 'Physcool®'
     },
     options: [
-      { name: '5ml', price: 100.0, status: ItemStatus.Available },
-      { name: '10ml', price: 200.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 100.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 200.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -730,8 +730,8 @@ export const items_catalogue_general: Item[] = [
       base: 'ládano, cedro'
     },
     options: [
-      { name: '5ml', price: 80.0, status: ItemStatus.Available },
-      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -749,8 +749,8 @@ export const items_catalogue_general: Item[] = [
       base: 'haba tonka, sándalo, ámbar, ámbar gris'
     },
     options: [
-      { name: '5ml', price: 90.0, status: ItemStatus.Available },
-      { name: '10ml', price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -768,8 +768,8 @@ export const items_catalogue_general: Item[] = [
       base: 'sándalo, haba tonka'
     },
     options: [
-      { name: '5ml', price: 90.0, status: ItemStatus.Available },
-      { name: '10ml', price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -787,8 +787,8 @@ export const items_catalogue_general: Item[] = [
       base: 'miel, haba tonka, tabaco'
     },
     options: [
-      { name: '5ml', price: 90.0, status: ItemStatus.Available },
-      { name: '10ml', price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -806,8 +806,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, notas orientales, notas amaderadas'
     },
     options: [
-      { name: '5ml', price: 80.0, status: ItemStatus.Available },
-      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -825,8 +825,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, notas amaderadas'
     },
     options: [
-      { name: '5ml', price: 90.0, status: ItemStatus.Available },
-      { name: '10ml', price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -844,8 +844,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla negra, ámbar, cedro, pachulí'
     },
     options: [
-      { name: '5ml', price: 90.0, status: ItemStatus.Available },
-      { name: '10ml', price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -863,8 +863,8 @@ export const items_catalogue_general: Item[] = [
       base: 'sándalo, almizcle, ámbar'
     },
     options: [
-      { name: '5ml', price: 80.0, status: ItemStatus.Available },
-      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
     status: undefined,
@@ -882,8 +882,8 @@ export const items_catalogue_general: Item[] = [
       base: 'madera de sándalo, madera de cedro'
     },
     options: [
-      { name: '5ml', price: 80.0, status: ItemStatus.Available },
-      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
     status: undefined,
@@ -901,8 +901,8 @@ export const items_catalogue_general: Item[] = [
       base: 'notas amaderadas, musgo, sándalo blanco, haba tonka, ámbar'
     },
     options: [
-      { name: '5ml', price: 90.0, status: ItemStatus.Available },
-      { name: '10ml', price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
     status: undefined,
@@ -920,8 +920,8 @@ export const items_catalogue_general: Item[] = [
       base: 'té negro chino, madera de guayaco, olíbano, ambroxan'
     },
     options: [
-      { name: '5ml', price: 90.0, status: ItemStatus.Available },
-      { name: '10ml', price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
     status: undefined,
@@ -939,8 +939,8 @@ export const items_catalogue_general: Item[] = [
       base: 'pimienta rosa, pachulí'
     },
     options: [
-      { name: '5ml', price: 90.0, status: ItemStatus.Available },
-      { name: '10ml', price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
     status: undefined,
@@ -958,8 +958,8 @@ export const items_catalogue_general: Item[] = [
       base: 'ámbar, almizcle, vainilla'
     },
     options: [
-      { name: '5ml', price: 80.0, status: ItemStatus.Available },
-      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
     status: undefined,
@@ -977,8 +977,8 @@ export const items_catalogue_general: Item[] = [
       base: 'ámbar, vainilla de Madagascar, almizcle blanco'
     },
     options: [
-      { name: '5ml', price: 80.0, status: ItemStatus.Available },
-      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
     status: undefined,
@@ -996,8 +996,8 @@ export const items_catalogue_general: Item[] = [
       base: 'caramelo, café'
     },
     options: [
-      { name: '5ml', price: 80.0, status: ItemStatus.Available },
-      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
     status: undefined,
@@ -1015,8 +1015,8 @@ export const items_catalogue_general: Item[] = [
       base: 'notas amaderadas, almizcle'
     },
     options: [
-      { name: '5ml', price: 80.0, status: ItemStatus.Available },
-      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
     status: undefined,
@@ -1034,8 +1034,8 @@ export const items_catalogue_general: Item[] = [
       base: 'almizcle, ambroxan, sándalo, musgo, notas amaderadas'
     },
     options: [
-      { name: '5ml', price: 100.0, status: ItemStatus.Available },
-      { name: '10ml', price: 200.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 100.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 200.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -1053,8 +1053,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, ámbar, madera seca, benjuí, ládano'
     },
     options: [
-      { name: '5ml', price: 50.0, status: ItemStatus.Available },
-      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -1072,8 +1072,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, incienso'
     },
     options: [
-      { name: '5ml', price: 50.0, status: ItemStatus.Available },
-      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -1091,8 +1091,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, praliné, almizcle'
     },
     options: [
-      { name: '5ml', price: 70.0, status: ItemStatus.Available },
-      { name: '10ml', price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -1110,8 +1110,8 @@ export const items_catalogue_general: Item[] = [
       base: 'ámbar, sándalo, castaña'
     },
     options: [
-      { name: '5ml', price: 60.0, status: ItemStatus.Available },
-      { name: '10ml', price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -1129,8 +1129,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, haba tonka, almizcle'
     },
     options: [
-      { name: '5ml', price: 80.0, status: ItemStatus.Available },
-      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -1148,8 +1148,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, haba tonka, ámbar, cedro, incienso, pachulí'
     },
     options: [
-      { name: '5ml', price: 80.0, status: ItemStatus.Available },
-      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -1167,8 +1167,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, cachemira, sándalo, musgo'
     },
     options: [
-      { name: '5ml', price: 50.0, status: ItemStatus.Available },
-      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
     status: undefined,
@@ -1186,8 +1186,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, haba tonka, benjuí, mirra, amberwood, akigalawood'
     },
     options: [
-      { name: '5ml', price: 50.0, status: ItemStatus.Available },
-      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
     status: undefined,
@@ -1205,8 +1205,8 @@ export const items_catalogue_general: Item[] = [
       base: 'café, vainilla, haba tonka, benjuí, almizcle'
     },
     options: [
-      { name: '5ml', price: 50.0, status: ItemStatus.Available },
-      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
     status: undefined,
@@ -1224,8 +1224,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, almizcle'
     },
     options: [
-      { name: '5ml', price: 50.0, status: ItemStatus.Available },
-      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -1243,8 +1243,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, almizcle, sándalo'
     },
     options: [
-      { name: '5ml', price: 50.0, status: ItemStatus.Available },
-      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -1262,8 +1262,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, ámbar, sándalo, almizcle'
     },
     options: [
-      { name: '5ml', price: 50.0, status: ItemStatus.Available },
-      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -1281,8 +1281,8 @@ export const items_catalogue_general: Item[] = [
       base: 'pachulí, sándalo'
     },
     options: [
-      { name: '5ml', price: 50.0, status: ItemStatus.Available },
-      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -1300,8 +1300,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, almizcle, cachemira'
     },
     options: [
-      { name: '5ml', price: 50.0, status: ItemStatus.Available },
-      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -1319,8 +1319,8 @@ export const items_catalogue_general: Item[] = [
       base: 'ambroxan, ámbar, ládano'
     },
     options: [
-      { name: '5ml', price: 70.0, status: ItemStatus.Available },
-      { name: '10ml', price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -1338,8 +1338,8 @@ export const items_catalogue_general: Item[] = [
       base: 'ambroxan, pachulí, vainilla, vetiver'
     },
     options: [
-      { name: '5ml', price: 70.0, status: ItemStatus.Available },
-      { name: '10ml', price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -1357,8 +1357,8 @@ export const items_catalogue_general: Item[] = [
       base: 'ambroxan, Akigalawood, hojas de pachulí de Indonesia, vaina de cacao'
     },
     options: [
-      { name: '5ml', price: 70.0, status: ItemStatus.Available },
-      { name: '10ml', price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -1376,8 +1376,8 @@ export const items_catalogue_general: Item[] = [
       base: 'madera de cedro, pachulí'
     },
     options: [
-      { name: '5ml', price: 80.0, status: ItemStatus.Available },
-      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -1395,8 +1395,8 @@ export const items_catalogue_general: Item[] = [
       base: 'cedro azul, ébano negro, vetiver'
     },
     options: [
-      { name: '5ml', price: 80.0, status: ItemStatus.Available },
-      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -1414,8 +1414,8 @@ export const items_catalogue_general: Item[] = [
       base: 'sándalo, cachemira, almizcle'
     },
     options: [
-      { name: '5ml', price: 90.0, status: ItemStatus.Available },
-      { name: '10ml', price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -1433,8 +1433,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, cedro, musgo'
     },
     options: [
-      { name: '5ml', price: 90.0, status: ItemStatus.Available },
-      { name: '10ml', price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -1452,8 +1452,8 @@ export const items_catalogue_general: Item[] = [
       base: 'almizcle, iris blanco'
     },
     options: [
-      { name: '5ml', price: 80.0, status: ItemStatus.Available },
-      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -1471,8 +1471,8 @@ export const items_catalogue_general: Item[] = [
       base: 'musgo de roble, ámbar, notas amaderadas'
     },
     options: [
-      { name: '5ml', price: 80.0, status: ItemStatus.Available },
-      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -1490,8 +1490,8 @@ export const items_catalogue_general: Item[] = [
       base: 'ámbar gris, almizcle, trozos de madera a la deriva, pachulí'
     },
     options: [
-      { name: '5ml', price: 70.0, status: ItemStatus.Available },
-      { name: '10ml', price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -1509,8 +1509,8 @@ export const items_catalogue_general: Item[] = [
       base: 'musgo, madera flotante, ámbar, almizcle'
     },
     options: [
-      { name: '5ml', price: 80.0, status: ItemStatus.Available },
-      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -1528,8 +1528,8 @@ export const items_catalogue_general: Item[] = [
       base: 'praliné, pachulí, vetiver'
     },
     options: [
-      { name: '5ml', price: 70.0, status: ItemStatus.Available },
-      { name: '10ml', price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -1547,8 +1547,8 @@ export const items_catalogue_general: Item[] = [
       base: 'magnolia, jazmín, cedro, sándalo, cuero'
     },
     options: [
-      { name: '5ml', price: 60.0, status: ItemStatus.Available },
-      { name: '10ml', price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -1566,8 +1566,8 @@ export const items_catalogue_general: Item[] = [
       base: 'sándalo, almizcle, ámbar'
     },
     options: [
-      { name: '5ml', price: 80.0, status: ItemStatus.Available },
-      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -1585,8 +1585,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, cedro, sándalo, pachulí, naranja amarga, cuero'
     },
     options: [
-      { name: '5ml', price: 60.0, status: ItemStatus.Available },
-      { name: '10ml', price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -1604,8 +1604,8 @@ export const items_catalogue_general: Item[] = [
       base: 'pachulí de Indonesia, almizcle, musgo de roble'
     },
     options: [
-      { name: '5ml', price: 90.0, status: ItemStatus.Available },
-      { name: '10ml', price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -1623,8 +1623,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, haba tonka, sándalo, cedro de Texas, pachulí, musgo de roble'
     },
     options: [
-      { name: '5ml', price: 70.0, status: ItemStatus.Available },
-      { name: '10ml', price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -1642,8 +1642,8 @@ export const items_catalogue_general: Item[] = [
       base: 'madera de oud, pachulí, Leatherwood'
     },
     options: [
-      { name: '5ml', price: 70.0, status: ItemStatus.Available },
-      { name: '10ml', price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -1661,8 +1661,8 @@ export const items_catalogue_general: Item[] = [
       base: 'ambroxan, Iso E Super, Sylkolide, cedro de Virginia, Árbol de Belambra'
     },
     options: [
-      { name: '5ml', price: 80.0, status: ItemStatus.Available },
-      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -1680,8 +1680,8 @@ export const items_catalogue_general: Item[] = [
       base: 'haba tonka, almizcle, ámbar'
     },
     options: [
-      { name: '5ml', price: 60.0, status: ItemStatus.Available },
-      { name: '10ml', price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -1699,8 +1699,8 @@ export const items_catalogue_general: Item[] = [
       base: 'sándalo, cedro de Virginia, olivo, almizcle'
     },
     options: [
-      { name: '5ml', price: 60.0, status: ItemStatus.Available },
-      { name: '10ml', price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -1719,8 +1719,8 @@ export const items_catalogue_general: Item[] = [
       base: 'hojas de tabaco, vainilla, haba tonka'
     },
     options: [
-      { name: '5ml', price: 180.0, status: ItemStatus.Available },
-      { name: '10ml', price: 360.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 180.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 360.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
     status: undefined,
@@ -1738,8 +1738,8 @@ export const items_catalogue_general: Item[] = [
       base: 'almizcle blanco, vainilla de Madagascar, ámbar'
     },
     options: [
-      { name: '5ml', price: 160.0, status: ItemStatus.Available },
-      { name: '10ml', price: 320.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 160.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 320.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
     status: undefined,
@@ -1757,8 +1757,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla de Madagascar, almizcle, cedro, ámbar gris'
     },
     options: [
-      { name: '5ml', price: 100.0, status: ItemStatus.Available },
-      { name: '10ml', price: 200.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 100.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 200.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -1776,8 +1776,8 @@ export const items_catalogue_general: Item[] = [
       base: 'Ambrofix™, pachulí'
     },
     options: [
-      { name: '5ml', price: 90.0, status: ItemStatus.Available },
-      { name: '10ml', price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -1795,8 +1795,8 @@ export const items_catalogue_general: Item[] = [
       base: 'amberwood, haba tonka, cedro, vetiver, incienso de olíbano'
     },
     options: [
-      { name: '5ml', price: 80.0, status: ItemStatus.Available },
-      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -1815,8 +1815,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, almizcle blanco, sándalo, ambroxan'
     },
     options: [
-      { name: '5ml', price: 50.0, status: ItemStatus.Available },
-      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined
@@ -1834,8 +1834,8 @@ export const items_catalogue_general: Item[] = [
       base: 'ámbar, pachulí'
     },
     options: [
-      { name: '5ml', price: 50.0, status: ItemStatus.Available },
-      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined
@@ -1853,8 +1853,8 @@ export const items_catalogue_general: Item[] = [
       base: 'sándalo, cachemira, vainilla'
     },
     options: [
-      { name: '5ml', price: 50.0, status: ItemStatus.Available },
-      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined
@@ -1872,8 +1872,8 @@ export const items_catalogue_general: Item[] = [
       base: 'madera de oud, pachulí, incienso'
     },
     options: [
-      { name: '5ml', price: 50.0, status: ItemStatus.Available },
-      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
     status: undefined
@@ -1891,8 +1891,8 @@ export const items_catalogue_general: Item[] = [
       base: 'postre de frutos rojos, vainilla, almizcle, sándalo'
     },
     options: [
-      { name: '5ml', price: 60.0, status: ItemStatus.Available },
-      { name: '10ml', price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined
@@ -1910,8 +1910,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, almizcle blanco, pachulí, cedro'
     },
     options: [
-      { name: '5ml', price: 50.0, status: ItemStatus.Available },
-      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined
@@ -1929,8 +1929,8 @@ export const items_catalogue_general: Item[] = [
       base: 'almizcle, vetiver, cedro'
     },
     options: [
-      { name: '5ml', price: 70.0, status: ItemStatus.Available },
-      { name: '10ml', price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined
@@ -1948,8 +1948,8 @@ export const items_catalogue_general: Item[] = [
       base: 'sándalo'
     },
     options: [
-      { name: '5ml', price: 50.0, status: ItemStatus.Available },
-      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined
@@ -1967,8 +1967,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, sándalo, almizcle'
     },
     options: [
-      { name: '5ml', price: 60.0, status: ItemStatus.Available },
-      { name: '10ml', price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined
@@ -1986,8 +1986,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, ámbar'
     },
     options: [
-      { name: '5ml', price: 50.0, status: ItemStatus.Available },
-      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined
@@ -2005,8 +2005,8 @@ export const items_catalogue_general: Item[] = [
       base: 'ámbar, haba tonka, sándalo'
     },
     options: [
-      { name: '5ml', price: 50.0, status: ItemStatus.Available },
-      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined
@@ -2024,8 +2024,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, haba tonka, cumarina'
     },
     options: [
-      { name: '5ml', price: 50.0, status: ItemStatus.Available },
-      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined
@@ -2043,8 +2043,8 @@ export const items_catalogue_general: Item[] = [
       base: 'ámbar, sándalo, pachulí'
     },
     options: [
-      { name: '5ml', price: 50.0, status: ItemStatus.Available },
-      { name: '10ml', price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined
@@ -2062,8 +2062,8 @@ export const items_catalogue_general: Item[] = [
       base: 'sándalo, madera de oud'
     },
     options: [
-      { name: '5ml', price: 70.0, status: ItemStatus.Available },
-      { name: '10ml', price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
     status: undefined
