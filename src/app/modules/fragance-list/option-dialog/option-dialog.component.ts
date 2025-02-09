@@ -6,7 +6,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { DialogLayoutComponent } from 'app/components/dialog-layout/dialog-layout.component';
 import { DialogData } from 'app/core/models/dialog.type';
 import { ItemOptions, ItemStatus } from 'app/core/models/item.type';
-import { UserDialogComponent } from 'app/modules/users/user-dialog/user-dialog.component';
 
 @Component({
   selector: 'app-option-dialog',
@@ -27,7 +26,7 @@ export class OptionDialogComponent {
   itemStatus = ItemStatus;
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: DialogData,
-    private dialogRef: MatDialogRef<UserDialogComponent>
+    private dialogRef: MatDialogRef<OptionDialogComponent>
   ) {}
 
   selectOption(option: ItemOptions): void {

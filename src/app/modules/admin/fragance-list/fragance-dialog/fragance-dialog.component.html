@@ -8,21 +8,13 @@
     </ng-container>
 
     <ng-container main>
-        @if(dismissAlert()){
-        <fuse-alert [type]="'warn'" [dismissible]="true" [dismissed]="true" [name]="'alertFields'">
-            <span fuseAlertTitle>Campos no válidos</span>
-            Llena todos los campos requeridos.
-        </fuse-alert>
-        }
 
-        <app-dinamic-form [dataForm$]="formUser$" [stateForm$]="stateFormUser$"
-            (returnData)="actionForm($event)"></app-dinamic-form>
-        <div *ngIf="this.data.item" class="text-md font-medium text-secondary">
-            <!-- <span></span> -->
-            <button mat-button color='accent' (click)="sendResetPassword()" class="ml-1 mb-1 hover:underline">Reiniciar
-                contraseña
-            </button>
-        </div>
+        <!-- <app-dinamic-form [dataForm$]="formFragance$" [stateForm$]="stateFormFragance$"
+            (returnData)="actionForm($event)"></app-dinamic-form> -->
+
+        <ngx-json-viewer [json]="objecJson()"></ngx-json-viewer>
+
+
     </ng-container>
     <ng-container btn>
         <!-- Cancel -->

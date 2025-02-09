@@ -1,0 +1,18 @@
+<div class='flex flex-col w-full p-4'>
+    <button mat-flat-button (click)="newFragance()"
+        class='hover:scale-105 transform transition w-fit self-center'>Agregar Perfume
+    </button>
+    <div class="grid gap-2 grid-cols-auto-fill w-full m-2">
+        @for(item of fragances(); track item){
+        <div class='flex'>
+            <button mat-flat-button (click)="openPerfumeDialog(item)"
+                [ngClass]="[existsInKv(item) ? 'bg-accent-300' : 'bg-white', item.status === 0 ? 'text-black' : 'text-red-600' ]"
+                class='hover:scale-105 transform transition'>
+                {{item.name}}</button>
+
+        </div>
+        }
+
+    </div>
+
+</div>
