@@ -1,0 +1,30 @@
+<app-dialog-layout [data]="data" (keydown.enter)="executeFormValue()">
+    <ng-container closeBtn>
+        <div class="absolute top-0 right-0 pt-4 pr-4">
+            <button mat-icon-button [matDialogClose]="undefined">
+                <mat-icon class="text-secondary" [svgIcon]="'heroicons_outline:x-mark'"></mat-icon>
+            </button>
+        </div>
+    </ng-container>
+
+    <ng-container main>
+
+        <!-- <app-dinamic-form [dataForm$]="formFragance$" [stateForm$]="stateFormFragance$"
+            (returnData)="actionForm($event)"></app-dinamic-form> -->
+
+        <ngx-json-viewer [json]="objecJson()"></ngx-json-viewer>
+
+
+    </ng-container>
+    <ng-container btn>
+        <!-- Cancel -->
+        <button class='hover:scale-105' mat-stroked-button [matDialogClose]="undefined">
+            Cancelar
+        </button>
+
+        <!-- Confirm -->
+        <button class='hover:scale-105' mat-flat-button color="primary" (click)="executeFormValue()">
+            {{data.actions.confirm.label}}
+        </button>
+    </ng-container>
+</app-dialog-layout>

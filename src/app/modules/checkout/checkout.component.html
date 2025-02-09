@@ -89,12 +89,23 @@
 
         <div class='flex flex-col items-center'>
             <fuse-alert [type]="'warning'">
-                <span fuseAlertTitle>Información de envío</span>
-                <span class="sm:text-md text-sm text-pretty">El costo de envío dentro de la ciudad de Guatemala / Mixco
-                    tiene un
-                    costo de
-                    Q.35.<br> Para el resto del
-                    país se envía por medio de Forza y dependerá del departamento y municipio destino.</span>
+                <span fuseAlertTitle>Información de pago y envío</span>
+                <span class="sm:text-md text-sm text-pretty">
+                    <ul>
+                        <li>
+                            El costo de envío dentro de la ciudad de Guatemala / Mixco
+                            tiene un
+                            costo de
+                            Q.35.<br> <strong>(Puedes cancelar al recibir tu pedido)</strong>
+                        </li><br>
+                        <li>
+                            Para el resto del país se envía por medio de Forza, el costo dependerá del
+                            departamento y municipio destino.<br> <strong>(
+                                Únicamente se envía por medio de pago anticipado - deposito/transferencia)</strong>
+
+                        </li>
+                    </ul>
+                </span>
             </fuse-alert>
             <span class="font-semibold">ENVIA TU PEDIDO A WHATSAPP</span>
             <picture>

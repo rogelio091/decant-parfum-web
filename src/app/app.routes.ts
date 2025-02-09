@@ -98,14 +98,14 @@ export const appRoutes: Route[] = [
       {
         path: 'faqs',
         loadComponent: () => import('app/modules/faqs/faqs.component').then((m) => m.FaqsComponent)
-      },
-      {
-        path: 'fragances',
-        loadComponent: () =>
-          import('app/modules/admin/fragance-list/fragance-list.component').then(
-            (m) => m.FraganceListComponent
-          )
       }
+      // {
+      //   path: 'fragances',
+      //   loadComponent: () =>
+      //     import('app/modules/admin/fragance-list/fragance-list.component').then(
+      //       (m) => m.FraganceListComponent
+      //     )
+      // }
       // {
       //   path: 'users',
       //   // canActivate: [verifyPermissionGuard],

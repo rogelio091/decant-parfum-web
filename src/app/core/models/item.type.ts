@@ -1,5 +1,5 @@
 export type Item = {
-  id: number;
+  id?: number;
   house: string;
   name: string;
   description: string;
@@ -55,4 +55,42 @@ export function calculateIsFullBottle(options: ItemOptions[]): boolean {
   return options.some(
     (option) => option.name !== SizeOptions.ML5 && option.name !== SizeOptions.ML10
   );
+}
+
+export function InitializeItem(): Item {
+  return {
+    house: '',
+    name: '',
+    description: '',
+    image: '',
+    notes: {
+      top: '',
+      middle: '',
+      base: ''
+    },
+    options: [
+      {
+        name: SizeOptions.ML5,
+        price: 0,
+        status: ItemStatus.Available
+      },
+      {
+        name: SizeOptions.ML10,
+        price: 0,
+        status: ItemStatus.Available
+      },
+      {
+        name: SizeOptions.ML50,
+        price: 0,
+        status: ItemStatus.Available
+      },
+      {
+        name: SizeOptions.ML100,
+        price: 0,
+        status: ItemStatus.Available
+      }
+    ],
+    gender: undefined,
+    status: 0
+  };
 }

@@ -482,8 +482,8 @@ export const items_catalogue_general: Item[] = [
     },
 
     options: [
-      { name: SizeOptions.ML5, price: 40.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 80.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 40.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 80.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -2081,8 +2081,8 @@ export const items_catalogue_general: Item[] = [
       base: 'almizcle, maderas blancas, styrax, pachulí'
     },
     options: [
-      { name: '5ml', price: 80.0, status: ItemStatus.Available },
-      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined
@@ -2101,8 +2101,8 @@ export const items_catalogue_general: Item[] = [
       base: 'manteca de cacao, acorde de cuero, madera de cedro de Virginia'
     },
     options: [
-      { name: '5ml', price: 110.0, status: ItemStatus.Available },
-      { name: '10ml', price: 220.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 110.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 220.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined
@@ -2120,8 +2120,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, pachulí, ámbar'
     },
     options: [
-      { name: '5ml', price: 70.0, status: ItemStatus.Available },
-      { name: '10ml', price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
     status: undefined
@@ -2139,8 +2139,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla'
     },
     options: [
-      { name: '5ml', price: 90.0, status: ItemStatus.Available },
-      { name: '10ml', price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined
@@ -2158,8 +2158,8 @@ export const items_catalogue_general: Item[] = [
       base: 'patchouli'
     },
     options: [
-      { name: '5ml', price: 90.0, status: ItemStatus.Available },
-      { name: '10ml', price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined
@@ -2177,8 +2177,8 @@ export const items_catalogue_general: Item[] = [
       base: 'cedro, cuero'
     },
     options: [
-      { name: '5ml', price: 80.0, status: ItemStatus.Available },
-      { name: '10ml', price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined
@@ -2196,8 +2196,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla'
     },
     options: [
-      { name: '5ml', price: 90.0, status: ItemStatus.Available },
-      { name: '10ml', price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined
@@ -2215,10 +2215,200 @@ export const items_catalogue_general: Item[] = [
       base: 'licor, musgo'
     },
     options: [
-      { name: '5ml', price: 90.0, status: ItemStatus.Available },
-      { name: '10ml', price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
+    status: undefined
+  },
+  {
+    id: 117,
+    house: 'Calvin Klein',
+    name: 'CK One',
+    description:
+      'Esta esencia fresca y juvenil se abre con notas vibrantes de piña, mandarina, papaya, bergamota, cardamomo y limón. En el corazón, se despliegan acordes florales de nuez moscada, violeta, raíz de lirio, jazmín, lirio de los valles, rosa y fresia. La base combina sándalo, ámbar, almizcle, cedro, musgo de roble, té verde y acordes verdes, creando una estela limpia y versátil.',
+    image: image_basePath + 'calvin_klein_ck_one.jpeg',
+    notes: {
+      top: 'piña, mandarina, papaya, bergamota, cardamomo, limón',
+      middle: 'nuez moscada, violeta, raíz de lirio, jazmín, lirio de los valles, rosa, fresia',
+      base: 'sándalo, ámbar, almizcle, cedro, musgo de roble, té verde, acordes verdes'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined
+  },
+  {
+    id: 118,
+    house: 'Calvin Klein',
+    name: 'CK One Shock For Her',
+    description:
+      'Esta esencia audaz y seductora se abre con notas vibrantes de flor de pasionaria, amapola roja y peonía. En el corazón, se despliegan acordes de chocolate mexicano, zarzamora, narciso y jazmín, aportando una dulzura intrigante. La base combina vainilla, almizcle, ámbar y pachulí, creando una estela cálida y envolvente.',
+    image: image_basePath + 'calvin_klein_ck_one_shock_for_her.jpg',
+    notes: {
+      top: 'flor de pasionaria, amapola roja, peonía',
+      middle: 'chocolate mexicano, zarzamora, narciso, jazmín',
+      base: 'vainilla, almizcle, ámbar, pachulí'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined
+  },
+  {
+    id: 119,
+    house: 'Calvin Klein',
+    name: 'CK One Shock For Him',
+    description:
+      'Fragancia atrevida y juvenil que rompe con la frescura habitual de la línea CK One, optando por un perfil más oscuro y especiado. Su apertura combina la energía cítrica de la clementina con el frescor de la lavanda y un toque inesperado de pepino. En el corazón, las especias toman protagonismo con un mix de cardamomo, pimienta y albahaca, aportando un carácter vibrante y ligeramente terroso. La base es cálida y adictiva, con un acorde de tabaco dulce fusionado con ámbar y pachulí, dejando una estela sensual y envolvente. Ideal para quienes buscan un aroma moderno y seductor sin perder versatilidad.',
+    image: image_basePath + 'calvin_klein_ck_one_shock_for_him.webp',
+    notes: {
+      top: 'clementina, lavanda, pepino',
+      middle: 'cardamomo, pimienta, albahaca',
+      base: 'tabaco, ámbar, pachulí, notas amaderadas'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined
+  },
+  {
+    id: 120,
+    house: 'Al Haramain',
+    name: 'Dubai Night',
+    description:
+      'Fragancia opulenta y misteriosa que evoca la energía vibrante de las noches en Dubái. Su inicio es especiado y exótico, con un toque de azafrán y resinas que se combinan con la frescura cítrica de la bergamota. A medida que evoluciona, el oud toma protagonismo, acompañado por una rosa aterciopelada y un matiz floral elegante que aporta profundidad. La base es cálida y envolvente, con ámbar y haba tonka que suavizan la intensidad del oud, mientras el almizcle blanco y el musgo de roble le dan un toque sofisticado. Es una fragancia intensa y seductora, ideal para quienes buscan un aroma con presencia y personalidad.',
+    image: image_basePath + 'al_haramain_dubai_night.webp',
+    notes: {
+      top: 'azafrán, bergamota, resina de elemi',
+      middle: 'oud, rosa de Bulgaria, lirio de los valles',
+      base: 'haba tonka, ámbar, almizcle blanco, musgo de roble'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined
+  },
+  {
+    id: 121,
+    house: 'Armaf',
+    name: 'Club de Nuit Precieux',
+    description:
+      'Fragancia elegante y moderna que combina lo mejor de los cítricos vibrantes con una base cálida y envolvente. Desde el primer instante, su salida brillante de limón, bergamota y piña despierta los sentidos con un frescor dulce y chispeante, complementado por un toque especiado de pimientas. A medida que evoluciona, las notas amaderadas y florales del corazón suavizan la composición, dando paso a una base rica y sensual de ámbar, vainilla y cuero. Con un equilibrio entre frescura, dulzura y profundidad, esta fragancia es perfecta para quienes buscan un aroma versátil con carácter y sofisticación.',
+    image: image_basePath + 'armaf_club_de_nuit_precieux.jpg',
+    notes: {
+      top: 'piña, limón, pera, caramelo, bergamota, pimienta rosa, pimienta negra',
+      middle: 'musgo de roble, maderas blancas, anís, jazmín, lirio de los valles',
+      base: 'ambroxan, ámbar, vainilla, almizcle blanco, cuero, cedro, pachulí'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 95.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 190.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined
+  },
+  {
+    id: 122,
+    house: 'Carolina Herrera',
+    name: '212 Men Heroes Forever Young',
+    description:
+      'Fragancia llena de energía y rebeldía, diseñada para quienes viven el momento sin miedo a ser auténticos. Su apertura es vibrante y chispeante, con una combinación jugosa de pera y el picante fresco del jengibre, que aporta dinamismo desde el primer instante. En el corazón, el geranio y la salvia añaden un toque verde y aromático, dándole equilibrio y modernidad. La base se asienta con una mezcla de cuero y almizcle, creando un fondo cálido y masculino que deja una estela limpia y ligeramente sensual. Es un aroma versátil y juvenil, ideal para quienes buscan un perfume que refleje actitud y frescura a la vez.',
+    image: image_basePath + 'carolina_herrera_212_men_heroes_forever_young.jpg',
+    notes: {
+      top: 'pera, jengibre',
+      middle: 'geranio, salvia',
+      base: 'almizcle, cuero'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined
+  },
+  {
+    id: 123,
+    house: 'Issey Miyake',
+    name: "L'Eau D'Issey",
+    description:
+      'Es la representación perfecta de frescura y elegancia atemporal. Inspirada en la pureza del agua, su apertura combina la suavidad del loto y el melón con un toque de fresia, evocando la sensación de una brisa cristalina. En el corazón, las flores blancas como el lirio de los valles y la peonía le aportan un carácter delicado pero vibrante, mientras que su base de almizcle y maderas suaves envuelve la piel con una calidez sutil y sofisticada. Es un perfume versátil y ligero, ideal para quienes buscan una fragancia limpia, serena y con un aire refinado.',
+    image: image_basePath + 'issey_miyake_leau_dissey.jpg',
+    notes: {
+      top: 'loto, melón, fresia, agua de rosas, calone',
+      middle: 'lirio de los valles, peonía, clavel',
+      base: 'almizcle, nardos, cedro, sándalo, ámbar'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined
+  },
+  {
+    id: 124,
+    house: 'Issey Miyake',
+    name: "L'Eau d'Issey Pour Homme",
+    description:
+      "L'Eau d'Issey Pour Homme es una fragancia que encapsula la esencia de la frescura y la pureza. Desde su lanzamiento en 1994, se ha convertido en un clásico atemporal para el hombre moderno. La apertura es una explosión cítrica vibrante, dominada por el yuzu, un cítrico japonés que aporta una frescura única y chispeante. A medida que evoluciona, emergen notas especiadas y amaderadas que añaden profundidad y carácter, mientras que una base de almizcle y maderas preciosas proporciona una calidez sutil y duradera. Es una fragancia versátil y equilibrada, perfecta para el uso diario y adecuada para cualquier ocasión.",
+    image: image_basePath + 'issey_miyake_leau_dissey_pour_homme.webp',
+    notes: {
+      top: 'yuzu, limón, bergamota, estragón',
+      middle: 'nuez moscada, lirio de los valles, cilantro, geranio',
+      base: 'almizcle, sándalo, cedro, vetiver, tabaco'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined
+  },
+  {
+    id: 125,
+    house: 'Michael Malul',
+    name: 'Vanilla +Creme for Women',
+    description:
+      'Fragancia reconfortante y envolvente, perfecta para quienes aman los aromas dulces pero equilibrados. Su salida es jugosa y luminosa, con la frescura de la pera y el toque vibrante del pomelo rosado. A medida que evoluciona, un corazón floral cremoso de jazmín y rosa le aporta un aire femenino y delicado. Sin embargo, el verdadero protagonista es su fondo, donde la vainilla y el caramelo se fusionan en una mezcla irresistible, suavizada por un toque almizclado que la hace más sofisticada. Es un aroma cálido y acogedor, ideal para días frescos o momentos en los que simplemente quieres sentirte envuelta en dulzura.',
+    image: image_basePath + 'michael_malul_vanilla_creme.jpg',
+    notes: {
+      top: 'pera, grosella blanca, pomelo rosado',
+      middle: 'jazmín sambac, rosa búlgara, flor de almendro',
+      base: 'vainilla, caramelo, almizcle, vetiver'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined
+  },
+  {
+    id: 126,
+    house: 'Michael Malul',
+    name: 'Sangria + Saffron',
+    description:
+      'Inspirada en la sofisticación de una noche de cócteles con un toque exótico. Su apertura es chispeante y jugosa, con una combinación de manzana verde y naranja que aporta frescura y energía, mientras que el azafrán le da un matiz especiado y lujoso. A medida que evoluciona, emergen notas de frambuesa y rosa damascena, creando un corazón afrutado y floral con un aire seductor. Finalmente, la base se asienta con ámbar gris y gamuza, envolviendo la fragancia en una calidez aterciopelada que deja una estela elegante y envolvente. Es ideal para quienes buscan un aroma moderno, versátil y con carácter.',
+    image: image_basePath + 'michael_malul_sangria_saffron.webp',
+    notes: {
+      top: 'manzana verde, naranja, azafrán',
+      middle: 'frambuesa, rosa damascena, jazmín, lirio de los valles',
+      base: 'ámbar gris, gamuza'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
     status: undefined
   }
 ];
