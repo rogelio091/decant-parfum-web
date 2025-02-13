@@ -2410,6 +2410,25 @@ export const items_catalogue_general: Item[] = [
     ],
     gender: Gender.Unisex,
     status: undefined
+  },
+  {
+    id: 127,
+    house: 'Jean Paul Gaultier',
+    name: 'Le Beau Flower Edition',
+    description:
+      'Fragancia que encapsula la esencia de un edén fantástico y seductor. Al aplicarla, se percibe una explosión vibrante de kumquat jugoso y limón ácido, aportando una frescura cítrica que despierta los sentidos. A medida que evoluciona, el corazón revela la intensidad embriagadora de las hojas de violeta, añadiendo una faceta floral y misteriosa. Finalmente, la base de cashmeran envuelve la composición con una calidez amaderada y envolvente, dejando una estela sensual y duradera. Es una fragancia ideal para quienes buscan una experiencia olfativa que combine frescura, profundidad y un toque de misterio.',
+    image: image_basePath + 'jean_paul_gaultier_le_beau_flower_edition.webp',
+    notes: {
+      top: 'kumquat, limón',
+      middle: 'hojas de violeta',
+      base: 'cashmeran'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined
   }
 ];
 
