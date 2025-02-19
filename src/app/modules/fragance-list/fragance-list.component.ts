@@ -81,7 +81,6 @@ export class FraganceListComponent implements OnInit {
         if (data) this.addToCart(item);
       });
   }
-
   addToCart(item: Item) {
     this._matDialog
       .open(OptionDialogComponent, {
