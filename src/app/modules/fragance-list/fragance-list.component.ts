@@ -38,7 +38,7 @@ export class FraganceListComponent implements OnInit {
   private _shoppingCartService = inject(ShoppingCartService);
   private _catalogService = inject(CatalogService);
   items = signal<Item[]>([]);
-  // allItems = items_catalogue;
+  allItems = signal<Item[]>([]);
   genders = Object.entries(Gender).map(([key, value]) => ({ key, value }));
   genderControl = new FormControl([]);
   queryControl = new FormControl('');
@@ -49,6 +49,7 @@ export class FraganceListComponent implements OnInit {
       next: (perfumes) => {
         console.log(perfumes);
         this.items.set(perfumes.filter((item) => item.status === ItemStatus.Available));
+        this.allItems.set(perfumes.filter((item) => item.status === ItemStatus.Available));
       },
       error: (err) => {
         console.error(err);
@@ -133,7 +134,7 @@ export class FraganceListComponent implements OnInit {
   // }
 
   generalFilter() {
-    var itemFilter = this.items();
+    var itemFilter = this.allItems();
     if (this.genderControl.value.length > 0) {
       itemFilter = itemFilter.filter((item) =>
         this.genderControl.value.some((value) => item.gender === value)
