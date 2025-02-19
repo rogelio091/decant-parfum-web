@@ -133,7 +133,7 @@ export class FraganceListComponent implements OnInit {
   // }
 
   generalFilter() {
-    var itemFilter = items_catalogue;
+    var itemFilter = this.items();
     if (this.genderControl.value.length > 0) {
       itemFilter = itemFilter.filter((item) =>
         this.genderControl.value.some((value) => item.gender === value)

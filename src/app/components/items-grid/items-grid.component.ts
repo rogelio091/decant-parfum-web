@@ -83,13 +83,30 @@ export class ItemsGridComponent implements OnChanges {
     this.addToCartClick.emit(item);
   }
 
+  onPaginateChange(event) {
+    this.scrollToTop();
+  }
+
   scrollToTop() {
+    let isUserScrolling = false;
+
+    // Escuchar eventos de scroll manual
+    const stopScrolling = () => {
+      isUserScrolling = true;
+      window.removeEventListener('wheel', stopScrolling);
+      window.removeEventListener('touchstart', stopScrolling);
+    };
+
+    window.addEventListener('wheel', stopScrolling);
+    window.addEventListener('touchstart', stopScrolling);
+
     (function smoothscroll() {
-      var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+      if (isUserScrolling) return; // Detiene la animación si el usuario interactúa
+
+      let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
 
       if (currentScroll > 0) {
         window.requestAnimationFrame(smoothscroll);
-
         window.scrollTo(0, currentScroll - currentScroll / 8);
       }
     })();

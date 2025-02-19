@@ -2435,7 +2435,7 @@ export const items_catalogue_general: Item[] = [
     house: 'Maison Alhambra',
     name: 'Azure',
     description:
-      'Fragancia que evoca la frescura y elegancia de una brisa marina en un día soleado. Su apertura vibrante combina la chispeante bergamota con la dulzura jugosa de la mandarina, creando una sensación revitalizante y energética. En el corazón, el delicado jazmín se entrelaza con la profundidad amaderada del cedro, aportando una sofisticación equilibrada y serena. Finalmente, la base se asienta con la calidez del ámbar gris y la suavidad del almizcle, dejando una estela sensual y envolvente que perdura en la piel. Ideal para quienes buscan una fragancia versátil que transita con naturalidad desde el día hasta la noche, Azure captura la esencia de la serenidad y el lujo en cada gota.',
+      'Fragancia que evoca la frescura y elegancia de una brisa marina en un día soleado. Ideal para quienes buscan una fragancia versátil que transita con naturalidad desde el día hasta la noche, Azure captura la esencia de la serenidad y el lujo en cada gota.',
     image: image_basePath + 'maison_alhambra_azure.webp',
     notes: {
       top: 'bergamota, mandarina',
