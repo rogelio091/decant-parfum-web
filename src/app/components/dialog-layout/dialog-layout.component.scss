@@ -8,6 +8,9 @@
     }
 
     .mat-mdc-dialog-container {
+        @media screen and (max-width: 599px) {
+            height: 100dvh !important;
+        }
         .mat-mdc-dialog-surface {
             padding: 0 !important;
         }

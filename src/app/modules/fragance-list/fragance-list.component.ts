@@ -38,7 +38,7 @@ export class FraganceListComponent implements OnInit {
   private _shoppingCartService = inject(ShoppingCartService);
   private _catalogService = inject(CatalogService);
   items = signal<Item[]>([]);
-  allItems = items_catalogue;
+  // allItems = items_catalogue;
   genders = Object.entries(Gender).map(([key, value]) => ({ key, value }));
   genderControl = new FormControl([]);
   queryControl = new FormControl('');
