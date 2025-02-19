@@ -2429,6 +2429,44 @@ export const items_catalogue_general: Item[] = [
     ],
     gender: Gender.Masculine,
     status: undefined
+  },
+  {
+    id: 128,
+    house: 'Maison Alhambra',
+    name: 'Azure',
+    description:
+      'Fragancia que evoca la frescura y elegancia de una brisa marina en un día soleado. Su apertura vibrante combina la chispeante bergamota con la dulzura jugosa de la mandarina, creando una sensación revitalizante y energética. En el corazón, el delicado jazmín se entrelaza con la profundidad amaderada del cedro, aportando una sofisticación equilibrada y serena. Finalmente, la base se asienta con la calidez del ámbar gris y la suavidad del almizcle, dejando una estela sensual y envolvente que perdura en la piel. Ideal para quienes buscan una fragancia versátil que transita con naturalidad desde el día hasta la noche, Azure captura la esencia de la serenidad y el lujo en cada gota.',
+    image: image_basePath + 'maison_alhambra_azure.webp',
+    notes: {
+      top: 'bergamota, mandarina',
+      middle: 'jazmín, cedro',
+      base: 'ámbar gris, almizcle'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined
+  },
+  {
+    id: 129,
+    house: 'Maison Alhambra',
+    name: 'Fraiche',
+    description:
+      'Al aplicarla, se percibe una apertura vibrante con notas cálidas y resinosas de ládano, entrelazadas con la profundidad del pachulí y la riqueza cremosa del sándalo, creando una base amaderada y envolvente. A medida que evoluciona, la dulzura refrescante del melón se armoniza con las delicadas notas florales de jazmín, mientras que el jengibre añade un sutil toque especiado y la nuez moscada aporta una calidez acogedora. Finalmente, la elegancia amaderada del cedro se combina con la rica dulzura del ámbar, dejando una estela duradera y equilibrada. Es una fragancia adecuada tanto para ocasiones formales como para el uso diario, aportando un toque de distinción en cualquier momento.',
+    image: image_basePath + 'maison_alhambra_fraiche.jpg',
+    notes: {
+      top: 'ládano, pachulí, sándalo',
+      middle: 'melón, jazmín, jengibre, nuez moscada',
+      base: 'cedro, ámbar'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined
   }
 ];
 
