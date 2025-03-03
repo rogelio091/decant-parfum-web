@@ -2433,7 +2433,7 @@ export const items_catalogue_general: Item[] = [
   {
     id: 128,
     house: 'Maison Alhambra',
-    name: 'Azure',
+    name: 'Jean Lowe Azure',
     description:
       'Fragancia que evoca la frescura y elegancia de una brisa marina en un día soleado. Ideal para quienes buscan una fragancia versátil que transita con naturalidad desde el día hasta la noche, Azure captura la esencia de la serenidad y el lujo en cada gota.',
     image: image_basePath + 'maison_alhambra_azure.webp',
@@ -2452,7 +2452,7 @@ export const items_catalogue_general: Item[] = [
   {
     id: 129,
     house: 'Maison Alhambra',
-    name: 'Fraiche',
+    name: 'Jean Lowe Fraiche',
     description:
       'Al aplicarla, se percibe una apertura vibrante con notas cálidas y resinosas de ládano, entrelazadas con la profundidad del pachulí y la riqueza cremosa del sándalo, creando una base amaderada y envolvente. A medida que evoluciona, la dulzura refrescante del melón se armoniza con las delicadas notas florales de jazmín, mientras que el jengibre añade un sutil toque especiado y la nuez moscada aporta una calidez acogedora. Finalmente, la elegancia amaderada del cedro se combina con la rica dulzura del ámbar, dejando una estela duradera y equilibrada. Es una fragancia adecuada tanto para ocasiones formales como para el uso diario, aportando un toque de distinción en cualquier momento.',
     image: image_basePath + 'maison_alhambra_fraiche.jpg',
@@ -2464,6 +2464,44 @@ export const items_catalogue_general: Item[] = [
     options: [
       { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
       { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined
+  },
+  {
+    id: 130,
+    house: 'Maison Alhambra',
+    name: 'Jean Lowe Vibe',
+    description:
+      'Una explosión de frescura y vitalidad, perfecta para quienes disfrutan de fragancias luminosas y energizantes. Su inicio es chispeante y efervescente, con un toque cítrico que despierta los sentidos al instante. A medida que evoluciona, se percibe un equilibrio entre dulzura frutal y matices herbales, aportando un aire despreocupado y moderno. En el fondo, una cremosidad envolvente suaviza la composición, dejando una estela sofisticada y ligeramente adictiva. Es el compañero ideal para los días soleados o cualquier momento en el que quieras llevar contigo una sensación de frescura y dinamismo.',
+    image: image_basePath + 'maison_alhambra_jean_lowe_vibe.webp',
+    notes: {
+      top: 'cidra, limón, naranja, menta, grosella negra, cilantro',
+      middle: 'albaricoque, albahaca, semillas de zanahoria, rosa de mayo',
+      base: 'higo, dátiles, ambreta'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined
+  },
+  {
+    id: 131,
+    house: 'Lattafa',
+    name: 'Art of Nature II',
+    description:
+      'Art of Nature II es una fragancia que captura la esencia del equilibrio entre frescura y calidez. Su apertura es luminosa y llena de energía, evocando la sensación de un amanecer vibrante. A medida que evoluciona, la composición se vuelve más compleja, con un contraste intrigante entre toques especiados y un fondo cremoso y envolvente. La base aporta una profundidad sofisticada, con una estela seductora y duradera que deja huella. Es una fragancia versátil, perfecta para quienes buscan un aroma con carácter y elegancia en cualquier ocasión.',
+    image: image_basePath + 'lattafa_art_of_nature_ii.jpg',
+    notes: {
+      top: 'bergamota, olíbano, mandarina, manzana',
+      middle: 'flor de azahar, rosa, cardamomo',
+      base: 'vainilla, ambroxán, madera de guayaco, cedro, almizcle'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
     status: undefined
