@@ -1243,8 +1243,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, almizcle, sándalo'
     },
     options: [
-      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -2294,7 +2294,7 @@ export const items_catalogue_general: Item[] = [
       { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
       { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
-    gender: Gender.Unisex,
+    gender: Gender.Masculine,
     status: undefined
   },
   {
