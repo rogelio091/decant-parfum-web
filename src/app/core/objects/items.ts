@@ -2505,6 +2505,44 @@ export const items_catalogue_general: Item[] = [
     ],
     gender: Gender.Unisex,
     status: undefined
+  },
+  {
+    id: 132,
+    house: 'Armaf',
+    name: 'Yum Yum',
+    description:
+      'Fragancia que evoca la dulzura y la frescura de un postre afrutado en una tarde de verano. Su inicio es una explosión jugosa y vibrante que despierta los sentidos con una mezcla de frutas cítricas y bayas silvestres. A medida que se desarrolla, revela un corazón floral delicado que añade un toque de elegancia y feminidad. Finalmente, la fragancia se asienta en una base cálida y envolvente, dejando una estela suave y aterciopelada que perdura en la piel. Es una elección perfecta para quienes buscan un aroma dulce pero sofisticado, ideal para el uso diario y ocasiones especiales.',
+    image: image_basePath + 'armaf_yum_yum.jpg',
+    notes: {
+      top: 'cereza, bayas silvestres, bergamota, naranja',
+      middle: 'vainilla, flores blancas, rosa',
+      base: 'notas empolvadas, ámbar, almizcle'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined
+  },
+  {
+    id: 133,
+    house: 'Hugo Boss',
+    name: 'Boss Bottled Unlimited',
+    description:
+      'Fragancia que encapsula la energía y la frescura de un día vibrante. Su composición ofrece una mezcla revitalizante que inspira confianza y dinamismo. Ideal para el hombre moderno que busca una esencia que lo acompañe en sus desafíos diarios, aportando una sensación de renovación y vigor.',
+    image: image_basePath + 'hugo_boss_boss_bottled_unlimited.jpeg',
+    notes: {
+      top: 'menta, hojas de violeta, pomelo',
+      middle: 'piña, canela, rosa',
+      base: 'láudano, sándalo, almizcle'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined
   }
 ];
 
