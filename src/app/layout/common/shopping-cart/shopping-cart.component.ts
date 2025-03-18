@@ -38,8 +38,7 @@ import { Subject } from 'rxjs';
     MatTooltipModule,
     NgTemplateOutlet,
     RouterLink,
-    ScrollingModule,
-    DatePipe
+    ScrollingModule
   ],
   templateUrl: './shopping-cart.component.html',
   animations: [popoverAnimation, fadeInRight, fadeInLeft, scaleFadeIn400ms]

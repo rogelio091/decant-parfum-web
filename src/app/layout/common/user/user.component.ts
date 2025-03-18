@@ -27,7 +27,7 @@ import { Subject, takeUntil } from 'rxjs';
   changeDetection: ChangeDetectionStrategy.OnPush,
   exportAs: 'user',
   standalone: true,
-  imports: [MatButtonModule, MatMenuModule, MatIconModule, NgClass, MatDividerModule]
+  imports: [MatButtonModule, MatMenuModule, MatIconModule, MatDividerModule]
 })
 export class UserComponent implements OnInit, OnDestroy {
   /* eslint-disable @typescript-eslint/naming-convention */

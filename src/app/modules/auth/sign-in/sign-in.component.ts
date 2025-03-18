@@ -36,7 +36,6 @@ import { BehaviorSubject } from 'rxjs';
   standalone: true,
   imports: [
     DinamicFormComponent,
-    RouterLink,
     FuseAlertComponent,
     FormsModule,
     ReactiveFormsModule,

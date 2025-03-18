@@ -27,18 +27,10 @@ import { ShoppingCartComponent } from '../../../common/shopping-cart/shopping-ca
   encapsulation: ViewEncapsulation.None,
   standalone: true,
   imports: [
-    FuseLoadingBarComponent,
     FuseVerticalNavigationComponent,
     FuseHorizontalNavigationComponent,
     MatButtonModule,
     MatIconModule,
-    LanguagesComponent,
-    FuseFullscreenComponent,
-    SearchComponent,
-    ShortcutsComponent,
-    MessagesComponent,
-    NotificationsComponent,
-    UserComponent,
     ShoppingCartComponent,
     RouterOutlet,
     ShoppingCartComponent
