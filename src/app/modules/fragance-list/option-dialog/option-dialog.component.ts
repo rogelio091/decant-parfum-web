@@ -6,6 +6,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { DialogLayoutComponent } from 'app/components/dialog-layout/dialog-layout.component';
 import { DialogData } from 'app/core/models/dialog.type';
 import { ItemOptions, ItemStatus } from 'app/core/models/item.type';
+import { environment } from 'environments/environment';
 
 @Component({
   selector: 'app-option-dialog',
@@ -24,6 +25,9 @@ export class OptionDialogComponent {
   isMobile = signal<boolean>(window.innerWidth < 960);
   selectedOption = signal<ItemOptions>(undefined);
   itemStatus = ItemStatus;
+
+  image_path = environment.IMAGES_URL;
+
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: DialogData,
     private dialogRef: MatDialogRef<OptionDialogComponent>

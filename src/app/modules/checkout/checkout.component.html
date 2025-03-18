@@ -16,7 +16,7 @@
                         <div class="flex flex-grow flex-shrink-0 gap-1 basis-0 py-3 pl-4">
                             <picture>
                                 @if(cartItem.image !== '') {
-                                <source type='image/webp' [srcset]="cartItem.image">
+                                <source type='image/webp' [srcset]="images_path + cartItem.image">
                                 }
                                 <img class="shrink-0 w-14 max-w-14 overflow-hidden object-contain object-center hidden sm:block"
                                     src="assets/images/no-image.png" loading="lazy" alt="Product Image">

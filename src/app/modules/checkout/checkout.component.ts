@@ -54,6 +54,8 @@ export class CheckoutComponent {
   shoppingCart = this._shoppingCartService.getShoppingCart();
   totalCart = this._shoppingCartService.totalCart;
 
+  images_path = environment.IMAGES_URL;
+
   ngOnInit(): void {}
 
   deleteFromCart(product: ItemsCart) {

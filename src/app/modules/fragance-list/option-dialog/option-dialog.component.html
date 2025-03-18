@@ -13,9 +13,9 @@
             <div class="flex relative w-15 md:w-30 h-20 m-auto items-center justify-center">
                 <picture>
                     @if(data.item.image !== '' && !isMobile()){
-                    <source type='image/png' [srcset]="data.item.image" class="object-cover ">
+                    <source type='image/png' [srcset]="image_path + data.item.image" class="object-cover ">
                     } @else if(data.item.image !== '' && isMobile()){
-                    <source type='image/png' [srcset]="data.item.image" class="object-cover ">
+                    <source type='image/png' [srcset]="image_path + data.item.image" class="object-cover ">
                     }
                     @else if(!isMobile()){
                     <source type='image/webp' [attr.srcset]="'images/no-image.png'" media="(min-width: 960px)">

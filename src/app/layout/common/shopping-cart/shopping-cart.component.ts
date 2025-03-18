@@ -53,6 +53,8 @@ export class ShoppingCartComponent implements OnInit {
   // totalCart = 0;
   totalCart = this._shoppingCartService.totalCart;
 
+  images_path = environment.IMAGES_URL;
+
   private _overlayRef: OverlayRef;
   private _unsubscribeAll: Subject<any> = new Subject<any>();
 

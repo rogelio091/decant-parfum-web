@@ -73,7 +73,7 @@
             <!-- Image -->
             <picture>
               @if(cartItem.image !== ''){
-              <source type='image/webp' [srcset]="cartItem.image">
+              <source type='image/webp' [srcset]="images_path + cartItem.image">
               }
               <img class="w-14 max-w-14 mr-4 overflow-hidden object-contain object-center"
                 src="assets/images/no-image.png" loading="lazy" alt="Product Image">
