@@ -80,6 +80,19 @@ export class FraganceListComponent implements OnInit {
     });
   }
 
+  updateAllPerfumeToKv() {
+    this.fragances().forEach((item) => {
+      this._catalogService.updatePerfume(item).subscribe({
+        next: (item) => {
+          console.log(item);
+        },
+        error: (error) => {
+          console.error(error);
+        }
+      });
+    });
+  }
+
   newFragance() {
     this.openPerfumeDialog();
   }

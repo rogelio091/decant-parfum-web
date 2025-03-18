@@ -44,7 +44,7 @@ export class FraganceListComponent implements OnInit {
   queryControl = new FormControl('');
 
   ngOnInit(): void {
-    // this.items = items_catalogue;
+    // this.items.set(items_catalogue);
     this._catalogService.getPerfumes().subscribe({
       next: (perfumes) => {
         console.log(perfumes);

@@ -25,6 +25,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { Observable } from 'rxjs';
 import { getSpanishPaginatorIntl } from 'app/core/helpers/spanishPaginator';
 import { MatRippleModule } from '@angular/material/core';
+import { environment } from 'environments/environment';
 
 @Component({
   selector: 'app-items-grid',
@@ -53,6 +54,8 @@ export class ItemsGridComponent implements OnChanges {
   @Output() addToCartClick = new EventEmitter<Item>();
 
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
+
+  images_path = environment.IMAGES_URL;
 
   itemList = signal<Item[]>([]);
   itemList$: Observable<Item[]>;
