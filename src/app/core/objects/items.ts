@@ -2543,6 +2543,63 @@ export const items_catalogue_general: Item[] = [
     ],
     gender: Gender.Masculine,
     status: undefined
+  },
+  {
+    id: 134,
+    house: 'Armaf',
+    name: 'Odyssey Dubai Chocolat',
+    description:
+      'Envuelve los sentidos en una experiencia dulce y opulenta, ideal para quienes disfrutan de aromas intensos y sofisticados. Desde el primer instante, despliega una calidez envolvente que recuerda a un postre artesanal, con un toque de especias y un acorde achocolatado que le aporta un carácter indulgente. A medida que evoluciona, la fragancia se torna más profunda y adictiva, con una base amaderada y cremosa que refuerza su elegancia y persistencia en la piel. Es perfecta para quienes buscan una esencia audaz y distintiva, ideal para climas fríos o para destacar en noches especiales.',
+    image: 'armaf_odyssey_dubai_chocolat.png',
+    notes: {
+      top: 'café, pistacho, praliné, knafeh, avellana',
+      middle: 'chocolate, vainilla, cardamomo',
+      base: 'caramelo, haba tonka, almizcle'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 75.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 150.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined
+  },
+  {
+    id: 135,
+    house: 'Bharara',
+    name: 'Queen',
+    description:
+      'Fragancia que exuda elegancia y sofisticación con un equilibrio perfecto entre frescura y calidez. Desde el primer instante, despliega una energía radiante y vibrante que cautiva con su luminosidad. A medida que evoluciona, las notas florales envuelven la composición con una feminidad delicada pero poderosa, aportando un toque refinado y encantador. En su fase final, la fragancia se transforma en una estela cálida y seductora que se funde con la piel, dejando un rastro envolvente y memorable. Ideal para quienes buscan una esencia distintiva que refleje seguridad y estilo en cada ocasión.',
+    image: 'bharara_queen.jpg',
+    notes: {
+      top: 'bergamota, limón, flores transparentes',
+      middle: 'flores blancas, lirio de los valles, rosa, violeta',
+      base: 'caramelo, vainilla, ámbar, pachulí, sándalo'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined
+  },
+  {
+    id: 136,
+    house: 'Rasasi',
+    name: 'Hawas Elixir',
+    description:
+      'Fragancia intensa y elegante que equilibra frescura con profundidad. Su inicio cítrico es chispeante y vibrante, marcando una presencia luminosa desde el primer instante. Conforme evoluciona, aparecen especias cálidas y un toque aromático que le otorgan carácter y sofisticación. La base amaderada y envolvente completa la experiencia con una estela duradera, sensual y refinada. Ideal para destacar en climas frescos o noches especiales.',
+    image: 'rasasi_hawas_elixir.jpg',
+    notes: {
+      top: 'bergamota, limón, mandarina',
+      middle: 'cardamomo, canela, lavanda',
+      base: 'ámbar, almizcle, notas amaderadas'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined
   }
 ];
 

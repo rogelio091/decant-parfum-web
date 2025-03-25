@@ -48,7 +48,12 @@ export const Forms: FormList = {
         Title: 'Número de telefono',
         CssClass: 'sm:col-start-1 sm:col-end-3 col-span-full',
         Value: undefined,
-        Rules: [Validators.required, Validators.minLength(8), Validators.maxLength(8)]
+        Rules: [
+          Validators.required,
+          Validators.minLength(8),
+          Validators.maxLength(8),
+          Validators.pattern(/^[0-9]+$/)
+        ]
       },
 
       {

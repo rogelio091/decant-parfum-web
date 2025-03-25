@@ -37,7 +37,7 @@
         @else if (field.FieldType.Name === TypeFields.PhoneNumber) {
 
         <input matInput [name]="field.Code" [formControlName]="field.Code" type="text" [required]="field.IsRequired"
-            (keypress)="numberOnly($event)" autocomplete="off">
+            (keypress)="numberOnly($event)" (input)="validatePhoneNumber($event, field.Code)" autocomplete="off">
 
         }
 
@@ -182,6 +182,12 @@
         form.controls[field.Code].touched) {
         <mat-error class='text-xs mb-3'>
             Requerido 1 minúscula, 1 mayúscula, 1 dígito</mat-error>
+        }
+
+        @if (field.Code === 'webCustomerPhoneNumber' && form.controls[field.Code].errors?.pattern &&
+        form.controls[field.Code].touched) {
+        <mat-error class='text-xs mb-3'>
+            Solo números sin espacios.</mat-error>
         }
 
         @if (field.Code === 'userName' && form.controls[field.Code].errors?.pattern &&

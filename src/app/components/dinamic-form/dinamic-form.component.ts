@@ -381,6 +381,15 @@ export class DinamicFormComponent implements OnInit, OnDestroy {
     return true;
   }
 
+  validatePhoneNumber(event: any, code) {
+    const valorOriginal = event.target.value;
+    const soloNumeros = valorOriginal.replace(/[^0-9]/g, '');
+    if (valorOriginal !== soloNumeros) {
+      event.target.value = soloNumeros;
+      this.form.controls[code].setValue(soloNumeros);
+    }
+  }
+
   decimalOnly(event): boolean {
     const charCode = event.which ? event.which : event.keyCode;
     if (charCode > 31 && (charCode < 48 || charCode > 57) && charCode !== 46) {
