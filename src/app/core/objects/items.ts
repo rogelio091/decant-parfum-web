@@ -16,8 +16,8 @@ export const items_catalogue_general: Item[] = [
       base: 'sándalo, almizcle'
     },
     options: [
-      { name: SizeOptions.ML5, price: 30.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 60.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 45.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 90.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine, // Add appropriate gender here
     status: undefined
@@ -246,8 +246,8 @@ export const items_catalogue_general: Item[] = [
       base: 'sándalo, ámbar, caramelo, musgo'
     },
     options: [
-      { name: SizeOptions.ML5, price: 35.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 70.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 45.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 90.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -384,8 +384,8 @@ export const items_catalogue_general: Item[] = [
     },
 
     options: [
-      { name: SizeOptions.ML5, price: 40.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 80.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 45.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 90.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -692,8 +692,8 @@ export const items_catalogue_general: Item[] = [
       base: 'haba tonka, ámbar, incienso'
     },
     options: [
-      { name: SizeOptions.ML5, price: 40.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 80.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -1186,8 +1186,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, haba tonka, benjuí, mirra, amberwood, akigalawood'
     },
     options: [
-      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Unisex,
     status: undefined,
@@ -2597,6 +2597,44 @@ export const items_catalogue_general: Item[] = [
     options: [
       { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
       { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined
+  },
+  {
+    id: 137,
+    house: 'Guerlain',
+    name: 'Aqua Allegoria Mandarine Basilic',
+    description:
+      'Captura la esencia de un jardín mediterráneo en pleno verano. Su apertura es una explosión jugosa y chispeante de cítricos que inunda los sentidos con una frescura luminosa. En el corazón, la albahaca aporta un toque verde y ligeramente especiado, creando una combinación armoniosa y revitalizante. La base suave y amaderada proporciona una profundidad sutil, dejando una estela elegante y duradera. Esta fragancia es perfecta para quienes buscan un aroma refrescante y sofisticado, ideal para los días soleados y las noches cálidas.',
+    image: 'guerlain_aqua_allegoria_mandarine_basilic.webp',
+    notes: {
+      top: 'clementina, naranja amarga, flor de naranjo, té verde, hiedra',
+      middle: 'mandarina, albahaca, manzanilla, peonía',
+      base: 'sándalo, ámbar'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined
+  },
+  {
+    id: 138,
+    house: 'Parfums de Marly',
+    name: 'Althaïr',
+    description:
+      'Althaïr es una fragancia que reinterpreta la vainilla de manera inesperada y moderna. Su apertura combina cítricos y especias, brindando una frescura luminosa y cálida. En el corazón, la vainilla Bourbon se presenta de forma majestuosa, aportando una dulzura refinada y texturizada. La base se compone de notas amaderadas y almizcladas, creando una estela adictiva y duradera. Es una elección perfecta para quienes buscan una fragancia elegante y carismática que equilibre tradición y modernidad.',
+    image: 'parfums_de_marly_althair.webp',
+    notes: {
+      top: 'flor de azahar del naranjo, bergamota, canela, cardamomo',
+      middle: 'vainilla Bourbon, elemí',
+      base: 'madera de gaiac, ambrox, praliné, almizcle'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 205.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 410.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined

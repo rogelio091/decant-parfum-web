@@ -31,7 +31,6 @@ export const faqs: Faq[] = [
   {
     id: 5,
     question: '¿Cuáles son los métodos de pago?',
-    answer:
-      'Si estás en Guatemala o Mixco, puedes pagar contra entrega. Para envíos realizados con Forza, el pago se realiza mediante depósito o transferencia previa.'
+    answer: 'El pago se realiza mediante depósito o transferencia previa.'
   }
 ];
