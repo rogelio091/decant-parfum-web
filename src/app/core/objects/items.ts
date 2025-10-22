@@ -35,8 +35,8 @@ export const items_catalogue_general: Item[] = [
       base: 'praliné, caramelo, vainilla, pachulí, incienso, regaliz, cumarina, papiro de Egipto'
     },
     options: [
-      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Feminine,
     status: undefined
@@ -654,8 +654,8 @@ export const items_catalogue_general: Item[] = [
       base: 'cedro de Virginia, almizcle'
     },
     options: [
-      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -1834,8 +1834,8 @@ export const items_catalogue_general: Item[] = [
       base: 'ámbar, pachulí'
     },
     options: [
-      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Feminine,
     status: undefined
@@ -1872,8 +1872,8 @@ export const items_catalogue_general: Item[] = [
       base: 'madera de oud, pachulí, incienso'
     },
     options: [
-      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Unisex,
     status: undefined
@@ -1891,8 +1891,8 @@ export const items_catalogue_general: Item[] = [
       base: 'postre de frutos rojos, vainilla, almizcle, sándalo'
     },
     options: [
-      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Feminine,
     status: undefined
@@ -2272,8 +2272,8 @@ export const items_catalogue_general: Item[] = [
       base: 'tabaco, ámbar, pachulí, notas amaderadas'
     },
     options: [
-      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Masculine,
     status: undefined
@@ -2313,7 +2313,7 @@ export const items_catalogue_general: Item[] = [
       { name: SizeOptions.ML5, price: 95.0, status: ItemStatus.Available },
       { name: SizeOptions.ML10, price: 190.0, status: ItemStatus.Available }
     ],
-    gender: Gender.Unisex,
+    gender: Gender.Masculine,
     status: undefined
   },
   {
@@ -2538,8 +2538,8 @@ export const items_catalogue_general: Item[] = [
       base: 'láudano, sándalo, almizcle'
     },
     options: [
-      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Masculine,
     status: undefined
@@ -2557,8 +2557,8 @@ export const items_catalogue_general: Item[] = [
       base: 'caramelo, haba tonka, almizcle'
     },
     options: [
-      { name: SizeOptions.ML5, price: 75.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 150.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 75.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 150.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Unisex,
     status: undefined
@@ -2638,6 +2638,386 @@ export const items_catalogue_general: Item[] = [
     ],
     gender: Gender.Masculine,
     status: undefined
+  },
+  {
+    id: 139,
+    house: 'Ariana Grande',
+    name: 'Cloud 2.0 Intense',
+    description:
+      'Versión más profunda y envolvente del icónico aroma de Ariana Grande. Desde el primer instante, despliega una dulzura cremosa que envuelve los sentidos, con matices frutales y un toque floral que aportan frescura y feminidad. A medida que evoluciona, la fragancia revela una base cálida y amaderada, creando una estela sensual y duradera. Es una elección ideal para quienes buscan un aroma dulce y sofisticado que destaque en cualquier ocasión.',
+    image: 'ariana_grande_cloud_2_0_intense.webp',
+    notes: {
+      top: 'lavanda, bergamota, pera',
+      middle: 'crema batida, praliné, coco, orquídea de vainilla',
+      base: 'cashmeran, ambroxan, almizcle, notas amaderadas'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined
+  },
+  {
+    id: 140,
+    house: 'Rasasi',
+    name: 'Hawas Fire',
+    description:
+      'Fusiona la frescura marina con una calidez ambarina, creando una experiencia olfativa intensa y sofisticada. Su apertura herbal y aromática da paso a un corazón floral y acuático, mientras que la base combina notas minerales y ámbar gris, dejando una estela duradera y envolvente. Ideal para quienes buscan un aroma distintivo que equilibre frescura y profundidad.',
+    image: 'rasasi_hawas_fire.webp',
+    notes: {
+      top: 'esclarea',
+      middle: 'jazmín egipcio, notas marinas',
+      base: 'ámbar, ámbar gris, notas minerales'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 75.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 150.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined
+  },
+  {
+    id: 141,
+    house: 'Armaf',
+    name: 'Caballo Pour Homme',
+    description:
+      'Fragancia que combina frescura cítrica con una base amaderada y almizclada, creando una experiencia olfativa sofisticada y duradera. Su apertura vibrante da paso a un corazón especiado y floral, culminando en una base cálida que aporta profundidad y elegancia. Ideal para quienes buscan un aroma distintivo que equilibre frescura y calidez.',
+    image: 'armaf_caballo_pour_homme.jpg',
+    notes: {
+      top: 'toronja (pomelo), limón (lima ácida), bergamota',
+      middle: 'jengibre, violeta, almizcle ambreta',
+      base: 'ambroxan, pachulí, almizcle, vetiver'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined
+  },
+  {
+    id: 142,
+    house: 'Ralph Lauren',
+    name: 'Polo 67',
+    description:
+      'Fresca y cítrica con un corazón aromático y una base amaderada. Su inicio vibrante da paso a un corazón especiado y floral, culminando en una base cálida que aporta profundidad y elegancia. Ideal para quienes buscan un aroma distintivo que equilibre frescura y calidez.',
+    image: 'ralph_lauren_polo_67.webp',
+    notes: {
+      top: 'bergamota, piña, limón',
+      middle: 'salvia, enebro, escaramujo',
+      base: 'vetiver, pachulí, vara de oro'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 75.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 150.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined
+  },
+  {
+    id: 143,
+    house: 'Billie Eilish',
+    name: 'Eilish',
+    description:
+      'Fragancia que envuelve los sentidos con su dulzura cálida y reconfortante. Desde la primera aplicación, se percibe una mezcla de notas azucaradas y frutales que evocan una sensación acogedora. A medida que evoluciona, se despliegan matices cremosos y especiados que aportan profundidad y carácter. La base amaderada y almizclada proporciona una estela suave y duradera, haciendo de esta fragancia una elección ideal para quienes buscan un aroma dulce y envolvente.',
+    image: 'billie_eilish_eilish.jpeg',
+    notes: {
+      top: 'pétalos azucarados, mandarina, bayas rojas',
+      middle: 'vainilla cremosa, especias suaves, cacao',
+      base: 'almizcles cálidos, haba tonka, maderas elegantes'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 75.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 150.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined
+  },
+  {
+    id: 144,
+    house: 'Paris Corner',
+    name: 'Coconut Lagoon',
+    description:
+      'Evoca la esencia de un paraíso tropical. Su apertura cítrica y vibrante da paso a un corazón jugoso y dulce, culminando en una base cremosa y reconfortante. Es una elección ideal para quienes buscan un aroma fresco y exótico que transporte a playas soleadas y brisas marinas.',
+    image: 'paris_corner_coconut_lagoon.jpg',
+    notes: {
+      top: 'limón, mandarina, bergamota',
+      middle: 'manzana, sandía, caramelo',
+      base: 'vainilla, coco'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 55.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 110.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined
+  },
+  {
+    id: 145,
+    house: 'Lattafa',
+    name: 'Art of Universe',
+    description:
+      'Combina una apertura cítrica y especiada con un corazón frutal y floral, culminando en una base cálida y amaderada. Su inicio vibrante da paso a un corazón dulce y envolvente, mientras que la base aporta profundidad y elegancia. Ideal para quienes buscan un aroma distintivo que equilibre frescura y calidez.',
+    image: 'lattafa_art_of_universe.webp',
+    notes: {
+      top: 'bergamota, mandarina, jengibre, menta',
+      middle: 'pera, flor de azahar',
+      base: 'almizcle, ámbar, cedro'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined
+  },
+  {
+    id: 146,
+    house: 'Lattafa',
+    name: 'Khamrah Dukhan',
+    description:
+      'Fusiona la tradición oriental con una intensidad moderna. Su apertura especiada y ahumada da paso a un corazón floral y resinoso, culminando en una base dulce y ambarina. Es una elección ideal para quienes buscan un aroma profundo y envolvente que destaque en climas frescos o noches especiales.',
+    image: 'lattafa_khamrah_dukhan.webp',
+    notes: {
+      top: 'mandarina, pimienta de Jamaica, especias ahumadas',
+      middle: 'cistus, flor de azahar, incienso, pachulí',
+      base: 'tabaco, ámbar, haba tonka, benjuí, praliné'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 55.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 110.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined
+  },
+  {
+    id: 147,
+    house: 'Ralph Lauren',
+    name: 'Polo Blue Parfum',
+    description:
+      'Es una reinterpretación intensa y sofisticada del clásico acuático. Su apertura combina cítricos frescos con un acorde marino, evocando la libertad del mar al atardecer. A continuación, surgen matices aromáticos y florales que aportan elegancia y profundidad. La base amaderada y resinosa culmina con una estela cálida y masculina, perfecta para quienes buscan una fragancia refinada y duradera que acompañe tanto en ocasiones formales como informales.',
+    image: 'ralph_lauren_polo_blue_parfum.webp',
+    notes: {
+      top: 'bergamota, mandarina, cardamomo, acorde marino',
+      middle: 'lavanda, salvia, albahaca, vetiver',
+      base: 'roble, incienso, pachulí'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 85.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 170.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined
+  },
+  {
+    id: 148,
+    house: 'Mancera',
+    name: 'Tonka Cola',
+    description:
+      'Fragancia gourmand divertida y envolvente, inspirada en la frescura burbujeante de una soda especiada. Su apertura chispeante de cítricos y especias despierta los sentidos con un toque juguetón, mientras que el corazón captura la esencia de una bebida de cola con matices florales suaves. En la base, la combinación de tonka, benjuí y vainilla crea una calidez cremosa que prolonga una estela dulce y adictiva. Perfecta para días frescos o momentos en los que quieres destacar con un aroma divertido y sofisticado.',
+    image: 'mancera_tonka_cola.webp',
+    notes: {
+      top: 'bergamota, nuez moscada, canela, cereza',
+      middle: 'cola chispeante, patchouli, flor de azahar',
+      base: 'tonka, benjuí, labdanum, vainilla'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 115.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 230.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined
+  },
+  {
+    id: 149,
+    house: 'Givenchy',
+    name: 'Gentleman Society Ambrée',
+    description:
+      'Cálida y sofisticada que encarna la elegancia contemporánea con un toque de audacia. Su apertura vibra con notas especiadas y herbales que despiertan los sentidos. En el centro, una combinación floral-amaderada aporta profundidad y refinamiento, mientras que la base ambarina y ahumada deja una estela rica, sensual y duradera. Ideal para quien busca una firma olfativa distintiva y memorable en eventos nocturnos o estaciones frías.',
+    image: 'givenchy_gentleman_society_ambree.jpg',
+    notes: {
+      top: 'salvia esclarea, bayas de enebro, nuez moscada',
+      middle: 'iris, narciso, cuarteto de vetiver, sándalo',
+      base: 'bálsamo de Perú, absoluto de tabaco, vainilla de Tasuki, ámbar'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined
+  },
+  {
+    id: 150,
+    house: 'Givenchy',
+    name: 'Gentleman EDT Intense',
+    description:
+      'Elegante y moderna, pensada para el hombre refinado que busca impactar. Su apertura especiada y fresca transmite una energía limpia, mientras que el corazón floral-amaderado aporta sofisticación y profundidad. Finalmente, la base combina cedro y cumarina para dejar una estela cálida, adictiva y duradera. Ideal para ocasiones diurnas que requieran seguridad y estilo.',
+    image: 'givenchy_gentleman_intense_edt.jpg',
+    notes: {
+      top: 'cardamomo, albahaca, bergamota',
+      middle: 'iris azul, ciprés',
+      base: 'cumarina, cedro'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 75.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 150.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined
+  },
+  {
+    id: 151,
+    house: 'Valentino',
+    name: 'Uomo Born in Roma Coral Fantasy',
+    description:
+      'Moderna y carismática que mezcla la frescura juguetona de la manzana roja con una profundidad ahumada y especiada en su base. Se siente enérgica en su apertura, evoluciona hacia un corazón aromático con salvia y geranio, y culmina en una estela cálida y profunda gracias al tabaco y las maderas. Perfecta para el hombre que busca un aroma versátil con presencia y elegancia nocturna.',
+    image: 'valentino_uomo_coral_fantasy.jpg',
+    notes: {
+      top: 'manzana roja, bergamota, cardamomo',
+      middle: 'lavanda, geranio bourbon, salvia esclarea',
+      base: 'hoja de tabaco, pachulí, vetiver haitiano'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 85.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 170.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined
+  },
+  {
+    id: 152,
+    house: 'Giorgio Armani',
+    name: 'Acqua di Giò Elixir',
+    description:
+      'Versión profunda y sofisticada del clásico acuático. Su apertura cítrica es vibrante, seguida de un corazón poderoso donde destaca la hoja de violeta, envuelto en un frescor marino aromático. La base se asienta en un cuero elegante y madera cálida, dejando una estela intensa, refinada y duradera. Perfecta para el hombre que busca un aroma que combine frescura oceánica con carácter y elegancia moderna.',
+    image: 'giorgio_armani_acqua_di_gio_elixir.webp',
+    notes: {
+      top: 'bergamota, mandarina verde, nuez moscada',
+      middle: 'acorde marino, hoja de violeta',
+      base: 'cuero, pachulí, vetiver, ládano'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 115.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 230.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined
+  },
+  {
+    id: 153,
+    house: 'Carolina Herrera',
+    name: 'Good Girl EDP',
+    description:
+      'Encarna la dualidad de lo dulce y lo atrevido. Su comienzo chispeante y sofisticado refleja confianza, mientras que el corazón floral aporta feminidad con una profundidad sensual. La base cálida y envolvente crea una estela adictiva y memorable, ideal para destacar en eventos nocturnos o en momentos especiales donde buscas dejar huella.',
+    image: 'carolina_herrera_good_girl.jpg',
+    notes: {
+      top: 'almendra, café, bergamota, limón',
+      middle: 'tuberosa, jazmín sambac, flor de azahar, rosa búlgara, lirio (orris)',
+      base: 'tonka, cacao, vainilla, praline, sándalo, ámbar, almizcle, madera de cachemira, canela, pachulí, cedro'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 100.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 200.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined
+  },
+  {
+    id: 154,
+    house: 'Cacharel',
+    name: 'Amor Amor EDT',
+    description:
+      'Vibrante y juvenil que celebra la pasión y la aventura. Desde la primera aplicación, despliega una sensación chispeante y frutal que despierta optimismo. En su corazón, unas flores blancas y afrutadas aportan un toque romántico y delicado. La base final se sumerge en una cálida estela gourmand, dulce y envolvente, ideal para destacar en momentos especiales o al caer la noche.',
+    image: 'cacharel_amor_amor_edt.webp',
+    notes: {
+      top: 'grosellas negras, naranja, mandarina, pomelo, casia, bergamota',
+      middle: 'rosa, chabacano, jazmín, azucena, lirio de los valles',
+      base: 'vainilla, haba tonka, almizcle, ámbar, cedro de Virginia'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined
+  },
+  {
+    id: 155,
+    house: 'Coach',
+    name: 'Coach Green',
+    description:
+      'Vibrante y refrescante, perfecta para quienes disfrutan de aromas naturales y llenos de energía. Desde el primer instante, su apertura chispeante despierta los sentidos con una frescura jugosa. A medida que evoluciona, una calidez herbaria y ligeramente terrosa aporta carácter y sofisticación, dejando una estela limpia y masculina que se siente moderna y accesible. Ideal como firma diaria para quienes buscan un aroma versátil y descomplicado.',
+    image: 'coach_green.jpg',
+    notes: {
+      top: 'kiwi jugoso, bergamota fresca',
+      middle: 'romero, geranio',
+      base: 'musgo cristalino, cedro masculino'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined
+  },
+  {
+    id: 156,
+    house: 'Gulf Orchid',
+    name: 'Mango Ice',
+    description:
+      'Fragancia vibrante y envolvente que juega con contrastes refrescantes e intensamente seductores. Su apertura chispeante despierta los sentidos con una energía helada y jugosa. A medida que evoluciona, se despliega un corazón elegante con toques florales y especiados que le aportan sofisticación. La base cierra con una calidez cremosa y golosa, dejando una estela memorable y sensual. Perfecta para quienes buscan una firma veraniega con actitud y carácter.',
+    image: 'gulf_orchid_mango_ice.jpg',
+    notes: {
+      top: 'jengibre, mango, limón, ruibarbo',
+      middle: 'ámbar, flores blancas, regaliz',
+      base: 'almizcle, caramelo, nueces, vainilla'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 55.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 110.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined
+  },
+  {
+    house: 'Afnan',
+    name: '9PM Elixir',
+    description:
+      'Una interpretación rica y magnética de la icónica línea 9PM, diseñada para aquellos que abrazan la noche con elegancia y confianza. Se abre con una especia cálida y luminosa, que se mezcla con un corazón de cuero, lavanda y pimiento, para luego cerrar con una base cremosa y resinosa de vainilla, pachulí y ládano.',
+    image: '9pm_elixir.webp',
+    notes: {
+      top: 'cardamomo, nuez moscada, elemí',
+      middle: 'pimiento, cuero, lavanda',
+      base: 'vainilla, pachulí, ládano, jara'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined,
+    id: 157
+  },
+  {
+    house: 'Hugo Boss',
+    name: 'Boss Bottled Bold Citrus',
+    description:
+      'Una explosión vibrante para el verano, esta edición limitada irradia energía y confianza con una explosión de potentes notas cítricas. Es una expresión atrevida y vigorizante de frescura.',
+    image: 'boss_bottled_bold_citrus.jpeg',
+    notes: {
+      top: 'limón, bergamota',
+      middle: 'geranio bourbon, resina de elemí',
+      base: 'vetiver, pachulí'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 158
   }
 ];
 
