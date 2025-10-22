@@ -109,7 +109,7 @@ export class CheckoutComponent {
     const encodedMessage = encodeURIComponent(message);
 
     // Construir el enlace de WhatsApp
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
 
     // Redirigir al enlace de WhatsApp
     window.open(whatsappUrl, '_blank');
