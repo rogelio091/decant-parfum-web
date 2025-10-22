@@ -16,6 +16,7 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { ShoppingCartService } from 'app/core/services/shopping-cart.service';
 import { OptionDialogComponent } from './option-dialog/option-dialog.component';
 import { CatalogService } from 'app/core/services/catalog.service';
+import { PubliDialogComponent } from './publi-dialog/publi-dialog.component';
 
 @Component({
   selector: 'app-fragance-list',
@@ -45,6 +46,7 @@ export class FraganceListComponent implements OnInit {
 
   ngOnInit(): void {
     // this.items.set(items_catalogue);
+    this.openInfoDialog();
     this._catalogService.getPerfumes().subscribe({
       next: (perfumes) => {
         console.log(perfumes);
@@ -55,6 +57,52 @@ export class FraganceListComponent implements OnInit {
         console.error(err);
       }
     });
+  }
+
+  openInfoDialog() {
+    const dialogShown = localStorage.getItem('infoDialogShown') === 'true';
+    const timestampString = localStorage.getItem('infoDialogTimestamp');
+
+    // 2. Calcular la fecha límite (hace 3 días)
+    const threeDaysAgo = new Date();
+    threeDaysAgo.setDate(threeDaysAgo.getDate() - 3);
+
+    // 3. Variable para la decisión
+    let shouldShowDialog = false;
+
+    if (dialogShown && timestampString) {
+      // Si se mostró y SÍ hay un timestamp
+      const storedDate = new Date(timestampString);
+
+      // Comprobar si la fecha guardada es más antigua (o igual) que "hace 3 días"
+      // 'isValid' previene errores si el timestampString está corrupto
+      const isValid = !isNaN(storedDate.getTime());
+
+      if (isValid && storedDate <= threeDaysAgo) {
+        shouldShowDialog = true;
+      }
+    } else if (!dialogShown || !timestampString) {
+      // Opcional: si nunca se ha mostrado, muéstralo la primera vez.
+      shouldShowDialog = true;
+    }
+    if (!shouldShowDialog) return;
+    this._matDialog
+      .open(PubliDialogComponent, {
+        data: {
+          title: 'Bienvenido a Ghostly Scents',
+          subtitle: 'Accede a un universo de aromas exclusivos.',
+          icon: {
+            show: false
+          }
+        },
+        panelClass: 'fuse-confirmation-dialog-panel',
+        disableClose: true
+      })
+      .afterClosed()
+      .subscribe(() => {
+        localStorage.setItem('infoDialogShown', 'true');
+        localStorage.setItem('infoDialogTimestamp', new Date().toISOString());
+      });
   }
 
   openFraganceDialog(item: Item) {
