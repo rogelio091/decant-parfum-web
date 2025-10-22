@@ -9,14 +9,8 @@ import { environment } from 'environments/environment';
 
 @Component({
   selector: 'app-publi-dialog',
-  imports: [
-    CommonModule,
-    DialogLayoutComponent,
-    MatButtonModule,
-    MatDialogModule,
-    MatIconModule,
-    NgOptimizedImage
-  ],
+  imports: [CommonModule, DialogLayoutComponent, MatButtonModule, MatDialogModule, MatIconModule],
+  standalone: true,
   templateUrl: './publi-dialog.component.html',
   styleUrl: './publi-dialog.component.scss'
 })
