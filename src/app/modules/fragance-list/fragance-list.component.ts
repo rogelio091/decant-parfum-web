@@ -203,6 +203,14 @@ export class FraganceListComponent implements OnInit {
     this.generalFilter();
   }
 
+  goToWhats() {
+    const phoneNumber = '50239730756';
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
+
+    // Redirigir al enlace de WhatsApp
+    window.open(whatsappUrl, '_blank');
+  }
+
   trackByFn(index: number, item: any): any {
     return item.id || index;
   }

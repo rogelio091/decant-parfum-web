@@ -17,6 +17,17 @@
                 [svgIcon]="'heroicons_solid:x-mark'" (click)="clearQuery()">
             </mat-icon>
         </mat-form-field>
+        <div class="flex-grow mt-4 sm:mt-0 sm:ml-4 items-center justify-center flex flex-col">
+            <span class="font-semibold sm:text-md text-sm">¿Dudas? Contáctanos por WhatsApp</span>
+            <picture>
+
+                <source type='image/png' [srcset]="'images/whatsapp/darkgreen.png'">
+
+                <img class="shrink-0 sm:w-32 w-26 border-2 rounded-full p-3 overflow-hidden object-contain object-center transition transform hover:scale-105 hover:brightness-200 cursor-pointer"
+                    src="images/no-image.png" loading="lazy" alt="Product Image" (click)="goToWhats()">
+            </picture>
+
+        </div>
     </div>
     <app-items-grid class='w-full' [items]="items()" (itemClick)="openFraganceDialog($event)"
         (addToCartClick)="addToCart($event)"></app-items-grid>
