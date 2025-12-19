@@ -50,13 +50,32 @@ export class CheckoutComponent {
   stateForm = signal<StateForm>({ resetForm: false, executeReturn: false });
   form$ = toObservable(this.form);
   stateForm$ = toObservable(this.stateForm);
+  applyDiscount = signal<boolean>(false);
+  discountToApply = computed(() => {
+    const discountAmount = this._shoppingCartService.totalCart() * 0.1;
+    return discountAmount;
+  });
 
   shoppingCart = this._shoppingCartService.getShoppingCart();
-  totalCart = this._shoppingCartService.totalCart;
+  totalCart = computed(() => {
+    let total = this._shoppingCartService.totalCart();
+    if (this.applyDiscount()) {
+      total = total * 0.9; // Aplicar 10% de descuento
+    }
+    return total;
+  });
 
   images_path = environment.IMAGES_URL;
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    const today = new Date();
+    const discountStart = new Date(today.getFullYear(), 11, 20); // December 20th
+    const discountEnd = new Date(today.getFullYear(), 11, 31); // December 31st
+
+    if (today >= discountStart && today <= discountEnd) {
+      this.applyDiscount.set(true);
+    }
+  }
 
   deleteFromCart(product: ItemsCart) {
     this._shoppingCartService.removeFromShoppingCart(product);
@@ -103,8 +122,13 @@ export class CheckoutComponent {
       )
       .join('\n');
 
-    const message = `Hola mi nombre es ${data.webCustomerFullName}, quiero compartir esta lista de productos:\n${productList}\n\nTotal: Q${this.totalCart()} \n\nDirección de entrega: ${data.address} \n Número de teléfono: ${data.webCustomerPhoneNumber}`;
+    // const message = `Hola mi nombre es ${data.webCustomerFullName}, quiero compartir esta lista de productos:\n${productList}\n\nTotal: Q${this.totalCart()} \n\nDirección de entrega: ${data.address} \n Número de teléfono: ${data.webCustomerPhoneNumber}`;
+    const message = `Hola mi nombre es ${data.webCustomerFullName}, quiero compartir esta lista de productos:\n${productList}
 
+    Total: Q${this.totalCart()} ${this.applyDiscount() ? `(Incluye descuento de -Q${this.discountToApply()})` : ''}
+  
+    Dirección de entrega: ${data.address}
+    Número de teléfono: ${data.webCustomerPhoneNumber}`;
     // Codificar el mensaje para la URL
     const encodedMessage = encodeURIComponent(message);
 

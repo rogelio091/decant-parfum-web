@@ -568,7 +568,7 @@ export const items_catalogue_general: Item[] = [
   },
   {
     house: 'Giorgio Armani',
-    name: 'Acqua di Giò Parfum',
+    name: 'Acqua di Gio Parfum',
     description:
       'Una fragancia masculina que combina la frescura del mar con notas amaderadas y aromáticas, capturando la esencia de la naturaleza y la elegancia contemporánea.',
     image: 'giorgioarmaniacquadigioparfum.webp',
@@ -587,7 +587,7 @@ export const items_catalogue_general: Item[] = [
   },
   {
     house: 'Giorgio Armani',
-    name: 'Acqua di Giò Profondo Eau de Parfum',
+    name: 'Acqua di Gio Profondo EDP',
     description:
       'Una fragancia masculina de la familia olfativa Aromática Acuática, lanzada en 2020. Combina notas marinas frescas en la salida, seguidas por un corazón de esencias aromáticas, y culmina con un fondo amaderado y almizclado, ofreciendo un aroma profundo y sofisticado.',
     image: 'giorgioarmaniacquadigioprofondoedp.jpg',
@@ -635,8 +635,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla de Madagascar, sándalo australiano, cedro del Himalaya'
     },
     options: [
-      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 85.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 170.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -673,8 +673,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vetiver, ámbar, vainilla, musgo, madera de teca'
     },
     options: [
-      { name: SizeOptions.ML5, price: 110.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 220.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 110.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 220.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -2690,8 +2690,8 @@ export const items_catalogue_general: Item[] = [
       base: 'ambroxan, pachulí, almizcle, vetiver'
     },
     options: [
-      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Masculine,
     status: undefined
@@ -2747,8 +2747,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, coco'
     },
     options: [
-      { name: SizeOptions.ML5, price: 55.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 110.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 55.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 110.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Unisex,
     status: undefined
@@ -2842,8 +2842,8 @@ export const items_catalogue_general: Item[] = [
       base: 'bálsamo de Perú, absoluto de tabaco, vainilla de Tasuki, ámbar'
     },
     options: [
-      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 85.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 170.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined
@@ -2889,7 +2889,7 @@ export const items_catalogue_general: Item[] = [
   {
     id: 152,
     house: 'Giorgio Armani',
-    name: 'Acqua di Giò Elixir',
+    name: 'Acqua di Gio Elixir',
     description:
       'Versión profunda y sofisticada del clásico acuático. Su apertura cítrica es vibrante, seguida de un corazón poderoso donde destaca la hoja de violeta, envuelto en un frescor marino aromático. La base se asienta en un cuero elegante y madera cálida, dejando una estela intensa, refinada y duradera. Perfecta para el hombre que busca un aroma que combine frescura oceánica con carácter y elegancia moderna.',
     image: 'giorgio_armani_acqua_di_gio_elixir.webp',
@@ -3018,6 +3018,158 @@ export const items_catalogue_general: Item[] = [
     gender: Gender.Masculine,
     status: undefined,
     id: 158
+  },
+  {
+    house: 'Hugo Boss',
+    name: 'Boss Bottled Night',
+    description:
+      'Una fragancia aromática destinada a ser el arma secreta de seducción. Es una composición intensa y especiada con un carácter masculino y elegante. Ideal para hombres que aman los desafíos y buscan convertirse en los conquistadores de la noche.',
+    image: 'boss_bottled_night.jpg',
+    notes: {
+      top: 'lavanda, abedul',
+      middle: 'violeta',
+      base: 'notas amaderadas, almizcle'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 159
+  },
+  {
+    house: 'Givenchy',
+    name: 'Gentleman Reserve Privee',
+    description:
+      'Una fragancia amaderada y ambarina inspirada en la suavidad y el aroma del whisky. Combina la elegancia floral del iris con la profundidad de las maderas y un toque de whisky absoluto, creando un aroma sofisticado, cálido y sensual para el caballero moderno.',
+    image: 'gentleman_reserve_privee.jpg',
+    notes: {
+      top: 'bergamota',
+      middle: 'iris, castaña',
+      base: 'absoluto de whisky, ámbar, maderas'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 160
+  },
+  {
+    house: 'Prada',
+    name: "L'Homme EDT",
+    description:
+      'Una fragancia sofisticada y moderna de la familia olfativa Amaderada Chipre. Es conocida por su olor limpio, atalcado y elegante, que mezcla notas frescas y florales con una base amaderada cálida. Perfecta para la oficina o el uso diario.',
+    image: 'prada_lhomme_edt.jpg',
+    notes: {
+      top: 'neroli, pimienta negra, cardamomo, semillas de zanahoria',
+      middle: 'iris, violeta, geranio, yerba mate',
+      base: 'ámbar, cedro, pachulí, sándalo'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 95.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 190.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 161
+  },
+  {
+    house: 'Montblanc',
+    name: 'Legend Blue',
+    description:
+      'Una fragancia de la familia Amaderada Aromática lanzada en 2024. Es una interpretación moderna y fresca de la línea Legend, que equilibra notas limpias y aromáticas de menta y lavanda con una base amaderada y sensual de sándalo y ambroxan. Un aroma elegante y sofisticado.',
+    image: 'montblanc_legend_blue.jpg',
+    notes: {
+      top: 'lavanda, menta',
+      middle: 'cedro, sándalo',
+      base: 'ambroxan, musgo'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 162
+  },
+  {
+    house: 'Dolce & Gabbana',
+    name: 'Light Blue Pour Homme (Versión 2025)',
+    description:
+      'Una reformulación moderna del icónico Light Blue, lanzada en 2025. Esta versión pule el original, ofreciendo una frescura cítrica más suave y elegante, descrita como un punto medio entre el EDT original y la versión Eau Intense. Mantiene la vibra mediterránea y veraniega con una base más robusta.',
+    image: 'light_blue_homme_2025.webp',
+    notes: {
+      top: 'limón (lima ácida)',
+      middle: 'romero',
+      base: 'pachulí'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 65.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 130.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 163
+  },
+  {
+    house: 'Loewe',
+    name: 'Agua El',
+    description:
+      'Una fragancia inspirada en el brillo de la luz sobre el agua que fluye. Es fresca, natural y sin artificios, diseñada para un hombre sencillo y moderno. Destaca por su salida cítrica y acuática que evoluciona hacia un corazón frutal suave y una base amaderada reconfortante.',
+    image: 'loewe_agua_el.jpg',
+    notes: {
+      top: 'yuzu, bergamota, pomelo, mandarina',
+      middle: 'piña, manzana verde, grosellas negras',
+      base: 'sándalo, cedro, almizcle, musgo de roble'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 164
+  },
+  {
+    house: 'Montblanc',
+    name: 'Starwalker',
+    description:
+      'Una fragancia de la familia Amaderada Especiada lanzada en 2005. Es una fragancia fresca, vigorizante y moderna, conocida por su distintiva nota de bambú. Combina frescura cítrica con un corazón amaderado y una base especiada y reconfortante. Ideal para el uso diario y para climas cálidos.',
+    image: 'montblanc_starwalker.jpg',
+    notes: {
+      top: 'bambú, bergamota, mandarina',
+      middle: 'sándalo, almizcle blanco, cedro',
+      base: 'jengibre, resina de abeto, nuez moscada, ámbar'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 165
+  },
+  {
+    house: 'Giorgio Armani',
+    name: 'Acqua di Gio Profondo EDT',
+    description:
+      'Una interpretación moderna y más fresca de la línea Profondo, lanzada como una nueva expresión marina y aromática. Captura la esencia del mar profundo con un carácter explosivo y efervescente, mezclando notas cítricas brillantes con un corazón aromático y una base mineral amaderada, evocando libertad y masculinidad moderna.',
+    image: 'acqua_di_gio_profondo_edt.jpg',
+    notes: {
+      top: 'notas marinas, mandarina verde, lima',
+      middle: 'lavanda, romero, ciprés, lentisco',
+      base: 'notas minerales, cedro, pachulí, almizcle'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 166
   }
 ];
 

@@ -60,8 +60,14 @@
                     </div>
                 </ng-container>
             </cdk-virtual-scroll-viewport>
-            <footer class="px-4 flex justify-end">
-                <div class="flex gap-2 justify-center items-center">
+            <footer class="px-4 flex justify-end flex-col gap-2 pt-4">
+                @if(applyDiscount()) {
+                <div class="flex gap-2 justify-end items-center">
+                    <div class="text-lg font-semibold text-red-500">Descuento</div>
+                    <div class="text-lg font-semibold text-red-500">{{discountToApply() | currency: 'Q. '}}</div>
+                </div>
+                }
+                <div class="flex gap-2 justify-end items-center">
                     <div class="text-lg font-semibold">Total</div>
                     <div class="text-lg font-semibold">{{totalCart() | currency: 'Q. '}}</div>
                 </div>

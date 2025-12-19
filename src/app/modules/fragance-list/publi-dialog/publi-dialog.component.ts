@@ -15,7 +15,7 @@ import { environment } from 'environments/environment';
   styleUrl: './publi-dialog.component.scss'
 })
 export class PubliDialogComponent {
-  images_path = environment.IMAGES_URL + 'probar2.webp';
+  images_path = environment.IMAGES_URL + 'publilast.jpg';
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: DialogData,
