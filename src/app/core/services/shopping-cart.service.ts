@@ -1,8 +1,6 @@
-import { Injectable, OnInit, WritableSignal, computed, inject, signal } from '@angular/core';
+import { Injectable, computed, inject, signal } from '@angular/core';
 import { StorageService } from './storage.service';
-import { BehaviorSubject, Observable } from 'rxjs';
 import { ToastService } from 'app/components/toast-alert/toast.service';
-import { Item } from '../models/item.type';
 import { ItemsCart, ShoppingCart } from '../objects/cart';
 
 @Injectable({
@@ -14,7 +12,6 @@ export class ShoppingCartService {
   private _cart = signal<ShoppingCart>({ items: [] });
   private _toastService = inject(ToastService);
   totalCart = computed(() => {
-    console.log('Calculating total cart');
     return this._cart().items.reduce((sum, item) => {
       return sum + item.price * item.quantity;
     }, 0);
@@ -40,7 +37,7 @@ export class ShoppingCartService {
 
     if (existingItemIndex !== -1) {
       if (product.quantity + updatedItems[existingItemIndex].quantity > 5) {
-        this._toastService.showErrorToast('No puedes agregar más de 5 unidades del mismo producto');
+        this._toastService.showErrorToast('No puedes agregar mas de 5 unidades del mismo producto');
         return;
       }
       updatedItems[existingItemIndex] = {
@@ -83,7 +80,7 @@ export class ShoppingCartService {
     this._storageService.saveValue(this._keyCart, this._cart());
   }
 
-  getShoppingCart(): WritableSignal<ShoppingCart> {
+  getShoppingCart() {
     return this._cart;
   }
 

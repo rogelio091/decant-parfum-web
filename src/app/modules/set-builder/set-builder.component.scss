@@ -1,0 +1,25 @@
+:host {
+  display: block;
+}
+
+/* Hide price badges (5ml, 10ml) and cart icon from items-grid
+   when used inside the set builder */
+.set-builder-grid {
+  ::ng-deep {
+    /* Hide the bottom price bar */
+    .bg-accent-600 {
+      display: none !important;
+    }
+
+    /* Hide the floating cart icon button */
+    [mattooltip="Agregar al carrito"],
+    .white-icon {
+      display: none !important;
+    }
+
+    /* Push scroll-to-top button above the fixed bottom bar on mobile */
+    .fixed.bottom-4.right-1 {
+      bottom: 5rem !important;
+    }
+  }
+}

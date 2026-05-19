@@ -17,6 +17,8 @@ import { ShoppingCartService } from 'app/core/services/shopping-cart.service';
 import { OptionDialogComponent } from './option-dialog/option-dialog.component';
 import { CatalogService } from 'app/core/services/catalog.service';
 import { PubliDialogComponent } from './publi-dialog/publi-dialog.component';
+import { RouterLink } from '@angular/router';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-fragance-list',
@@ -28,7 +30,9 @@ import { PubliDialogComponent } from './publi-dialog/publi-dialog.component';
     MatIconModule,
     MatInputModule,
     ItemsGridComponent,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterLink,
+    MatButtonModule
   ],
   templateUrl: './fragance-list.component.html',
   styleUrl: './fragance-list.component.scss'

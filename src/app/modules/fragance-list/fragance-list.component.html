@@ -28,6 +28,14 @@
             </picture>
 
         </div>
+        <div class="flex-grow mt-4 sm:mt-0 sm:ml-4 items-center justify-center flex flex-col">
+            <span class="font-semibold sm:text-md text-sm">Set de 5 Decants de 1ml</span>
+            <button mat-raised-button color="accent" routerLink="/decants/build-set"
+                class="rounded-full p-3 transition transform hover:scale-105 flex items-center gap-2">
+                <mat-icon [svgIcon]="'heroicons_outline:cube'"></mat-icon>
+                <span>Armar Set 1ml</span>
+            </button>
+        </div>
     </div>
     <app-items-grid class='w-full' [items]="items()" (itemClick)="openFraganceDialog($event)"
         (addToCartClick)="addToCart($event)"></app-items-grid>

@@ -89,6 +89,11 @@ export const appRoutes: Route[] = [
           )
       },
       {
+        path: 'decants/build-set',
+        loadComponent: () =>
+          import('app/modules/set-builder/set-builder.component').then((m) => m.SetBuilderComponent)
+      },
+      {
         path: 'checkout',
         loadComponent: () =>
           import('app/modules/checkout/checkout.component').then((m) => m.CheckoutComponent)

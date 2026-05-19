@@ -9,7 +9,6 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { FuseAlertComponent } from '@fuse/components/alert';
 import { FuseCardComponent } from '@fuse/components/card';
 import { FuseConfirmationService } from '@fuse/services/confirmation';
-import { FuseConfirmationDialogComponent } from '@fuse/services/confirmation/dialog/dialog.component';
 import { popoverAnimation } from 'app/animations/popover.animation';
 import {
   DinamicFormComponent,
@@ -60,7 +59,7 @@ export class CheckoutComponent {
   totalCart = computed(() => {
     let total = this._shoppingCartService.totalCart();
     if (this.applyDiscount()) {
-      total = total * 0.9; // Aplicar 10% de descuento
+      total = total * 0.9;
     }
     return total;
   });
@@ -69,12 +68,16 @@ export class CheckoutComponent {
 
   ngOnInit(): void {
     const today = new Date();
-    const discountStart = new Date(today.getFullYear(), 11, 20); // December 20th
-    const discountEnd = new Date(today.getFullYear(), 11, 31); // December 31st
+    const discountStart = new Date(today.getFullYear(), 11, 20);
+    const discountEnd = new Date(today.getFullYear(), 11, 31);
 
     if (today >= discountStart && today <= discountEnd) {
       this.applyDiscount.set(true);
     }
+  }
+
+  isSetItem(item: ItemsCart): boolean {
+    return !!item.setFragrances && item.setFragrances.length > 0;
   }
 
   deleteFromCart(product: ItemsCart) {
@@ -82,7 +85,6 @@ export class CheckoutComponent {
   }
 
   modifyQuantity(product: ItemsCart, event: MatSelectChange) {
-    console.log(event);
     product.quantity = Number(event.value);
     this._shoppingCartService.modifyQuantityItemCart(product);
   }
@@ -108,34 +110,30 @@ export class CheckoutComponent {
       this._toastService.showErrorToast('No se ha completado el formulario');
       return;
     }
-    console.log(data);
-    const phoneNumber = '50239730756'; // Tu número en formato internacional
+    const phoneNumber = '50239730756';
 
-    // Lista de productos
-    const products = this.shoppingCart().items;
-
-    // Generar el mensaje dinámicamente
-    const productList = products
-      .map(
-        (product) =>
-          `- ${product.quantity} x ${product.house} - ${product.itemName} (${product.name}) Q${product.price * product.quantity} `
-      )
+    const productList = this.shoppingCart().items
+      .map((product) => {
+        if (this.isSetItem(product)) {
+          const setLines = product.setFragrances!
+            .map((f, i) => `  ${i + 1}. ${f.house} - ${f.name}`)
+            .join('\n');
+          return `- SET DE 5 DECANTS (1ml): Q${product.price * product.quantity}\n${setLines}`;
+        }
+        return `- ${product.quantity} x ${product.house} - ${product.itemName} (${product.name}) Q${product.price * product.quantity}`;
+      })
       .join('\n');
 
-    // const message = `Hola mi nombre es ${data.webCustomerFullName}, quiero compartir esta lista de productos:\n${productList}\n\nTotal: Q${this.totalCart()} \n\nDirección de entrega: ${data.address} \n Número de teléfono: ${data.webCustomerPhoneNumber}`;
     const message = `Hola mi nombre es ${data.webCustomerFullName}, quiero compartir esta lista de productos:\n${productList}
 
     Total: Q${this.totalCart()} ${this.applyDiscount() ? `(Incluye descuento de -Q${this.discountToApply()})` : ''}
   
-    Dirección de entrega: ${data.address}
-    Número de teléfono: ${data.webCustomerPhoneNumber}`;
-    // Codificar el mensaje para la URL
-    const encodedMessage = encodeURIComponent(message);
+    Direccion de entrega: ${data.address}
+    Numero de telefono: ${data.webCustomerPhoneNumber}`;
 
-    // Construir el enlace de WhatsApp
+    const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
 
-    // Redirigir al enlace de WhatsApp
     window.open(whatsappUrl, '_blank');
     this.confirmSendedOrder();
   }
@@ -143,9 +141,9 @@ export class CheckoutComponent {
   confirmSendedOrder() {
     this._fuseConfirmationService
       .open({
-        title: '¿Has podido enviar tú pedido por Whatsapp?',
+        title: 'Has podido enviar tu pedido por Whatsapp?',
         message:
-          'Si no has podido enviar tú orden por medio de whatsapp, puedes intentar nuevamente.',
+          'Si no has podido enviar tu orden por medio de whatsapp, puedes intentar nuevamente.',
         icon: {
           show: true,
           name: 'heroicons_outline:question-mark-circle',
@@ -154,7 +152,7 @@ export class CheckoutComponent {
         actions: {
           confirm: {
             show: true,
-            label: 'Sí',
+            label: 'Si',
             color: 'primary'
           },
           cancel: {

@@ -6,8 +6,8 @@ export type Item = {
   image: string;
   notes: NotesOptions;
   options: ItemOptions[];
-  gender: Gender;
-  status: ItemStatus;
+  gender: Gender | undefined;
+  status: ItemStatus | undefined;
 };
 
 export type ItemOptions = {
@@ -35,11 +35,21 @@ export enum Gender {
 }
 
 export enum SizeOptions {
+  ML1 = '1ml',
   ML5 = '5ml',
   ML10 = '10ml',
   ML50 = '50ml',
   ML100 = '100ml'
 }
+
+export type SetSelection = {
+  itemId: number;
+  house: string;
+  itemName: string;
+  image: string;
+  basePrice: number; // precio_5ml / 5
+  description: string;
+};
 
 export function calculateItemStatus(options: ItemOptions[]): ItemStatus {
   // Si al menos una opción está disponible, el estado general es 'Available'
@@ -93,4 +103,15 @@ export function InitializeItem(): Item {
     gender: undefined,
     status: 0
   };
+}
+
+/**
+ * Calcula el precio de un set de 5 decants de 1ml.
+ * Fórmula: Σ(precio_5ml / 5) + Q10, redondeado al múltiplo de 5 superior.
+ */
+export function calculateSetPrice(selections: SetSelection[]): number {
+  if (selections.length !== 5) return 0;
+  const rawTotal = selections.reduce((sum, sel) => sum + sel.basePrice, 0);
+  const withFee = rawTotal + 10;
+  return Math.ceil(withFee / 5) * 5;
 }

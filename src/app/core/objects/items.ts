@@ -54,8 +54,8 @@ export const items_catalogue_general: Item[] = [
       base: 'jengibre, sándalo, pachulí, jazmín'
     },
     options: [
-      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 55.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 110.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
     status: undefined
@@ -285,8 +285,8 @@ export const items_catalogue_general: Item[] = [
       base: 'almizcle blanco, vainilla, ámbar'
     },
     options: [
-      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -324,8 +324,8 @@ export const items_catalogue_general: Item[] = [
     },
 
     options: [
-      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -344,8 +344,8 @@ export const items_catalogue_general: Item[] = [
     },
 
     options: [
-      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -502,8 +502,8 @@ export const items_catalogue_general: Item[] = [
     },
 
     options: [
-      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -559,8 +559,8 @@ export const items_catalogue_general: Item[] = [
       base: 'almizcles, maderas de ámbar, raíz de lirio, cedro'
     },
     options: [
-      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -901,8 +901,8 @@ export const items_catalogue_general: Item[] = [
       base: 'notas amaderadas, musgo, sándalo blanco, haba tonka, ámbar'
     },
     options: [
-      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
     status: undefined,
@@ -920,8 +920,8 @@ export const items_catalogue_general: Item[] = [
       base: 'té negro chino, madera de guayaco, olíbano, ambroxan'
     },
     options: [
-      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
     status: undefined,
@@ -939,8 +939,8 @@ export const items_catalogue_general: Item[] = [
       base: 'pimienta rosa, pachulí'
     },
     options: [
-      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
     ],
     gender: Gender.Unisex,
     status: undefined,
@@ -1034,8 +1034,8 @@ export const items_catalogue_general: Item[] = [
       base: 'almizcle, ambroxan, sándalo, musgo, notas amaderadas'
     },
     options: [
-      { name: SizeOptions.ML5, price: 100.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 200.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 100.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 200.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -1471,8 +1471,8 @@ export const items_catalogue_general: Item[] = [
       base: 'musgo de roble, ámbar, notas amaderadas'
     },
     options: [
-      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -1528,8 +1528,8 @@ export const items_catalogue_general: Item[] = [
       base: 'praliné, pachulí, vetiver'
     },
     options: [
-      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 55.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 110.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -1623,8 +1623,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, haba tonka, sándalo, cedro de Texas, pachulí, musgo de roble'
     },
     options: [
-      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -1680,8 +1680,8 @@ export const items_catalogue_general: Item[] = [
       base: 'haba tonka, almizcle, ámbar'
     },
     options: [
-      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -1757,8 +1757,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla de Madagascar, almizcle, cedro, ámbar gris'
     },
     options: [
-      { name: SizeOptions.ML5, price: 100.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 200.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 95.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 190.0, status: ItemStatus.Available }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -2443,8 +2443,8 @@ export const items_catalogue_general: Item[] = [
       base: 'ámbar gris, almizcle'
     },
     options: [
-      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Unisex,
     status: undefined
@@ -2462,8 +2462,8 @@ export const items_catalogue_general: Item[] = [
       base: 'cedro, ámbar'
     },
     options: [
-      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Unisex,
     status: undefined
@@ -2576,8 +2576,8 @@ export const items_catalogue_general: Item[] = [
       base: 'caramelo, vainilla, ámbar, pachulí, sándalo'
     },
     options: [
-      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Feminine,
     status: undefined
@@ -2595,8 +2595,8 @@ export const items_catalogue_general: Item[] = [
       base: 'ámbar, almizcle, notas amaderadas'
     },
     options: [
-      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined
@@ -2785,8 +2785,8 @@ export const items_catalogue_general: Item[] = [
       base: 'tabaco, ámbar, haba tonka, benjuí, praliné'
     },
     options: [
-      { name: SizeOptions.ML5, price: 55.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 110.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 55.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 110.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Unisex,
     status: undefined
@@ -3164,12 +3164,677 @@ export const items_catalogue_general: Item[] = [
       base: 'notas minerales, cedro, pachulí, almizcle'
     },
     options: [
+      { name: SizeOptions.ML5, price: 75.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 150.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 166
+  },
+  {
+    house: 'Giorgio Armani',
+    name: 'Acqua di Gio Eau de Parfum (Versión 2025)',
+    description:
+      'Una reinterpretación moderna y sostenible del clásico, presentada en una botella recargable. Combina la frescura marina icónica con una nueva faceta aromática y mineral, creando una estela potente, cristalina y duradera que evoca la inmensidad del horizonte infinito del mar.',
+    image: 'adg_edp_2025.jpg',
+    notes: {
+      top: 'notas marinas, mandarina verde',
+      middle: 'salvia, lavandín, geranio',
+      base: 'pachulí, vetiver, notas minerales'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 75.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 150.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 167
+  },
+  {
+    house: 'Hugo Boss',
+    name: 'Boss Bottled Beyond',
+    description:
+      'Un lanzamiento de 2025 que explora una dualidad vibrante y sensual. Es una fragancia "gengibre-cuero" diseñada para inspirar admiración y éxito. La frescura picante del jengibre choca con la profundidad carnal del cuero, creando una firma olfativa audaz y moderna para el hombre que va más allá de los límites.',
+    image: 'boss_bottled_beyond.jpg',
+    notes: {
+      top: 'jengibre fresco',
+      middle: 'cuero, hoja de cedro',
+      base: 'notas amaderadas, pachulí, vetiver'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 168
+  },
+  {
+    house: 'Giorgio Armani',
+    name: 'Acqua di Gio Absolu',
+    description:
+      'Una reinterpretación audaz que celebra la unión entre el agua dulce y la madera cálida. Mantiene el ADN marino clásico pero añade una dimensión frutal y amaderada, resultando en una fragancia más sensual, profunda y versátil que el original.',
+    image: 'adg_absolu.jpg',
+    notes: {
+      top: 'notas marinas, bergamota, pera, manzana, pomelo',
+      middle: 'lavanda, romero, geranio',
+      base: 'notas amaderadas, haba tonka, pachulí, ládano'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 105.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 210.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 169
+  },
+  {
+    house: 'Versace',
+    name: 'Eros Pour Femme EDP',
+    description:
+      'La encarnación de la fuerza, la individualidad y la seducción femenina. Una alquimia de notas vibrantes y luminosas de limón siciliano y granada que dan paso a un corazón floral radiante, cerrando con maderas sensuales.',
+    image: 'versace_eros_femme.jpg',
+    notes: {
+      top: 'limón siciliano, granada, bergamota de Calabria',
+      middle: 'flor de azahar del limonero, jazmín sambac, peonía',
+      base: 'almizcle, ambroxan, sándalo, notas amaderadas'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 65.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 130.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined,
+    id: 170
+  },
+  {
+    house: 'Armaf',
+    name: 'Odyssey Mega',
+    description:
+      'Una fragancia aromática fougère que proyecta confianza y energía. A menudo comparada con YSL Y EDP, ofrece una apertura fresca y especiada de jengibre y cítricos que evoluciona hacia un corazón aromático y frutal, ideal para el uso diario y situaciones versátiles.',
+    image: 'odyssey_mega.jpg',
+    notes: {
+      top: 'jengibre, bergamota, naranja, limón, menta',
+      middle: 'piña, salvia, enebro, geranio',
+      base: 'almizcle, cedro, vetiver, haba tonka'
+    },
+    options: [
       { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
       { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
     ],
     gender: Gender.Masculine,
     status: undefined,
-    id: 166
+    id: 171
+  },
+  {
+    house: 'Armaf',
+    name: 'Odyssey Aqua Edition',
+    description:
+      'Una fragancia vigorizante inspirada en la frescura extrema del mar y las hierbas aromáticas. Con un perfil que recuerda a Invictus Platinum, combina notas cítricas y mentoladas con un fondo de maderas modernas, perfecta para el calor intenso o el gimnasio.',
+    image: 'odyssey_aqua.jpg',
+    notes: {
+      top: 'naranja, pomelo, abrótano (artemisia)',
+      middle: 'menta, lavanda',
+      base: 'ambroxan, ciprés, pachulí'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 172
+  },
+  {
+    house: 'Armaf',
+    name: 'Odyssey Ba Ha Mas',
+    description:
+      'Una edición vibrante y tropical que captura la esencia de las vacaciones exóticas. Su frasco colorido con motivos de plátanos anticipa un aroma jugoso y marino, dominado por notas de melón, pera y un toque salado, evocando cócteles frutales frente al mar.',
+    image: 'odyssey_ba_ha_mas.jpg',
+    notes: {
+      top: 'melón, manzana verde, algas, pera, sal',
+      middle: 'notas acuáticas, incienso, nenúfar',
+      base: 'azúcar, almizcle, cedro, ámbar'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 55.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 110.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined,
+    id: 175
+  },
+  {
+    house: 'Rasasi',
+    name: 'Hawas Pink',
+    description:
+      'Lanzada en 2025, esta fragancia es una interpretación más juguetona y gourmand de la línea. Se aleja de la frescura frutal de la original para ofrecer un aroma dulce y adictivo, destacando por su nota distintiva de malvavisco y algodón de azúcar mezclada con flores blancas elegantes.',
+    image: 'hawas_pink_2025.jpg',
+    notes: {
+      top: 'neroli egipcio, canela, nuez moscada',
+      middle: 'flor de azahar, nardos (tuberosa), malvavisco (bombón)',
+      base: 'algodón de azúcar, vainilla, haba tonka'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 55.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 110.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined,
+    id: 176
+  },
+  {
+    house: 'Lattafa',
+    name: 'Asad Zanzibar Limited Edition',
+    description:
+      'Lanzada en 2025, esta edición limitada ofrece un giro audaz sobre la temática de Zanzíbar. Se aleja del coco cremoso de la versión original para presentar un perfil más aromático y limpio, destacando por una nota distintiva de "jabón negro" y frescura marina, sobre una base cálida de maderas y haba tonka.',
+    image: 'asad_zanzibar_limited.webp',
+    notes: {
+      top: 'notas marinas, lavanda, pimienta rosa',
+      middle: 'jabón negro, cachemira, canela',
+      base: 'haba tonka, ámbar, madera de cedro, sándalo'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 177
+  },
+  {
+    house: 'Guerlain',
+    name: "L'Homme Ideal EDT",
+    description:
+      'El hombre ideal es un mito. Su perfume, una realidad. Una fragancia amaderada aromática que gira en torno a un acorde de "amaretto" increíblemente adictivo. Es elegante, inteligente y divertida, equilibrando la frescura de los cítricos con la calidez de la almendra y el cuero.',
+    image: 'lhomme_ideal_edt.jpg',
+    notes: {
+      top: 'cítricos, romero, flor de azahar del naranjo',
+      middle: 'almendra, haba tonka',
+      base: 'cuero, cedro, vetiver'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 75.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 150.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 178
+  },
+  {
+    house: 'Lattafa',
+    name: 'Asad Bourbon',
+    description:
+      'Un lanzamiento de 2025 que explora la faceta más rica y nocturna de la línea Asad. Inspirado en la calidez de un licor añejo, ofrece una apertura frutal y especiada que evoluciona hacia un corazón gourmand de cacao y davana, descansando sobre una base lujosa de vainilla bourbon y maderas.',
+    image: 'asad_bourbon.webp',
+    notes: {
+      top: 'pimienta rosa, lavanda, ciruela Mirabel',
+      middle: 'cacao, davana, nuez moscada',
+      base: 'vainilla bourbon, ámbar, vetiver'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 179
+  },
+  {
+    house: 'French Avenue (Fragrance World)',
+    name: 'Vulcan Feu',
+    description:
+      'Una fragancia vibrante y exótica que captura la esencia del fuego y la pasión tropical. Inspirada en "God of Fire", destaca por una nota de mango increíblemente realista y jugosa, equilibrada con el picor del jengibre y un fondo amaderado y ambarino. Es potente, llamativa y totalmente unisex.',
+    image: 'vulcan_feu.webp',
+    notes: {
+      top: 'mango, jengibre, limón, frutos rojos',
+      middle: 'cumarina, jazmín, cedro',
+      base: 'almizcle, ámbar, madera de oud, cipriol (nagarmotha)'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined,
+    id: 180
+  },
+  {
+    house: 'Armaf',
+    name: 'Club de Nuit Bling',
+    description:
+      'Una fragancia unisex audaz y radiante que encarna el lujo moderno y el glamour de Dubái. Se abre con una explosión de cítricos brillantes antes de revelar un corazón etéreo de "Prisma Floral" y "Polvo de Estrellas" (acordes luminosos y aireados), cerrando con una base sofisticada de maderas aterciopeladas y vainilla suave.',
+    image: 'club_de_nuit_bling.jpg',
+    notes: {
+      top: 'cítricos frescos, bergamota, limón',
+      middle: 'prisma floral, polvo de estrellas (acorde aireado), notas florales',
+      base: 'maderas aterciopeladas (velvet woods), vainilla'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 75.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 150.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined,
+    id: 181
+  },
+  {
+    house: 'Lattafa',
+    name: 'Eclaire Pistache',
+    description:
+      'Una adición soñada a la familia Eclaire, lanzada en 2025. Es una fragancia puramente gourmand que evoca un postre de alta pastelería. Se centra en una nota rica y cremosa de pistacho tostado que se funde con crema batida y cacao, descansando sobre la base lechosa y avainillada característica de la línea Eclaire.',
+    image: 'eclaire_pistache.jpg',
+    notes: {
+      top: 'crema de pistacho, pistacho tostado',
+      middle: 'crema batida (pastry cream), coco, cacao',
+      base: 'vainilla, leche, almizcle'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined,
+    id: 182
+  },
+  {
+    house: 'Lattafa',
+    name: 'Asad Elixir',
+    description:
+      'Una evolución concentrada y poderosa del Asad original, lanzada en 2025. Diseñada para ser más profunda y rica, se abre con una tensión especiada y cítrica de azafrán y pomelo, revelando un corazón intensamente ahumado de tabaco y vainilla, descansando sobre una base oscura y resinosa de incienso y ámbar seco.',
+    image: 'asad_elixir.jpg',
+    notes: {
+      top: 'pimienta rosa, azafrán, pomelo',
+      middle: 'tabaco, madera de cedro, vainilla',
+      base: 'pachulí, olíbano (incienso), cachemira, ámbar seco'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 65.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 130.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 183
+  },
+  {
+    house: 'Lattafa',
+    name: 'Yara Elixir',
+    description:
+      'Una interpretación más profunda y seductora de la icónica línea Yara. Se aleja de la frescura láctea del original para ofrecer una experiencia puramente gourmand y cremosa. Destaca por una nota irresistible de "s\'mores de fresa" en la salida, evolucionando hacia un corazón floral elegante y un fondo cálido de caramelo y vainilla.',
+    image: 'yara_elixir.jpg',
+    notes: {
+      top: 'Smores de fresa, grosellas negras',
+      middle: 'jazmín, flor de azahar del naranjo',
+      base: 'vainilla, caramelo, ámbar, almizcle'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 65.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 130.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined,
+    id: 184
+  },
+  {
+    house: 'Rasasi',
+    name: 'Hawas Atlantis',
+    description:
+      'Un lanzamiento de 2025 que rompe con el ADN dulce del original para sumergirse en las profundidades del océano. Es una fragancia acuática y mineral muy potente, descrita a menudo con un inicio "vegetal" y salado (notas de algas o pimiento verde) que se asienta en un fondo marino, limpio y almizclado. Audaz y polarizante.',
+    image: 'hawas_atlantis.jpg',
+    notes: {
+      top: 'manzana, limón, bergamota, canela',
+      middle: 'notas acuosas, ciruela, cardamomo, flor de azahar',
+      base: 'madera a la deriva, ámbar gris, almizcle, pachulí'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 185
+  },
+  {
+    house: 'Rasasi',
+    name: 'Hawas Malibu',
+    description:
+      'Un escape exótico en una botella. Esta fragancia captura la energía vibrante de la costa del Pacífico con una apertura explosiva de frutas tropicales y cítricos. Es una composición luminosa y juguetona que evoca días de sol y cócteles, equilibrando la dulzura de la piña con un fondo de maderas suaves y almizcle. Ideal para el calor extremo.',
+    image: 'hawas_malibu.jpg',
+    notes: {
+      top: 'piña, naranja, pomelo (toronja)',
+      middle: 'raíz de lirio (orris), lavanda, ámbar',
+      base: 'haba tonka, cachemira (cashmeran), almizcle, pachulí'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 186
+  },
+  {
+    house: 'Rasasi',
+    name: 'Hawas Diva',
+    description:
+      'Lanzada en 2025, esta fragancia rinde homenaje a la mujer que lidera con elegancia y misterio. Es una composición Oriental Floral que equilibra la acidez jugosa del ruibarbo y el lichi con un corazón ahumado de incienso y rosa, descansando sobre una base cálida y sensual de vainilla y ámbar gris. Audaz, moderna y sofisticada.',
+    image: 'hawas_diva.webp',
+    notes: {
+      top: 'frutos rojos, ruibarbo, lichi',
+      middle: 'rosa, incienso, cedro',
+      base: 'vainilla, ámbar gris, almizcle'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined,
+    id: 187
+  },
+  {
+    house: 'Rayhaan',
+    name: 'Jungle Vibe',
+    description:
+      'Una fragancia fresca, verde y vibrante que captura la esencia de un bosque soleado. Se abre con una ráfaga limpia de cítricos y notas verdes, revelando un corazón suave de higo y hojas de violeta, para asentarse en una base reconfortante y amaderada de sándalo y almizcle blanco. Perfecta para el día a día y climas cálidos.',
+    image: 'rayhaan_jungle_vibe.jpg',
+    notes: {
+      top: 'bergamota, toronja (pomelo), higo',
+      middle: 'notas verdes, hoja de violeta, notas acuáticas',
+      base: 'sándalo, almizcle blanco, pachulí'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 65.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 130.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined,
+    id: 188
+  },
+  {
+    house: 'Lattafa Pride',
+    name: 'Nebras Elixir',
+    description:
+      'Una interpretación más profunda y embriagadora del éxito gourmand original. Este elixir intensifica la adictiva mezcla de vainilla y cacao, añadiendo una capa rica de maderas cálidas, caramelo oscuro y ámbar para crear una estela nocturna, densa y sumamente seductora.',
+    image: 'nebras_elixir.jpg',
+    notes: {
+      top: 'bayas rojas, mandarina, azafrán',
+      middle: 'cacao puro, vainilla, rosa',
+      base: 'haba tonka, ámbar, maderas oscuras, azúcar'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 65.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 130.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined,
+    id: 189
+  },
+  {
+    house: 'Cristiano Ronaldo',
+    name: 'Legacy',
+    description:
+      'Una fragancia amaderada aromática clásica y carismática. Se abre con una refrescante mezcla de lavanda y manzana verde especiada con canela, dando paso a un corazón aromático y floral de cedro, romero y salvia, para finalmente reposar sobre una base masculina y terrosa de pachulí y maderas rubias.',
+    image: 'cristiano_ronaldo_legacy.jpg',
+    notes: {
+      top: 'bergamota, canela, manzana verde, lavanda',
+      middle: 'raíz de lirio (orris), cedro, peonía, violeta, romero, salvia',
+      base: 'pachulí, ámbar gris, vetiver, maderas rubias'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 190
+  },
+  {
+    house: 'Rasasi',
+    name: 'Hawas Kobra',
+    description:
+      'Lanzada en 2025, esta fragancia ha ganado una popularidad masiva por ser una potente inspiración de Louis Vuitton Imagination. Ofrece un perfil increíblemente limpio, jabonoso y cítrico. Destaca por una salida chispeante de jengibre y cítricos que da paso a un corazón aromático dominado por el té verde y un toque de canela, asentándose en una base magnética y duradera de almizcle y ámbar.',
+    image: 'hawas_kobra.jpg',
+    notes: {
+      top: 'jengibre, bergamota, naranja tangerina',
+      middle: 'canela, neroli, té verde',
+      base: 'almizcle, notas amaderadas, ámbar'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 191
+  },
+  {
+    house: 'Rasasi',
+    name: 'Hawas Tropical',
+    description:
+      'Un vibrante lanzamiento de 2025 que te transporta a un paraíso exótico. Es un verdadero cóctel frutal potente y dulce, que destaca por una explosión de mango jugoso y maracuyá en la salida, equilibrado con un corazón floral suave y apoyado sobre una base almizclada y avainillada de enorme rendimiento. Ideal para quienes buscan destacar en climas cálidos o fiestas de verano.',
+    image: 'hawas_tropical.jpg',
+    notes: {
+      top: 'mango, maracuyá (fruta de la pasión), naranja dulce',
+      middle: 'jazmín sambac, ylang-ylang, notas acuosas',
+      base: 'almizcle blanco, vainilla de Madagascar, sándalo'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 65.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 130.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 192
+  },
+  {
+    house: 'Michael Malul',
+    name: 'Ktoret San Lucas',
+    description:
+      'Una fragancia amaderada especiada que encarna la sofisticación relajada. Se abre con la frescura picante del cardamomo y la bergamota, evolucionando hacia un corazón floral y empolvado de violeta e iris. Finalmente, se asienta en una base lujosa y terrosa de sándalo australiano, cuero y ámbar.',
+    image: 'ktoret_san_lucas.webp',
+    notes: {
+      top: 'cardamomo, bergamota, pimienta rosa',
+      middle: 'hojas de violeta, iris, geranio',
+      base: 'sándalo, cuero, ámbar, vetiver'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined,
+    id: 193
+  },
+  {
+    house: 'Michael Malul',
+    name: 'Ktoret Sparkle',
+    description:
+      'Una fragancia radiante, alegre y magnética que captura la esencia de la luz y la vitalidad. Se abre con una explosión efervescente de mandarina y pimienta rosa, suavizada por la delicadeza del nenúfar. En su corazón, un bouquet femenino de flores blancas y rosas se asienta sobre una base elegante de cedro y pachulí.',
+    image: 'ktoret_sparkle.webp',
+    notes: {
+      top: 'mandarina, nenúfar (lirio de agua), pimienta rosa',
+      middle: 'flor de azahar del naranjo (neroli marroquí), jazmín, rosa damascena',
+      base: 'madera de cedro, almizcle, pachulí'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined,
+    id: 194
+  },
+  {
+    house: 'Rasasi',
+    name: 'Hawas Verde',
+    description:
+      'Un lanzamiento de 2025 que da un giro espectacular hacia la frescura aromática. Se aleja del perfil dulce tradicional de la línea para ofrecer una explosión cítrica y mentolada sumamente vigorizante, con un estilo que recuerda a Xerjoff Torino21. Es una composición verde, limpia y energizante, ideal para destacar durante el calor intenso.',
+    image: 'hawas_verde.webp',
+    notes: {
+      top: 'lima (limón verde), menta, limón',
+      middle: 'romero, manzana verde',
+      base: 'pachulí, ámbar, almizcle'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 75.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 150.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 195
+  },
+  {
+    house: 'Armaf',
+    name: 'Odyssey Toffee Coffee',
+    description:
+      'Una deliciosa y adictiva adición gourmand a la línea Odyssey. Captura la reconfortante esencia de una cafetería de lujo, fusionando el aroma intenso de los granos de café recién tostados con la dulzura mantecosa y rica del toffee. Es una fragancia cálida, cremosa y envolvente, ideal para destacar en climas fríos o noches especiales.',
+    image: 'odyssey_toffee_coffee.webp',
+    notes: {
+      top: 'granos de café tostado, almendra',
+      middle: 'toffee (caramelo de mantequilla), cacao, leche caliente',
+      base: 'vainilla, haba tonka, almizcle cálido'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined,
+    id: 196
+  },
+  {
+    house: 'Armaf',
+    name: 'Odyssey Artisto',
+    description:
+      'Una fragancia tropical, dulce y seductora que destaca en cualquier colección. Conocida por su vibrante frasco rojo, se abre con un toque aromático y de frutos secos que da paso a un corazón sumamente cremoso de coco, canela y frutas exóticas. Descansa sobre un fondo cálido de vainilla y ámbar. Ideal para quienes disfrutan el estilo de Le Beau pero buscan algo con un giro único.',
+    image: 'odyssey_artisto.webp',
+    notes: {
+      top: 'bergamota, frutos secos, salvia',
+      middle: 'coco, frutas tropicales, canela',
+      base: 'vainilla, ámbar, haba tonka'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined,
+    id: 197
+  },
+  {
+    house: 'Dolce & Gabbana',
+    name: 'Light Blue Capri In Love (Mujer)',
+    description:
+      'Un lanzamiento de 2025 que evoca la serenidad, la delicadeza y el romance de la isla de Capri. Esta fragancia floral afrutada se abre con la elegancia del té de jazmín, dando paso a la frescura crujiente de la manzana verde, y se asienta sobre un fondo ligeramente especiado y sofisticado gracias a la longoza.',
+    image: 'light_blue_capri_in_love_mujer.jpg',
+    notes: {
+      top: 'té de jazmín',
+      middle: 'manzana verde',
+      base: 'longoza (notas especiadas)'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Feminine,
+    status: undefined,
+    id: 198
+  },
+  {
+    house: 'Dolce & Gabbana',
+    name: 'Light Blue Capri In Love Pour Homme',
+    description:
+      'La interpretación masculina de 2025 para la línea Capri In Love. Es un giro atrevido y distinto a los clásicos cítricos de Light Blue, ofreciendo un perfil amaderado y aromático. Destaca por una apertura picante de pimienta negra, un corazón dulce y verde de higo, sobre un fondo cálido, masculino y terroso de pachulí.',
+    image: 'light_blue_capri_in_love_hombre.jpg',
+    notes: {
+      top: 'pimienta negra',
+      middle: 'higo',
+      base: 'pachulí'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 199
+  },
+  {
+    house: 'Paco Rabanne',
+    name: '1 Million Lucky',
+    description:
+      'Una fragancia vibrante y cautivadora que invita a aprovechar el momento. Es una versión más frutal y gourmand del clásico 1 Million, destacando por una apertura jugosa de ciruela que da paso a un corazón adictivo de avellana, miel y cedro. Descansa sobre una base cálida y amaderada, resultando en un aroma juguetón, dulce y muy atractivo.',
+    image: 'one_million_lucky.jpg',
+    notes: {
+      top: 'ciruela, notas ozónicas, pomelo, bergamota',
+      middle: 'avellana, miel, cedro, madera de cachemira, jazmín, flor de azahar del naranjo',
+      base: 'amberwood, pachulí, musgo de roble, vetiver'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 100.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 200.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 200
+  },
+  {
+    house: 'Paco Rabanne',
+    name: '1 Million Parfum',
+    description:
+      'Una interpretación audaz, opulenta y soleada del icónico 1 Million. Esta versión Parfum introduce un contraste intrigante entre la salinidad del nardo y la calidez del cuero solar. Es una fragancia sumamente potente, floral y dulce, con toques de coco y pino, diseñada para no pasar desapercibida.',
+    image: 'one_million_parfum.jpg',
+    notes: {
+      top: 'toronja (pomelo), notas saladas, pino',
+      middle: 'nardos, aceite de monoi, notas solares',
+      base: 'cuero, ámbar gris, ládano'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 75.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 150.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 201
+  },
+  {
+    house: 'Chanel',
+    name: 'Allure Homme Sport Superleggera',
+    description:
+      'Inspirada en el mundo del automovilismo y el concepto de ligereza extrema, esta fragancia de 2024 es una evolución más dinámica y chispeante del clásico Allure Homme Sport. Se abre con una explosión cítrica y luminosa de pomelo y mandarina, evolucionando hacia un corazón elegante de cedro, para finalmente asentarse sobre un fondo seductor de almizcle blanco, sándalo y pachulí.',
+    image: 'allure_homme_sport_superleggera.webp',
+    notes: {
+      top: 'cítricos, mandarina, pomelo (toronja)',
+      middle: 'notas amaderadas, madera de cedro',
+      base: 'almizcle blanco, ámbar, pachulí, sándalo'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 105, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 210, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 202
+  },
+  {
+    house: 'Guerlain',
+    name: "L'Homme Idéal Cologne Forte",
+    description:
+      'Una reinterpretación magistral lanzada en 2025 que juega con el contraste entre el frío intenso y el calor especiado. Se abre con un estallido vigorizante de pomelo y cáscara de limón, revelando el icónico corazón de almendra de la línea, esta vez matizado con canela. Descansa sobre una base profunda de incienso y vetiver que le aporta un rendimiento y elegancia excepcionales.',
+    image: 'lhomme_ideal_cologne_forte.jpg',
+    notes: {
+      top: 'pomelo, cáscara de limón, bergamota',
+      middle: 'almendra, canela',
+      base: 'vainillina, vetiver, incienso'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 85, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 170, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 203
   }
 ];
 
