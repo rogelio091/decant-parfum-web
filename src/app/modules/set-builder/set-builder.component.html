@@ -38,6 +38,7 @@
       <app-items-grid
         class="w-full set-builder-grid"
         [items]="filteredItems()"
+        [selectedItemIds]="selectedIds()"
         (itemClick)="toggleSelection($event)"
         (addToCartClick)="toggleSelection($event)">
       </app-items-grid>
@@ -138,18 +139,24 @@
           <span class="text-xs text-secondary">Total: Q{{ setPrice().toFixed(2) }}</span>
         </div>
 
-        <!-- Action button -->
-        <button
-          mat-raised-button
-          [color]="isComplete() ? 'primary' : 'basic'"
-          class="flex-shrink-0"
-          (click)="isComplete() ? addSetToCart() : openSetPreview()">
-          @if (isComplete()) {
-            Agregar
-          } @else {
+        <!-- Action buttons -->
+        <div class="flex gap-2 flex-shrink-0">
+          <button
+            mat-stroked-button
+            class="flex-shrink-0"
+            (click)="openSetPreview()">
             Ver detalle
+          </button>
+          @if (isComplete()) {
+            <button
+              mat-raised-button
+              color="primary"
+              class="flex-shrink-0"
+              (click)="addSetToCart()">
+              Agregar
+            </button>
           }
-        </button>
+        </div>
       </div>
     }
   </div>

@@ -70,6 +70,7 @@ export class SetBuilderComponent implements OnInit {
   selectionCount = computed(() => this.selections().length);
   isComplete = computed(() => this.selections().length === this.maxSelections);
   setPrice = computed(() => calculateSetPrice(this.selections()));
+  selectedIds = computed(() => this.selections().map((s) => s.itemId));
 
   ngOnInit(): void {
     this._catalogService.getPerfumes().subscribe({

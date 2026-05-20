@@ -38,7 +38,8 @@
     </fuse-card> -->
 
     <fuse-card @fadeInRight *ngFor="let product of itemList$ |async; index as i;"
-        class="flex flex-col max-w-80 w-full h-full transform transition hover:scale-105 justify-between ">
+        class="flex flex-col max-w-80 w-full h-full transform transition hover:scale-105 justify-between "
+        [class.selected]="selectedItemIds?.includes(product.id)">
         <div class='fixed bottom-5 z-10 icon-size-6 cursor-pointer'
             [ngClass]="{' right-5' : !isMobile(), ' left-6' : isMobile()}" matRipple [matRippleColor]="'cyan'"
             [matRippleCentered]="true" [matRippleUnbounded]="true">

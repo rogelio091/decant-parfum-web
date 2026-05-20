@@ -50,6 +50,7 @@ import { environment } from 'environments/environment';
 })
 export class ItemsGridComponent implements OnChanges {
   @Input({ required: true }) items: Item[] = [];
+  @Input() selectedItemIds: number[] = [];
   @Output() itemClick = new EventEmitter<Item>();
   @Output() addToCartClick = new EventEmitter<Item>();
 
