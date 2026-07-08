@@ -51,7 +51,7 @@ export class CheckoutComponent {
   stateForm$ = toObservable(this.stateForm);
   applyDiscount = signal<boolean>(false);
   discountToApply = computed(() => {
-    const discountAmount = this._shoppingCartService.totalCart() * 0.1;
+    const discountAmount = this._shoppingCartService.totalCart() * 0.15;
     return discountAmount;
   });
 
@@ -59,7 +59,7 @@ export class CheckoutComponent {
   totalCart = computed(() => {
     let total = this._shoppingCartService.totalCart();
     if (this.applyDiscount()) {
-      total = total * 0.9;
+      total = total * 0.85;
     }
     return total;
   });
@@ -68,8 +68,8 @@ export class CheckoutComponent {
 
   ngOnInit(): void {
     const today = new Date();
-    const discountStart = new Date(today.getFullYear(), 11, 20);
-    const discountEnd = new Date(today.getFullYear(), 11, 31);
+    const discountStart = new Date(today.getFullYear(), 6, 1);
+    const discountEnd = new Date(today.getFullYear(), 6, 31);
 
     if (today >= discountStart && today <= discountEnd) {
       this.applyDiscount.set(true);

@@ -1015,8 +1015,8 @@ export const items_catalogue_general: Item[] = [
       base: 'notas amaderadas, almizcle'
     },
     options: [
-      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Unisex,
     status: undefined,
@@ -3835,6 +3835,120 @@ export const items_catalogue_general: Item[] = [
     gender: Gender.Masculine,
     status: undefined,
     id: 203
+  },
+  {
+    house: 'Givenchy',
+    name: 'Gentleman Society Sport',
+    description:
+      'Una iteración dinámica y energizante de la elegante línea Gentleman Society. Esta versión "Sport" toma el distintivo ADN amaderado y floral del original y lo inyecta con una frescura luminosa. Se abre con una combinación vigorizante de cítricos y menta fría, dando paso a un corazón aromático donde brilla la emblemática nota de narciso, para finalmente descansar sobre una base limpia y estructurada de vetiver y maderas claras.',
+    image: 'givenchy_society_sport.jpg',
+    notes: {
+      top: 'bergamota, menta, cardamomo',
+      middle: 'narciso, salvia, geranio',
+      base: 'vetiver de Haití, madera de cedro, sándalo'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 85.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 170.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 204
+  },
+  {
+    house: 'Maison Alhambra',
+    name: 'Jean Lowe Summer Vibes',
+    description:
+      'Una fragancia vibrante y refrescante que evoca los soleados días de verano. Pertenece a la prestigiosa línea Jean Lowe y se caracteriza por una salida cítrica y luminosa que se funde con un corazón floral suave, descansando sobre una base limpia y almizclada. Perfecta para aportar frescura y vitalidad en climas cálidos.',
+    image: 'jean_lowe_summer_vibes.jpg',
+    notes: {
+      top: 'cítricos, bergamota, limón',
+      middle: 'notas florales, jazmín, acordes acuáticos',
+      base: 'almizcle, maderas claras, ámbar'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined,
+    id: 205
+  },
+  {
+    house: 'Dumont',
+    name: 'Nitro Elixir',
+    description:
+      'Una fragancia intensa y seductora, diseñada para dejar una impresión duradera. Nitro Elixir combina la calidez de las especias con la profundidad de las maderas oscuras y la riqueza del ámbar. Su salida especiada da paso a un corazón balsámico y resinoso, culminando en un fondo sumamente denso y envolvente.',
+    image: 'nitro_elixir.jpg',
+    notes: {
+      top: 'pimienta negra, especias cálidas, bergamota',
+      middle: 'resinas, notas amaderadas, pachulí',
+      base: 'ámbar, haba tonka, vainilla'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 206
+  },
+  {
+    house: 'Dumont',
+    name: 'Nitro Gold',
+    description:
+      'Nitro Gold es una declaración de lujo y opulencia. Esta fragancia destaca por su perfil dulce, frutal y ligeramente especiado, que aporta una sensación de sofisticación moderna. Se abre con notas frutales chispeantes, evolucionando hacia un corazón aromático y floral, para asentarse en una base cremosa y amaderada.',
+    image: 'nitro_gold.jpg',
+    notes: {
+      top: 'notas frutales, manzana, cardamomo',
+      middle: 'lavanda, geranio, nuez moscada',
+      base: 'madera de cedro, vainilla, ámbar'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 207
+  },
+  {
+    house: 'Lattafa',
+    name: 'Angham',
+    description:
+      'Una composición elegante y cautivadora que fusiona la tradición oriental con un toque contemporáneo. Angham se caracteriza por su rica mezcla de notas florales y especiadas, ofreciendo un aroma cálido y envolvente. Ideal para ocasiones especiales o para quienes buscan una fragancia con carácter y profundidad.',
+    image: 'angham.jpg',
+    notes: {
+      top: 'azafrán, rosa, cítricos',
+      middle: 'maderas preciosas, pachulí, jazmín',
+      base: 'oud (madera de agar), ámbar, almizcle'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 65.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 130.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined,
+    id: 208
+  },
+  {
+    house: 'Dolce & Gabbana',
+    name: 'The One Parfum',
+    description:
+      'La versión más concentrada y lujosa del icónico The One. Este Parfum intensifica la clásica combinación de ámbar y especias, llevándola a un nivel superior de sofisticación. Con una apertura vibrante de albahaca y cardamomo, revela un corazón profundo y balsámico, descansando sobre una base magnética y duradera de maderas nobles y cuero.',
+    image: 'the_one_parfum.jpg',
+    notes: {
+      top: 'albahaca grand vert, cardamomo, pomelo',
+      middle: 'esclarea, flor de azahar del naranjo, cilantro',
+      base: 'ámbar intenso, sándalo, notas de tabaco'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 209
   }
 ];
 
