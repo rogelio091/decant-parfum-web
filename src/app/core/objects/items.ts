@@ -324,8 +324,8 @@ export const items_catalogue_general: Item[] = [
     },
 
     options: [
-      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -3949,6 +3949,44 @@ export const items_catalogue_general: Item[] = [
     gender: Gender.Masculine,
     status: undefined,
     id: 209
+  },
+  {
+    house: 'Bharara',
+    name: 'Rome Melancholia',
+    description:
+      'Una fragancia elegante, moderna y seductora. Combina acordes aromáticos frescos con un fondo cálido y amaderado. Destaca por una apertura vibrante de cardamomo que se suaviza en un exótico corazón de coco, dejando una estela de amberwood sumamente adictiva y duradera.',
+    image: 'rome_melancholia.webp',
+    notes: {
+      top: 'cardamomo',
+      middle: 'coco',
+      base: 'amberwood'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 210
+  },
+  {
+    house: 'Carolina Herrera',
+    name: '212 VIP Black Elixir',
+    description:
+      'Una versión que oscurece y endulza el ADN fiestero de la línea VIP. Es una fragancia oriental cálida, dulzona e íntima. La lavanda de la salida da paso rápidamente a una nota protagonista de madera de regaliz negro, para asentarse en una potente y sensual base de vainilla.',
+    image: '212_vip_elixir.webp',
+    notes: {
+      top: 'lavanda',
+      middle: 'regaliz negro',
+      base: 'vainilla'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 211
   }
 ];
 
