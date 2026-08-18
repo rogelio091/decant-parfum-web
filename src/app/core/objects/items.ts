@@ -3924,8 +3924,8 @@ export const items_catalogue_general: Item[] = [
       base: 'oud (madera de agar), ámbar, almizcle'
     },
     options: [
-      { name: SizeOptions.ML5, price: 65.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 130.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 65.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 130.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Unisex,
     status: undefined,
@@ -3987,6 +3987,44 @@ export const items_catalogue_general: Item[] = [
     gender: Gender.Masculine,
     status: undefined,
     id: 211
+  },
+  {
+    house: 'Rasasi',
+    name: 'Hawas Highness',
+    description:
+      'Un lanzamiento de 2026 que apuesta al jengibre como protagonista absoluto. Se abre con una salida cítrica y especiada que se mantiene vibrante durante toda la evolución, acompañada de una capa floral sutil (jazmín, rosa y violeta) y asentada sobre una base amaderada de cedro, pachulí y vetiver con la calidez del ámbar. Conserva el inconfundible ADN almizclado y limpio de la línea Hawas, con un dulzor sutil tipo vainilla. Es frecuentemente comparada con Sospiro Vibrato.',
+    image: 'hawas_highness.jpg',
+    notes: {
+      top: 'jengibre, cítricos, notas especiadas',
+      middle: 'jazmín, rosa, violeta',
+      base: 'cedro, pachulí, vetiver, ámbar'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 75.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 150.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 212
+  },
+  {
+    house: 'Rasasi',
+    name: 'Hawas Chrome',
+    description:
+      'Un lanzamiento de 2026 de la línea Hawas con un perfil tropical-ambarino, dulce y luminoso. Se abre con una mezcla jugosa de frutas amarillas, naranja dulce y durazno, que da paso a un corazón acuoso y frutal dominado por el mango y la maracuyá. Descansa sobre una base cálida y reconfortante de almizcle, ámbar y vainilla. Una fragancia versátil y envolvente, ideal para climas cálidos y uso diario.',
+    image: 'hawas_chrome.jpg',
+    notes: {
+      top: 'frutas amarillas, naranja dulce, durazno (melocotón)',
+      middle: 'notas acuosas, mango, maracuyá (fruta de la pasión), notas frutales',
+      base: 'almizcle, ámbar, vainilla'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 75.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 150.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Unisex,
+    status: undefined,
+    id: 213
   }
 ];
 
