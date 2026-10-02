@@ -4025,6 +4025,25 @@ export const items_catalogue_general: Item[] = [
     gender: Gender.Unisex,
     status: undefined,
     id: 213
+  },
+  {
+    house: 'Armaf',
+    name: 'Odyssey Nexus',
+    description:
+      'Un lanzamiento de 2026 que captura la aclamada esencia del descontinuado Acqua di Giò Profumo. Se abre con una frescura marina vibrante combinada con bergamota y mandarina, evolucionando hacia un corazón aromático y especiado donde destacan el romero, el jengibre y la salvia. Su secado es elegante, oscuro y magnético, protagonizado por el incienso ahumado, maderas nobles y un pachulí terroso. Una fragancia fresca, sofisticada y sumamente versátil.',
+    image: 'odyssey_nexus.jpg',
+    notes: {
+      top: 'notas marinas, bergamota, mandarina',
+      middle: 'romero, jengibre, salvia, geranio',
+      base: 'incienso de olíbano, pachulí, notas amaderadas, notas balsámicas'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 214
   }
 ];
 
