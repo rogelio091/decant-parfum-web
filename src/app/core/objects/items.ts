@@ -4044,6 +4044,44 @@ export const items_catalogue_general: Item[] = [
     gender: Gender.Masculine,
     status: undefined,
     id: 214
+  },
+  {
+    house: 'Versace',
+    name: 'Man Eau Fraîche Extrême',
+    description:
+      'La reinterpretación intensa del clásico Man Eau Fraîche, lanzada en 2025. Se abre con un estallido luminoso de limón y flor de azahar especiado con pimienta rosa, dando paso a un corazón aromático de lavanda, salvia esclarea y geranio bourbon. Su secado es limpio, moderno y magnético, construido sobre ambroxan, almizcle y cedro de Virginia. Una fragancia fresca pero con cuerpo, ideal para el calor y el uso diario.',
+    image: 'versace_eau_fraiche_extreme.jpg',
+    notes: {
+      top: 'flor de azahar, limón, pimienta rosa',
+      middle: 'lavanda, salvia esclarea, geranio bourbon',
+      base: 'ambroxan, almizcle, cedro de Virginia'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 75.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 150.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 215
+  },
+  {
+    house: 'Montblanc',
+    name: 'Individuel',
+    description:
+      'Un clásico moderno de 2003 que combina la frescura aromática con un fondo goloso y amaderado. Se abre con una mezcla compleja de lavanda, piña, menta y especias, evolucionando hacia un corazón floral de violeta y jazmín. Su base es inconfundible: frambuesa, chocolate negro y vainilla sobre sándalo, ámbar y pachulí. Una fragancia cálida, limpia y muy versátil, con excelente rendimiento.',
+    image: 'montblanc_individuel.png',
+    notes: {
+      top: 'lavanda, canela, piña, bayas de enebro, menta, bergamota, romero, cardamomo, cilantro',
+      middle: 'flor de azahar, violeta, geranio, jazmín',
+      base: 'frambuesa, vainilla, sándalo, chocolate negro, almizcle, ámbar, pachulí, vetiver, musgo de roble'
+    },
+    options: [
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+    ],
+    gender: Gender.Masculine,
+    status: undefined,
+    id: 216
   }
 ];
 
