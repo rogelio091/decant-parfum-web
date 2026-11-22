@@ -54,8 +54,8 @@ export const items_catalogue_general: Item[] = [
       base: 'jengibre, sándalo, pachulí, jazmín'
     },
     options: [
-      { name: SizeOptions.ML5, price: 55.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 110.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 55.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 110.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Unisex,
     status: undefined
@@ -130,8 +130,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, haba tonka, ámbar, pachulí'
     },
     options: [
-      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -1262,8 +1262,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, ámbar, sándalo, almizcle'
     },
     options: [
-      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 50.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 100.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -3126,8 +3126,8 @@ export const items_catalogue_general: Item[] = [
       base: 'sándalo, cedro, almizcle, musgo de roble'
     },
     options: [
-      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -3658,8 +3658,8 @@ export const items_catalogue_general: Item[] = [
       base: 'madera de cedro, almizcle, pachulí'
     },
     options: [
-      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Feminine,
     status: undefined,
