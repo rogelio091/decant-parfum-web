@@ -72,8 +72,8 @@ export const items_catalogue_general: Item[] = [
       base: 'almizcle, ámbar, naranja'
     },
     options: [
-      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -91,8 +91,8 @@ export const items_catalogue_general: Item[] = [
       base: 'ciprés, pino, cedro, ámbar'
     },
     options: [
-      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -227,8 +227,8 @@ export const items_catalogue_general: Item[] = [
       base: 'pachulí, vainilla, almizcle, vetiver'
     },
     options: [
-      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -939,8 +939,8 @@ export const items_catalogue_general: Item[] = [
       base: 'pimienta rosa, pachulí'
     },
     options: [
-      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Unisex,
     status: undefined,
@@ -1110,8 +1110,8 @@ export const items_catalogue_general: Item[] = [
       base: 'ámbar, sándalo, castaña'
     },
     options: [
-      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -1129,8 +1129,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, haba tonka, almizcle'
     },
     options: [
-      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -1148,8 +1148,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, haba tonka, ámbar, cedro, incienso, pachulí'
     },
     options: [
-      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 80.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 160.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -1471,8 +1471,8 @@ export const items_catalogue_general: Item[] = [
       base: 'musgo de roble, ámbar, notas amaderadas'
     },
     options: [
-      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -1528,8 +1528,8 @@ export const items_catalogue_general: Item[] = [
       base: 'praliné, pachulí, vetiver'
     },
     options: [
-      { name: SizeOptions.ML5, price: 55.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 110.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 55.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 110.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -2062,8 +2062,8 @@ export const items_catalogue_general: Item[] = [
       base: 'sándalo, madera de oud'
     },
     options: [
-      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Unisex,
     status: undefined
@@ -2500,8 +2500,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, ambroxán, madera de guayaco, cedro, almizcle'
     },
     options: [
-      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Unisex,
     status: undefined
@@ -2595,8 +2595,8 @@ export const items_catalogue_general: Item[] = [
       base: 'ámbar, almizcle, notas amaderadas'
     },
     options: [
-      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Masculine,
     status: undefined
@@ -2766,8 +2766,8 @@ export const items_catalogue_general: Item[] = [
       base: 'almizcle, ámbar, cedro'
     },
     options: [
-      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Unisex,
     status: undefined
@@ -2993,8 +2993,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, pachulí, ládano, jara'
     },
     options: [
-      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Unisex,
     status: undefined,
@@ -3373,8 +3373,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla bourbon, ámbar, vetiver'
     },
     options: [
-      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -3449,8 +3449,8 @@ export const items_catalogue_general: Item[] = [
       base: 'pachulí, olíbano (incienso), cachemira, ámbar seco'
     },
     options: [
-      { name: SizeOptions.ML5, price: 65.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 130.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 65.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 130.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -3468,8 +3468,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, caramelo, ámbar, almizcle'
     },
     options: [
-      { name: SizeOptions.ML5, price: 65.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 130.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 65.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 130.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -3525,8 +3525,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla, ámbar gris, almizcle'
     },
     options: [
-      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Feminine,
     status: undefined,
@@ -4000,8 +4000,8 @@ export const items_catalogue_general: Item[] = [
       base: 'cedro, pachulí, vetiver, ámbar'
     },
     options: [
-      { name: SizeOptions.ML5, price: 75.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 150.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 75.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 150.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Masculine,
     status: undefined,
@@ -4038,8 +4038,8 @@ export const items_catalogue_general: Item[] = [
       base: 'incienso de olíbano, pachulí, notas amaderadas, notas balsámicas'
     },
     options: [
-      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 60.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 120.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Masculine,
     status: undefined,
