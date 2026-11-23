@@ -2139,8 +2139,8 @@ export const items_catalogue_general: Item[] = [
       base: 'vainilla'
     },
     options: [
-      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 90.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 180.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Feminine,
     status: undefined
@@ -2405,8 +2405,8 @@ export const items_catalogue_general: Item[] = [
       base: 'ámbar gris, gamuza'
     },
     options: [
-      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.Available },
-      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.Available }
+      { name: SizeOptions.ML5, price: 70.0, status: ItemStatus.SoldOut },
+      { name: SizeOptions.ML10, price: 140.0, status: ItemStatus.SoldOut }
     ],
     gender: Gender.Unisex,
     status: undefined
